@@ -1,0 +1,68 @@
+.filters-section {
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+  }
+
+  .search {
+    display: flex;
+    margin: .5rem 1rem;
+
+    @include media-breakpoint-up(sm) {
+      margin: .5rem 3rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      align-items: center;
+      height: 100%;
+      margin: 0;
+    }
+
+    input {
+      border-radius: 0;
+      border: 1px solid #ddd;
+      padding: 1rem 1rem;
+      width: calc(100% - 30px);
+      height: 40px;
+    }
+
+    button {
+      background-color: #5ab4ce;
+      color: #fff;
+      width: 75px;
+      cursor: pointer;
+      height: 40px;
+    }
+  }
+
+  .filter {
+
+    p {
+      font-size: 2rem;
+      width: 100%;
+      background-color: #6fb0dd;
+      padding: .5rem;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #eee;
+      padding: 1rem .5rem;
+      justify-content: center;
+    }
+
+    a {
+      font-size: 2rem;
+      border: 1px solid #ddd;
+      width: 40px;
+      height: 40px;
+      margin: .2rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      color: #5ab4ce;
+      background-color: #fff;
+    }
+  }
+}

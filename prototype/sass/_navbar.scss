@@ -1,0 +1,55 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 1.5rem 0;
+  z-index: 3;
+
+  > ul {
+    margin: 0 2rem 0 50px;
+    display: table;
+    transition: margin .2s;
+
+    @media (min-width: 900px) {
+      margin: 0 2rem 0 250px;
+    }
+
+    .sidebar-active & {
+      margin: 0 2rem 0 250px;
+    }
+
+    > li {
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .bars {
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.8rem;
+    top: 5px;
+    left: 5px;
+
+    &:before {
+      content: '';
+      background: #000;
+      box-shadow: 0 .2em 0 0 #000, 0 .4em 0 0 #000;
+      height: 2px;
+      left: 10px;
+      position: absolute;
+      top: 0.4em;
+      width: 0.6em;
+      opacity: .9;
+    }
+  }
+
+}

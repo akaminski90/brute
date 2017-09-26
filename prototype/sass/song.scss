@@ -1,0 +1,99 @@
+@import "main";
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.song {
+  margin: 3rem 0 0;
+
+  > h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #3a3a3a;
+    padding: 0 .5rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
+  }
+
+  > p {
+    font-size: 1.7rem;
+    margin: 3rem 0 5rem;
+    display: none;
+    padding: 0 1rem;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+  }
+
+  .text {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+
+    @media (min-width: 400px) {
+      font-size: 1.5rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.65rem;
+    }
+
+    .string {
+      border-bottom: 1px solid #eee;
+      padding: .5rem 0;
+
+      @media (min-width: 320px) {
+        display: flex;
+      }
+
+      &:hover {
+        background-color: #f7f7f7;
+      }
+
+      .original {
+        width: 100%;
+
+        @media (min-width: 320px) {
+          width: 50%;
+          padding: 0 1rem;
+          border-right: 1px solid #eee;
+        }
+      }
+
+      .translate {
+        width: 100%;
+
+        @media (min-width: 320px) {
+          width: 50%;
+          padding: 0 1rem;
+        }
+      }
+
+      .translate {
+        font-weight: 600;
+      }
+    }
+  }
+
+}
+
+
+
+.author {
+  position: absolute;
+  display: none;
+  right: 0;
+  font-size: 1.5rem;
+  width: 70%;
+  bottom: 0;
+  max-width: 1300px;
+
+  @include media-breakpoint-up(xxl) {
+    display: block;
+
+  }
+}
