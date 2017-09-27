@@ -8,6 +8,8 @@
 //     $('.wrapper').removeClass('mobile-menu-active');
 // });
 
+
+/*********************SIDEBAR****************************************************/
 var sidebar = document.querySelector('.sidebar');
 var article = document.querySelector('body article');
 var sidebarStyle = sidebar.currentStyle || window.getComputedStyle(sidebar);
@@ -19,4 +21,12 @@ document.querySelector('.bars').addEventListener('click', function () {
         sidebar.style.left = '0px';
         article.style.marginLeft = '300px';
     }
+});
+
+/**********************ARROWS******************************************************/
+
+$('.br-down').click(function () {
+    var $li = $(this).parent().parent();
+    $li.toggleClass('active');
+    $(this).toggleClass('br-down').toggleClass('br-up');
 });
