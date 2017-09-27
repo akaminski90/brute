@@ -13,15 +13,28 @@
 var sidebar = document.querySelector('.sidebar');
 var article = document.querySelector('body article');
 var siteName = document.querySelector('.navbar ul');
+var content = document.querySelector('.content');
 var sidebarStyle = sidebar.currentStyle || window.getComputedStyle(sidebar);
 document.querySelector('.bars').addEventListener('click', function () {
-    if (sidebarStyle.left === '0px' || sidebarStyle.left === '') {
+    if (sidebarStyle.left === '0px') {
         sidebar.style.left = '-300px';
-        article.style.marginLeft = '0px';
-        siteName.style.marginLeft = '50px';
+        //if (window.innerWidth >= 900) {
+            article.style.marginLeft = '0px';
+            content.style.left = '0px';
+        /*} else {
+            content.style.left = '0px';
+            article.style.marginLeft = '0px';
+        }
+        siteName.style.marginLeft = '50px';*/
     } else {
         sidebar.style.left = '0px';
-        article.style.marginLeft = '300px';
+        if (window.innerWidth >= 900) {
+            article.style.marginLeft = '300px';
+            content.style.left = '0px';
+        } else {
+            content.style.left = '300px';
+            article.style.marginLeft = '0px';
+        }
         siteName.style.marginLeft = '250px';
     }
 });
