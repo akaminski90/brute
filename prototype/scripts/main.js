@@ -19,8 +19,8 @@ document.querySelector('.bars').addEventListener('click', function () {
     if (sidebarStyle.left === '0px') {
         sidebar.style.left = '-300px';
         //if (window.innerWidth >= 900) {
-            article.style.marginLeft = '0px';
-            content.style.left = '0px';
+        article.style.marginLeft = '0px';
+        content.style.left = '0px';
         /*} else {
             content.style.left = '0px';
             article.style.marginLeft = '0px';
@@ -47,10 +47,17 @@ document.querySelector('.bars').addEventListener('click', function () {
     $(this).toggleClass('br-down').toggleClass('br-up');
 });*/
 
-document.body.addEventListener('click', function (event) {
+/*document.body.addEventListener('click', function (event) {
+    arrows = document.querySelectorAll('.sidebar > ul > li > a');
     if (event.target.classList.contains('br-down') || event.target.classList.contains('br-up')) {
         event.target.classList.toggle('br-down');
         event.target.classList.toggle('br-up');
         event.target.parentNode.parentNode.classList.toggle('active');
     }
+});*/
+
+$('.sidebar > ul > li > a').click(function () {
+    var $li = $(this).parent();
+    $li.toggleClass('active');
+    $(this).find('i').toggleClass('br-down').toggleClass('br-up');
 });
