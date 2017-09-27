@@ -1682,3 +1682,4 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2017-09-27 12:59:40,995 [P42344/D12/T50] INFO  umbraco.content - Load Xml from file...
  2017-09-27 12:59:40,996 [P42344/D12/T50] INFO  umbraco.content - Loaded Xml from file.
  2017-09-27 12:59:41,031 [P42344/D12/T35] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-09-26 12:59:40
+ 2017-09-27 13:15:52,104 [P42344/D12/T114] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: akaminski@dev-team.com, IP Address: ::1
