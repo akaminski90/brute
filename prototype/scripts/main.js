@@ -24,8 +24,8 @@ document.querySelector('.bars').addEventListener('click', function () {
         /*} else {
             content.style.left = '0px';
             article.style.marginLeft = '0px';
-        }
-        siteName.style.marginLeft = '50px';*/
+        }*/
+        siteName.style.marginLeft = '50px';
     } else {
         sidebar.style.left = '0px';
         if (window.innerWidth >= 900) {
