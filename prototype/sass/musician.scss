@@ -15,21 +15,24 @@
     margin: 4rem 0 0;
   }
 
-  h1 {
-    color: #3a3a3a;
-    font-size: 3rem;
-  }
-
   p {
     color: #3a3a3a;
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 1rem 0 3rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
+    }
   }
 
   a {
     color: #6fb0dd;
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: .25rem 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
+    }
   }
 }
 
