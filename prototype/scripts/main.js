@@ -12,7 +12,6 @@
 /*********************SIDEBAR****************************************************/
 var sidebar = document.querySelector('.sidebar');
 var article = document.querySelector('body article');
-var siteName = document.querySelector('.navbar ul');
 var content = document.querySelector('.content');
 var sidebarStyle = sidebar.currentStyle || window.getComputedStyle(sidebar);
 document.querySelector('.bars').addEventListener('click', function () {
@@ -25,7 +24,6 @@ document.querySelector('.bars').addEventListener('click', function () {
             content.style.left = '0px';
             article.style.marginLeft = '0px';
         }*/
-        siteName.style.marginLeft = '50px';
     } else {
         sidebar.style.left = '0px';
         if (window.innerWidth >= 900) {
@@ -35,7 +33,6 @@ document.querySelector('.bars').addEventListener('click', function () {
             content.style.left = '300px';
             article.style.marginLeft = '0px';
         }
-        siteName.style.marginLeft = '250px';
     }
 });
 

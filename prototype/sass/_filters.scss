@@ -1,4 +1,5 @@
 .filters-section {
+  flex-basis: 100%;
 
   @include media-breakpoint-up(xl) {
     display: flex;

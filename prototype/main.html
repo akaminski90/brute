@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <title>Перевод песен - Brute.by</title>
     <link href="css/index.css" rel="stylesheet"/>
+    <link href="css/gray.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex, nofollow"/>
     <meta name="description" content=""/>
@@ -11,21 +12,22 @@
 
 </head>
 <body>
-<svg style="display: none">
-    <filter id='grayscale'>
-        <feColorMatrix type='matrix'
-                       values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/>
-    </filter>
-</svg>
 <div class="wrapper">
 
     <nav class="navbar">
         <span class="bars"></span>
-        <ul>
-            <li>
-                <a href="javascript:void(0)">Site name</a>
-            </li>
-        </ul>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">Главная страница</a>
+                </li>
+            </ul>
+            <ul class="send">
+                <li>
+                    <a href="javascript:void(0)">Отправьте свой перевод</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
 
@@ -256,7 +258,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                        <a href="javascript:void(0)" class="musician">
+                        <a href="javascript:void(0)" class="musician ">
                             <img src="img/foals.jpg"/>
                             <div class="description">
                                 <p>The sunshine Underground</p>
@@ -279,5 +281,6 @@
     </article>
 </div>
 <script src="scripts/main.js"></script>
+<script src="scripts/jquery.gray.min.js"></script>
 </body>
 </html>

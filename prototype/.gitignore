@@ -197,4 +197,4 @@ ModelManifest.xml
 *.css
 *.xml
 *.iml
-*.map
+*.css.map
