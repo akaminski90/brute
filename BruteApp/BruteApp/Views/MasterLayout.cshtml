@@ -1,0 +1,77 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+}
+
+@* the fun starts here *@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Перевод песен - Brute.by</title>
+    @RenderSection("styles", false)
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="description" content=""/>
+    <script src="~/scripts/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+    @RenderSection("svg", false)
+<div class="wrapper">
+
+<nav class="navbar">
+    <span class="bars"></span>
+    <ul>
+        <li>
+            <a href="javascript:void(0)">Site name</a>
+        </li>
+    </ul>
+</nav>
+
+
+<nav class="sidebar">
+    <ul>
+        <li>
+            <a href="javascript:void(0)">
+                <span>HIM</span>
+                <i class="br-down"></i>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <span>Kings of leon</span>
+                <i class="br-down"></i>
+            </a>
+            <ul class="collapse">
+                <li>
+                    <a href="index.html">Closer</a>
+                </li>
+                <li>
+                    <a href="page-types.html">Walls</a>
+                </li>
+                <li>
+                    <a href="page-type-editor.html">Use Somebody</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <span>The Sunshine Underground</span>
+                <i class="br-down"></i>
+            </a>
+            <ul class="collapse">
+                <li>
+                    <a href="content.html">Chemical Brothers</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+@RenderBody()
+</div>
+@RenderSection("scripts", false)
+</body>
+</html>
+

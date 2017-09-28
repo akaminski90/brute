@@ -1,0 +1,231 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.MainPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "MasterLayout.cshtml";
+}
+
+@section styles {
+    <link href="~/css/index.css" rel="stylesheet" />
+}
+
+@section svg {
+    <svg style="display: none">
+        <filter id='grayscale'>
+            <feColorMatrix type='matrix'
+                           values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/>
+        </filter>
+    </svg>
+}
+
+<article>
+<div class="content">
+<div class="container-fluid">
+<div class="row">
+    <div class="filters-section">
+        <div class="col-xl-5">
+            <div class="search">
+                <input placeholder="Введите название группы"/>
+                <button>
+                    <i class="br-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-xl-7 no-padding">
+            <div class="filter">
+                <p>Выберите исполнителя по первой букве (цифре):</p>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">0</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">1</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">2</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">3</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">4</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">5</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">6</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">7</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">8</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">9</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">A</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">B</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">C</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">D</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">E</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">F</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">G</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">H</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">I</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">J</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">K</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">L</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">M</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">N</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">O</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">P</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Q</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">R</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">S</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">T</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">U</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">V</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">W</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">X</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Y</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Z</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="javascript:void(0)" class="musician">
+            <img src="img/foals.jpg"/>
+            <div class="description">
+                <p>Foals</p>
+                <span>перевод песен</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="javascript:void(0)" class="musician">
+            <img src="img/HIM.jpg"/>
+            <div class="description">
+                <p>HIM</p>
+                <span>перевод песен</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="javascript:void(0)" class="musician">
+            <img src="img/Kings-of-Leon.jpg"/>
+            <div class="description">
+                <p>Kings of leon</p>
+                <span>перевод песен</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="javascript:void(0)" class="musician">
+            <img src="img/TheSunshineUnderground.jpg"/>
+            <div class="description">
+                <p>The sunshine Underground</p>
+                <span>перевод песен</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="javascript:void(0)" class="musician">
+            <img src="img/Kings-of-Leon.jpg"/>
+            <div class="description">
+                <p>The sunshine Underground</p>
+                <span>перевод песен</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="javascript:void(0)" class="musician">
+            <img src="img/foals.jpg"/>
+            <div class="description">
+                <p>The sunshine Underground</p>
+                <span>перевод песен</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="javascript:void(0)" class="musician">
+            <img src="img/foals.jpg"/>
+            <div class="description">
+                <p>The sunshine Underground</p>
+                <span>перевод песен</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="javascript:void(0)" class="musician">
+            <img src="img/TheSunshineUnderground.jpg"/>
+            <div class="description">
+                <p>The sunshine Underground</p>
+                <span>перевод песен</span>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+</article>
+
+@section scripts {
+    <script src="~/scripts/main.js"></script>
+}

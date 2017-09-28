@@ -1,0 +1,53 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Send>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "MasterLayout.cshtml";
+}
+
+@section styles {
+    <link href="~/css/send.css" rel="stylesheet" />
+}
+
+<article>
+    <div class="content">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-9 col-xxl-8">
+                    <div class="send-translation">
+
+                        <h1>Отправьте нам свой перевод</h1>
+                        <p>Какое-то описание. Сюда лучше richTextEditor</p>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9 col-xl-9 col-xxl-8">
+                                <div class="input error">
+                                    <input placeholder="Ваше имя"/>
+                                    <span class="validation">Некорректное имя</span>
+                                </div>
+                                <div class="input">
+                                    <input placeholder="Ссылка на профиль ВК, Фейсбук или Инстаграм"/>
+                                </div>
+                                <div class="input">
+                                    <input placeholder="Почтовый ящик"/>
+                                    <span class="validation">Некорректный почтовый ящик</span>
+                                </div>
+                                <div class="send-file error">
+                                    <input type="file" id="file" class="custom-file-input">
+                                    <span class="file-control"></span>
+                                    <span class="validation">Прикрепите перевод песни тектовым документом</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</article>
+
+@section scripts {
+    <script src="~/scripts/main.js"></script>
+}

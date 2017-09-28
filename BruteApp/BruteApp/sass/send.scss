@@ -1,0 +1,115 @@
+@import "main";
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.send-translation {
+
+  > h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #3a3a3a;
+    padding: 0 .5rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-size: 1.7rem;
+    margin: 3rem 0;
+  }
+
+  .input {
+    margin: 2.5rem 0;
+    position: relative;
+
+    input {
+      height: 45px;
+      border: 1px solid #ddd;
+      width: 100%;
+      padding: 0 1rem;
+    }
+
+  }
+
+  .send-file {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: 45px;
+    font-size: 1.6rem;
+    margin: .5rem 0;
+
+    input {
+      width: 100%;
+      height: 45px;
+      margin: 0;
+      opacity: 0;
+    }
+
+    .file-control {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 45px;
+      padding: 1rem;
+      line-height: 1.5;
+      color: #464a4c;
+      border: 1px solid #ddd;
+      pointer-events: none;
+      user-select: none;
+
+      &:before {
+        content: "Browse";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        display: block;
+        height: 45px;
+        padding: 1rem;
+        line-height: 1.5;
+        color: #464a4c;
+        background-color: #eceeef;
+        border: 1px solid #ddd;
+      }
+
+      &:after {
+        content: "Выберите файл";
+      }
+    }
+  }
+
+  .error {
+    input {
+      border: 1px solid #ff2f3b;
+    }
+
+    .file-control {
+      border: 1px solid #ff2f3b;
+
+      &:before {
+        border: 1px solid #ff2f3b;
+      }
+    }
+
+    .validation {
+      display: block;
+    }
+  }
+
+  .validation {
+    display: none;
+    color: #ff2f3b;
+    font-size: 1.5rem;
+    margin: .5rem;
+    position: absolute;
+    bottom: -25px;
+  }
+
+}

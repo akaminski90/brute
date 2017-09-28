@@ -1,0 +1,181 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Musician>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "MasterLayout.cshtml";
+}
+
+@section styles {
+    <link href="~/css/musician.css" rel="stylesheet" />
+}
+
+<article>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="filters-section">
+                    <div class="col-xl-5">
+                        <div class="search">
+                            <input placeholder="Введите название группы"/>
+                            <button>
+                                <i class="br-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 no-padding">
+                        <div class="filter">
+                            <p>Выберите исполнителя по первой букве (цифре):</p>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">0</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">1</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">2</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">3</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">4</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">5</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">6</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">7</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">8</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">9</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">A</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">B</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">C</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">D</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">E</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">F</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">G</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">H</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">I</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">J</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">K</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">L</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">M</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">N</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">O</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">P</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Q</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">R</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">S</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">T</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">U</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">V</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">W</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">X</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Y</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Z</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="musician">
+                        <h1>Перевод песен группы <strong>HIM</strong></h1>
+                        <p>
+                            Переводы песен группы HIM осуществлён с адаптацией на русский язык.
+                            Учитываются метафоры и смысл каждой строки - соответственно то, что хочет донести до слушателя автор песни.
+                        </p>
+                        <a href="javascript:void(0)">Перевод песен HIM: перевод песни Rockstar, текст песни</a>
+                        <a href="javascript:void(0)">Перевод песен HIM: перевод песни Join me in death, текст песни</a>
+                        <a href="javascript:void(0)">Перевод песен HIM: перевод песни Rockstar, текст песни</a>
+                        <a href="javascript:void(0)">Перевод песен HIM: перевод песни Rockstar, текст песни</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="javascript:void(0)">
+                <i class="br-left"></i>
+                <span>prev</span>
+            </a>
+            <div class="pages">
+                <a class="active" href="javascript:void(0)">1</a>
+                <a href="javascript:void(0)">2</a>
+                <a href="javascript:void(0)">3</a>
+                <a href="javascript:void(0)">...</a>
+                <a href="javascript:void(0)">20</a>
+            </div>
+            <a href="javascript:void(0)">
+                <i class="br-right"></i>
+                <span>next</span>
+            </a>
+        </div>
+    </div>
+</article>
+
+@section scripts {
+    <script src="~/scripts/main.js"></script>
+}

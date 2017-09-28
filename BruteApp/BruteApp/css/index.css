@@ -2257,6 +2257,7 @@ html {
 }
 
 html, body {
+  min-height: 100%;
   height: 100%;
 }
 
@@ -2307,8 +2308,8 @@ article {
 
 .content {
   position: relative;
-  height: -webkit-calc(100% - 50px);
-  height: calc(100% - 50px);
+  min-height: -webkit-calc(100% - 50px);
+  min-height: calc(100% - 50px);
   -webkit-transition: left .2s;
   transition: left .2s;
   left: 0;
@@ -2370,6 +2371,14 @@ article {
 
 .br-search:before {
   content: "\65";
+}
+
+.br-left:before {
+  content: "\61";
+}
+
+.br-right:before {
+  content: "\62";
 }
 
 .navbar {
@@ -2745,6 +2754,12 @@ footer ul li a span {
   display: flex;
   color: #5ab4ce;
   background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .filters-section .filter a:hover {
+    border: 1px solid #838383;
+  }
 }
 
 article .content .musician {
