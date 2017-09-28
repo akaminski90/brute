@@ -46,6 +46,33 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Song Name
+		///</summary>
+		[ImplementPropertyType("songName")]
+		public string SongName
+		{
+			get { return this.GetPropertyValue<string>("songName"); }
+		}
+
+		///<summary>
+		/// Song Text
+		///</summary>
+		[ImplementPropertyType("songText")]
+		public Newtonsoft.Json.Linq.JToken SongText
+		{
+			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("songText"); }
+		}
+
+		///<summary>
+		/// Translator
+		///</summary>
+		[ImplementPropertyType("translator")]
+		public Umbraco.Web.Models.RelatedLinks Translator
+		{
+			get { return this.GetPropertyValue<Umbraco.Web.Models.RelatedLinks>("translator"); }
+		}
+
+		///<summary>
 		/// Navigation Name: Page name of navbar
 		///</summary>
 		[ImplementPropertyType("navigationName")]

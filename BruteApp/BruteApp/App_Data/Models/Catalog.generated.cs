@@ -44,5 +44,14 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// Songs on Page
+		///</summary>
+		[ImplementPropertyType("songsOnPage")]
+		public int SongsOnPage
+		{
+			get { return this.GetPropertyValue<int>("songsOnPage"); }
+		}
 	}
 }

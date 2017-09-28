@@ -9,59 +9,133 @@
     <link href="~/css/musician.css" rel="stylesheet" />
 }
 
-<article>
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="filters-section">
-                    <div class="col-xl-5">
-                        <div class="search">
-                            <input placeholder="Введите название группы"/>
-                            <button>
-                                <i class="br-search"></i>
-                            </button>
+@{
+    var selection = Model.Content.Children.OrderByDescending(x => x.GetPropertyValue("NavigationName"));
+    var pageSize = (int)Model.Content.Ancestor(2).GetPropertyValue("SongsOnPage") > 0 ? (int)Model.Content.Ancestor(2).GetPropertyValue("SongsOnPage") : 10;
+    var pages = 1;
+    int.TryParse(Request.QueryString["pages"], out pages);
+    var totalPages = (int)Math.Ceiling((double)selection.Count() / pageSize);
+    if (pages > totalPages)
+    {
+        pages = totalPages;
+    }
+    else
+    {
+        if (pages < 1)
+        {
+            pages = 1;
+        }
+    }
+    <article>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="filters-section">
+                        <div class="col-xl-5">
+                            <div class="search">
+                                <input placeholder="Введите название группы"/>
+                                <button>
+                                    <i class="br-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        @CreateCatlogMenu()
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="musician">
+                            <h1>Перевод песен @(Model.Content.Band ? "группы" : "исполнителя") <strong>@Model.Content.NavigationName</strong>
+                            </h1>
+                            <p>
+                                Переводы песен @(Model.Content.Band ? "группы" : "исполнителя") @Model.Content.NavigationName осуществлён с адаптацией на русский язык.
+                                Учитываются метафоры и смысл каждой строки - соответственно то, что хочет донести до слушателя автор песни.
+                            </p>
+                            @foreach (var publishedContent in selection.Skip((pages - 1) * pageSize).Take(pageSize))
+                            {
+                                var song = (Song) publishedContent;
+                                <a href="@song.Url">Перевод песен @Model.Content.NavigationName: перевод песни @song.SongName, текст песни</a>
+                            }                           
                         </div>
                     </div>
-                    @CreateCatlogMenu()
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <div class="musician">
-                        <h1>Перевод песен группы <strong>HIM</strong></h1>
-                        <p>
-                            Переводы песен группы HIM осуществлён с адаптацией на русский язык.
-                            Учитываются метафоры и смысл каждой строки - соответственно то, что хочет донести до слушателя автор песни.
-                        </p>
-                        <a href="javascript:void(0)">Перевод песен HIM: перевод песни Rockstar, текст песни</a>
-                        <a href="javascript:void(0)">Перевод песен HIM: перевод песни Join me in death, текст песни</a>
-                        <a href="javascript:void(0)">Перевод песен HIM: перевод песни Rockstar, текст песни</a>
-                        <a href="javascript:void(0)">Перевод песен HIM: перевод песни Rockstar, текст песни</a>
-                    </div>
+            @if (totalPages > 1)
+            {
+            <div class="pagination">            
+            
+                <a href="@(pages <= 1 ? "javascript:void(0)" : "?pages=" + (pages-1))">
+                    <i class="br-left"></i>
+                    <span>prev</span>
+                </a>
+
+                <div class="pages">
+                    @{
+                        const int delta = 2;
+                        var range = new List<int>();
+                        var rangeWithDots = new List<int>();
+                        var l = 0;
+
+                        range.Add(1);
+
+                        for (var i = pages - delta; i <= pages + delta; i++)
+                        {
+                            if (i < totalPages && i > 1)
+                            {
+                                range.Add(i);
+                            }
+                        }
+
+                        range.Add(totalPages);
+
+                        foreach (var item in range)
+                        {
+                            if (l != 0)
+                            {
+                                if (item - l == 2)
+                                {
+                                    rangeWithDots.Add(l + 1);
+                                }
+                                else
+                                {
+                                    if (item - l != 1)
+                                    {
+                                        rangeWithDots.Add(0);
+                                    }
+                                }
+                            }
+                            rangeWithDots.Add(item);
+                            l = item;
+                        }
+
+                        foreach (var item in rangeWithDots)
+                        {
+                            if (item != 0)
+                            {
+                                <a @(item == pages ? "class=active" : string.Empty) href="?pages=@item">@item</a>
+                            }
+                            else
+                            {
+                                if (item == 0)
+                                {
+                                    <a style="cursor: default; user-select: none;">...</a>
+                                }
+                            }
+                        }
+                    }               
                 </div>
+            
+                <a href="@(pages >= totalPages ? "javascript:void(0)" : "?pages=" + (pages+1))">
+                    <i class="br-right"></i>
+                    <span>next</span>
+                </a>
+
             </div>
+            }
         </div>
-        <div class="pagination">
-            <a href="javascript:void(0)">
-                <i class="br-left"></i>
-                <span>prev</span>
-            </a>
-            <div class="pages">
-                <a class="active" href="javascript:void(0)">1</a>
-                <a href="javascript:void(0)">2</a>
-                <a href="javascript:void(0)">3</a>
-                <a href="javascript:void(0)">...</a>
-                <a href="javascript:void(0)">20</a>
-            </div>
-            <a href="javascript:void(0)">
-                <i class="br-right"></i>
-                <span>next</span>
-            </a>
-        </div>
-    </div>
-</article>
+    </article>
 
 @section scripts {
     <script src="~/scripts/main.js"></script>
@@ -69,7 +143,7 @@
 
 @helper CreateCatlogMenu()
 {
-var catalog = (Catalog)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<Catalog>()));
+    var catalog = (Catalog) Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<Catalog>()));
 
     <div class="col-xl-7 no-padding">
         <div class="filter">
@@ -87,4 +161,5 @@ var catalog = (Catalog)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", 
             </ul>
         </div>
     </div>
+}
 }
