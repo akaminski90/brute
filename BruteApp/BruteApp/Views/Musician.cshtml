@@ -11,16 +11,10 @@
 
 @{
     var selection = Model.Content.Children.OrderByDescending(x => x.GetPropertyValue("NavigationName"));
-    var count = selection.Count();
-    foreach (var item in selection)
-     {
-         <p>@item</p>
-     }
-    <p>@selection.Count()</p>
     var pageSize = (int)Model.Content.Ancestor(2).GetPropertyValue("SongsOnPage") > 0 ? (int)Model.Content.Ancestor(2).GetPropertyValue("SongsOnPage") : 10;
     var pages = 1;
     int.TryParse(Request.QueryString["pages"], out pages);
-    var totalPages = (int)Math.Ceiling((double)count / pageSize);
+    var totalPages = (int)Math.Ceiling((double)selection.Count() / pageSize);
     if (pages > totalPages)
     {
         pages = totalPages;
