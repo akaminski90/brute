@@ -46,6 +46,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Band: Tick this if it is a band
+		///</summary>
+		[ImplementPropertyType("band")]
+		public bool Band
+		{
+			get { return this.GetPropertyValue<bool>("band"); }
+		}
+
+		///<summary>
 		/// Navigation Name: Page name of navbar
 		///</summary>
 		[ImplementPropertyType("navigationName")]
