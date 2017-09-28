@@ -2001,3 +2001,10 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2017-09-28 11:18:18,513 [P4624/D15/T89] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
  2017-09-28 11:18:18,513 [P4624/D15/T89] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
  2017-09-28 11:18:18,518 [P4624/D15/T89] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 5ms)
+ 2017-09-28 11:48:35,305 [P4624/D15/T67] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: akaminski@dev-team.com, IP Address: ::1
+ 2017-09-28 12:55:22,924 [P4624/D15/T338] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username akaminski@dev-team.com from IP address ::1
+ 2017-09-28 12:55:22,926 [P4624/D15/T338] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: akaminski@dev-team.com logged in from IP address ::1
+ 2017-09-28 12:55:23,389 [P4624/D15/T342] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-28 12:55:23,389 [P4624/D15/T342] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-28 12:55:23,389 [P4624/D15/T342] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2017-09-28 12:55:23,395 [P4624/D15/T342] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 5ms)

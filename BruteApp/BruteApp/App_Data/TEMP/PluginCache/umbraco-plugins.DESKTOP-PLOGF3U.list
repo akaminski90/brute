@@ -768,3 +768,13 @@ umbraco.loadStylesheetProperty, umbraco, Version=1.0.6471.23334, Culture=neutral
 umbraco.loadStylesheets, umbraco, Version=1.0.6471.23334, Culture=neutral, PublicKeyToken=null
 umbraco.loadXslt, umbraco, Version=1.0.6471.23334, Culture=neutral, PublicKeyToken=null
 
+umbraco.interfaces.IApplication
+umbraco.businesslogic.ApplicationAttribute
+umbraco.businesslogic.ContentApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.MediaApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.SettingsApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.DeveloperApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.UsersApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.MembersApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.TranslationApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+

@@ -56,7 +56,7 @@ document.querySelector('.bars').addEventListener('click', function () {
     }
 });*/
 
-var arrows = document.querySelectorAll('.sidebar > ul > li > a');
+/*var arrows = document.querySelectorAll('.sidebar > ul > li > a');
 arrows.forEach(cur => cur.addEventListener('click', function () {
     this.parentNode.classList.toggle('active');
     for (var i = 0; i < this.childNodes.length; i++) {
@@ -69,7 +69,25 @@ arrows.forEach(cur => cur.addEventListener('click', function () {
             this.childNodes[i].classList.toggle('br-up');
         }
     }
-}));
+}));*/
+
+var arrows = document.querySelectorAll('.sidebar > ul > li > a');
+for (var i = 0; i < arrows.length; i++) {
+    arrows[i].addEventListener('click',
+        function() {
+            this.parentNode.classList.toggle('active');
+            for (var i = 0; i < this.childNodes.length; i++) {
+                //console.log(this.childNodes[i]);
+                if (this.childNodes[i].className === 'br-down') {
+                    this.childNodes[i].classList.toggle('br-up');
+                    this.childNodes[i].classList.toggle('br-down');
+                } else if (this.childNodes[i].className === 'br-up') {
+                    this.childNodes[i].classList.toggle('br-down');
+                    this.childNodes[i].classList.toggle('br-up');
+                }
+            }
+        });
+}
 
 /*$('.sidebar > ul > li > a').click(function () {
     var $li = $(this).parent();
