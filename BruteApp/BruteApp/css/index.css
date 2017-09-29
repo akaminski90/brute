@@ -2252,6 +2252,15 @@ button {
   border: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -2317,13 +2326,15 @@ article {
   background-color: #fff;
 }
 
-.sidebar-active .content {
-  left: 220px;
+h1 {
+  color: #3a3a3a;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
-@media (min-width: 900px) {
-  .sidebar-active .content {
-    left: 0;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 
@@ -2392,24 +2403,63 @@ article {
   z-index: 3;
 }
 
-.navbar > ul {
+.navbar .links {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 2rem 0 50px;
-  display: table;
   -webkit-transition: margin .2s;
   transition: margin .2s;
 }
 
-@media (min-width: 900px) {
-  .navbar > ul {
-    margin: 0 2rem 0 250px;
+.navbar .links .send {
+  display: none;
+}
+
+.navbar .links .send li {
+  margin: .2rem 0;
+}
+
+@media (min-width: 768px) {
+  .navbar .links .send li {
+    margin: 0;
   }
 }
 
-.sidebar-active .navbar > ul {
-  margin: 0 2rem 0 250px;
+.navbar .links .send li a {
+  font-size: 1.4rem;
+  color: #e67373;
 }
 
-.navbar > ul > li a {
+@media (min-width: 768px) {
+  .navbar .links .send li a {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .navbar .links .send {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar .links .send {
+    font-size: 1.7rem;
+  }
+}
+
+.navbar .links ul li a {
   text-decoration: none;
   color: #000;
   font-size: 1.7rem;
@@ -2659,6 +2709,12 @@ footer ul li a span {
   font-size: 1rem;
 }
 
+.filters-section {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+
 @media (min-width: 1200px) {
   .filters-section {
     display: -webkit-box;
@@ -2770,6 +2826,7 @@ article .content .musician {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  position: relative;
 }
 
 article .content .musician:hover img {
@@ -2782,31 +2839,16 @@ article .content .musician:hover span {
 }
 
 article .content .musician .description {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   position: absolute;
-  height: 100%;
   width: 100%;
 }
 
 article .content .musician img {
-  -webkit-filter: url("#grayscale");
-          filter: url("#grayscale");
   width: 100%;
   height: 100%;
   opacity: .85;
@@ -2815,16 +2857,50 @@ article .content .musician img {
 }
 
 article .content .musician p {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
   font-weight: 600;
   text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  article .content .musician p {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  article .content .musician p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  article .content .musician p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  article .content .musician p {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1350px) {
+  article .content .musician p {
+    font-size: 2.5rem;
+  }
 }
 
 article .content .musician span {
   font-size: 2rem;
   color: #fff;
   opacity: 0;
+  display: block;
+  text-align: center;
   visibility: hidden;
   -webkit-transition: opacity .2s, visibility .2s;
   transition: opacity .2s, visibility .2s;

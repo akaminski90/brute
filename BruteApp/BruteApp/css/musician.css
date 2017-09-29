@@ -2252,6 +2252,15 @@ button {
   border: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -2317,13 +2326,15 @@ article {
   background-color: #fff;
 }
 
-.sidebar-active .content {
-  left: 220px;
+h1 {
+  color: #3a3a3a;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
-@media (min-width: 900px) {
-  .sidebar-active .content {
-    left: 0;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 
@@ -2392,24 +2403,63 @@ article {
   z-index: 3;
 }
 
-.navbar > ul {
+.navbar .links {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 2rem 0 50px;
-  display: table;
   -webkit-transition: margin .2s;
   transition: margin .2s;
 }
 
-@media (min-width: 900px) {
-  .navbar > ul {
-    margin: 0 2rem 0 250px;
+.navbar .links .send {
+  display: none;
+}
+
+.navbar .links .send li {
+  margin: .2rem 0;
+}
+
+@media (min-width: 768px) {
+  .navbar .links .send li {
+    margin: 0;
   }
 }
 
-.sidebar-active .navbar > ul {
-  margin: 0 2rem 0 250px;
+.navbar .links .send li a {
+  font-size: 1.4rem;
+  color: #e67373;
 }
 
-.navbar > ul > li a {
+@media (min-width: 768px) {
+  .navbar .links .send li a {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .navbar .links .send {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar .links .send {
+    font-size: 1.7rem;
+  }
+}
+
+.navbar .links ul li a {
   text-decoration: none;
   color: #000;
   font-size: 1.7rem;
@@ -2659,6 +2709,12 @@ footer ul li a span {
   font-size: 1rem;
 }
 
+.filters-section {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+
 @media (min-width: 1200px) {
   .filters-section {
     display: -webkit-box;
@@ -2797,21 +2853,28 @@ footer ul li a span {
   }
 }
 
-.musician h1 {
-  color: #3a3a3a;
-  font-size: 3rem;
-}
-
 .musician p {
   color: #3a3a3a;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 1rem 0 3rem;
+}
+
+@media (min-width: 768px) {
+  .musician p {
+    font-size: 2rem;
+  }
 }
 
 .musician a {
   color: #6fb0dd;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: .25rem 0;
+}
+
+@media (min-width: 768px) {
+  .musician a {
+    font-size: 2rem;
+  }
 }
 
 .pagination {

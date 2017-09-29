@@ -1,6 +1,9 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using BruteApp.Helpers;
 @{
-	Layout = null;
+    Layout = null;
+    var main = (MainPage)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<MainPage>()));
+    var send = (Send)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<Send>()));
 }
 
 @* the fun starts here *@
@@ -23,11 +26,18 @@
 
 <nav class="navbar">
     <span class="bars"></span>
-    <ul>
-        <li>
-            <a href="javascript:void(0)">Site name</a>
-        </li>
-    </ul>
+    <div class="links">
+        <ul>
+            <li>
+                <a href="@main.Url">Главная страница</a>
+            </li>
+        </ul>
+        <ul class="send">
+            <li>
+                <a href="@send.Url">Отправьте свой перевод</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 

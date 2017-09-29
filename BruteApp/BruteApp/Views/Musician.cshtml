@@ -10,7 +10,7 @@
 }
 
 @{
-    var selection = Model.Content.Children.OrderByDescending(x => x.GetPropertyValue("NavigationName"));
+    var selection = Model.Content.Children.OrderBy(x => x.GetPropertyValue("NavigationName"));
     var pageSize = (int)Model.Content.Ancestor(2).GetPropertyValue("SongsOnPage") > 0 ? (int)Model.Content.Ancestor(2).GetPropertyValue("SongsOnPage") : 10;
     var pages = 1;
     int.TryParse(Request.QueryString["pages"], out pages);
@@ -47,10 +47,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
                         <div class="musician">
-                            <h1>Перевод песен @(Model.Content.Band ? "группы" : "исполнителя") <strong>@Model.Content.NavigationName</strong>
+                            <h1>Перевод песен @IsBand() <strong>@Model.Content.NavigationName</strong>
                             </h1>
                             <p>
-                                Переводы песен @(Model.Content.Band ? "группы" : "исполнителя") @Model.Content.NavigationName осуществлён с адаптацией на русский язык.
+                                Переводы песен @IsBand() @Model.Content.NavigationName осуществлён с адаптацией на русский язык.
                                 Учитываются метафоры и смысл каждой строки - соответственно то, что хочет донести до слушателя автор песни.
                             </p>
                             @foreach (var publishedContent in selection.Skip((pages - 1) * pageSize).Take(pageSize))
@@ -149,7 +149,7 @@
         <div class="filter">
             <p>Выберите исполнителя по первой букве (цифре):</p>
             <ul>
-                @foreach (var item in catalog.Children)
+                @foreach (var item in catalog.Children.OrderBy(x => x.GetPropertyValue("NavigationName")))
                 {
                     if ((string) item.GetPropertyValue("navigationName") != string.Empty)
                     {
@@ -162,4 +162,9 @@
         </div>
     </div>
 }
+}
+
+@helper IsBand()
+{
+    @(Model.Content.Band ? "группы" : "исполнителя")
 }

@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+
 }
 
 article {
@@ -46,12 +47,14 @@ article {
   left: 0;
   margin: 50px 0 0;
   background-color: #fff;
+}
 
-  .sidebar-active & {
-    left: 220px;
+h1 {
+  color: #3a3a3a;
+  font-size: 2.5rem;
+  text-align: center;
 
-    @media (min-width: 900px) {
-      left: 0;
-    }
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
   }
 }

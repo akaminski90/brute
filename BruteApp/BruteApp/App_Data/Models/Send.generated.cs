@@ -46,7 +46,16 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Navigation Name: Page name of navbar
+		/// Upload
+		///</summary>
+		[ImplementPropertyType("upload")]
+		public string Upload
+		{
+			get { return this.GetPropertyValue<string>("upload"); }
+		}
+
+		///<summary>
+		/// Navigation Name: Page name for navbar
 		///</summary>
 		[ImplementPropertyType("navigationName")]
 		public string NavigationName

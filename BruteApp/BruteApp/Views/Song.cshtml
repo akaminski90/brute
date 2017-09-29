@@ -85,7 +85,7 @@
         }
 
         При полном или частичном копировании данного материала указывайте
-        активную ссылку на сайт (<a href="@main.UrlAbsolute()">brute.by</a>),
+        активную ссылку на сайт (<a href="@main.UrlAbsolute()">@main.UrlAbsolute()</a>),
         а также авторов перевода.
     </p>
 </div>
@@ -104,7 +104,7 @@ var catalog = (Catalog)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", 
         <div class="filter">
             <p>Выберите исполнителя по первой букве (цифре):</p>
             <ul>
-                @foreach (var item in catalog.Children)
+                @foreach (var item in catalog.Children.OrderBy(x => x.GetPropertyValue("NavigationName")))
                 {
                     if ((string)item.GetPropertyValue("navigationName") != string.Empty)
                     {

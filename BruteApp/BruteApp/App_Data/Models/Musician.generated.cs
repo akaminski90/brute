@@ -55,7 +55,16 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Navigation Name: Page name of navbar
+		/// Musician image
+		///</summary>
+		[ImplementPropertyType("Image")]
+		public Umbraco.Web.Models.ImageCropDataSet Image
+		{
+			get { return this.GetPropertyValue<Umbraco.Web.Models.ImageCropDataSet>("Image"); }
+		}
+
+		///<summary>
+		/// Navigation Name: Page name for navbar
 		///</summary>
 		[ImplementPropertyType("navigationName")]
 		public string NavigationName

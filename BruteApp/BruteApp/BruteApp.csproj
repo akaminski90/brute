@@ -372,6 +372,7 @@
     <Compile Include="App_Data\Models\Song.generated.cs" />
     <Compile Include="Helpers\AttributeHelper.cs" />
     <Compile Include="Helpers\MediaHelper.cs" />
+    <Compile Include="Models\FeedbackModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
