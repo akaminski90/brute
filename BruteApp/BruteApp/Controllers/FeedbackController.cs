@@ -29,10 +29,11 @@ namespace BruteApp.Controllers
             var mailBody = string.Format(mailBodyTemplate,
                 title,
                 feedback.Name,
+                feedback.Link,
                 feedback.Email,
                 feedback.File
             );
-            EmailHelper.SendEmail(ConfigurationManager.AppSettings["workEmail"], mailBody, "Новый перевод");
+            EmailHelper.SendEmail(ConfigurationManager.AppSettings["workEmail"], mailBody, "Новый перевод", feedback.File);
             TempData["MailSent"] = "Перевод успешно отправлен";
             return RedirectToCurrentUmbracoPage();
         }

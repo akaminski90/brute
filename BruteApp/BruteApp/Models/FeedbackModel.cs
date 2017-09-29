@@ -16,6 +16,6 @@ namespace BruteApp.Models
         [EmailAddress(ErrorMessage = "Проверьте правильность введенного адреса электронной почты")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Прикрепите текстовый файл с переводом песни")]
-        public string File { get; set; }
+        public HttpPostedFileBase File { get; set; }
     }
 }

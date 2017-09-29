@@ -12,8 +12,9 @@ namespace BruteApp.Helpers
 
         public static string Get(string resources)
         {
+            var allRessources = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();
             var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = $"TestApp.Resources.{resources}";
+            var resourceName = $"BruteApp.Resources.{resources}";
             using (var stream = assembly.GetManifestResourceStream(resourceName))
             using (var reader = new StreamReader(stream))
             {
