@@ -74,11 +74,15 @@
 
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-9 col-xl-9 col-xxl-8">
+                    <div class="col-lg-12 col-xl-9 col-xxl-8">
                         <div class="send-translation">
 
                             <h1>Отправьте нам свой перевод</h1>
-                            <p>Какое-то описание. Сюда лучше richTextEditor</p>
+                            <p>
+                                Для того, чтобы Ваш перевод разместили на сайте, Вам необходимо оформить его в данном текстовом файле
+                                <a href="#">Здесь будет текстовой файл на скачивание - шаюлон для оформления перевода</a>, а затем отправить нам через форму ниже.
+                                В случае, каких-либо неточностей, администрация свяжется с вами через электронную почту, потому указывайте СВОЙ КОРРЕКТНЫЙ почтовый ящик.
+                            </p>
                             <div class="row justify-content-center">
                                 <div class="col-lg-9 col-xl-9 col-xxl-8">
                                     <div class="input error">
@@ -107,8 +111,35 @@
 
 
         </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title" id="exampleModalLabel">Перевод был отправлен</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ваш перевод был отправлен администрации сайта.</p>
+                        <p>В скоро времени он будет рассмотрен.</p>
+                        <p>Спасибо!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-primary">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </article>
 </div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>
