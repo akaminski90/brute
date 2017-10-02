@@ -24,7 +24,7 @@ namespace BruteApp.Controllers
             }
 
             var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
-            const string title = "Новое сообщение";
+            const string title = "Новый перевод";
             var mailBodyTemplate = ResourceHelper.Get("Feedback.txt");
             var mailBody = string.Format(mailBodyTemplate,
                 title,

@@ -29,12 +29,18 @@
     > li {
       font-size: 1.7rem;
 
+      &.active > a {
+        background-color: #e5ecf1;
+
+
+      }
+
       > a {
         padding: 1.2rem 2rem;
         transition: background-color .1s;
 
         &:hover {
-          background-color: #f4f4f4;
+          background-color: #e5ecf1;
         }
       }
 
@@ -47,7 +53,7 @@
       }
 
       > ul {
-        background-color: #f7f7f7;
+        background-color: #fdfdfd;
 
         a {
           font-size: 1.5rem;

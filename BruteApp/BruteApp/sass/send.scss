@@ -1,4 +1,9 @@
 @import "main";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/buttons";
+
 
 .content {
   display: flex;
@@ -29,6 +34,7 @@
       border: 1px solid #ddd;
       width: 100%;
       padding: 0 1rem;
+      font-size: 1.5rem;
     }
 
   }
@@ -62,7 +68,7 @@
       user-select: none;
 
       &:before {
-        content: "Browse";
+        content: "Обзор";
         position: absolute;
         top: -1px;
         right: -1px;
@@ -77,7 +83,7 @@
       }
 
       &:after {
-        content: "Выберите файл";
+        content: "Добавить файл с переводом";
       }
     }
   }
@@ -103,10 +109,36 @@
   .validation {
     display: none;
     color: #ff2f3b;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: .5rem;
     position: absolute;
     bottom: -25px;
+
+    @include media-breakpoint-up(sm){
+      font-size: 1.5rem;
+    }
   }
 
+}
+
+.modal {
+  .modal-title, .close {
+    font-size: 2rem;
+  }
+
+  .modal-footer button {
+    font-size: 1.5rem;
+
+  }
+
+  .modal-body {
+    p {
+      font-size: 1.3rem;
+
+      @include media-breakpoint-up(sm){
+        font-size: 1.5rem;
+      }
+      padding: 0;
+    }
+  }
 }

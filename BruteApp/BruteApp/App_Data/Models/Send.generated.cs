@@ -46,12 +46,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Upload
+		/// Description
 		///</summary>
-		[ImplementPropertyType("upload")]
-		public string Upload
+		[ImplementPropertyType("description")]
+		public IHtmlString Description
 		{
-			get { return this.GetPropertyValue<string>("upload"); }
+			get { return this.GetPropertyValue<IHtmlString>("description"); }
 		}
 
 		///<summary>

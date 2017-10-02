@@ -2659,6 +2659,10 @@ footer ul li a span {
   font-size: 1.7rem;
 }
 
+.sidebar > ul > li.active > a {
+  background-color: #e5ecf1;
+}
+
 .sidebar > ul > li > a {
   padding: 1.2rem 2rem;
   -webkit-transition: background-color .1s;
@@ -2666,7 +2670,7 @@ footer ul li a span {
 }
 
 .sidebar > ul > li > a:hover {
-  background-color: #f4f4f4;
+  background-color: #e5ecf1;
 }
 
 .sidebar > ul > li.active .collapse {
@@ -2678,7 +2682,7 @@ footer ul li a span {
 }
 
 .sidebar > ul > li > ul {
-  background-color: #f7f7f7;
+  background-color: #fdfdfd;
 }
 
 .sidebar > ul > li > ul a {
@@ -2756,6 +2760,7 @@ footer ul li a span {
   width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
   height: 40px;
+  font-size: 1.5rem;
 }
 
 .filters-section .search button {
