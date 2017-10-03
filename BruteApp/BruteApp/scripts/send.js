@@ -2,7 +2,7 @@ var input = document.querySelector('input[type=file]');
 var file = input.files;
 
 if (file.length === 0) {
-    document.querySelector('.file-control').textContent = 'Выберите файл';
+    document.querySelector('.file-control .placeholder').textContent = 'Добавить файл с переводом';
 }
 
 input.addEventListener('change', updateText);
@@ -11,9 +11,9 @@ function updateText() {
     var file = input.files;
 
     if (file.length !== 0) {
-        document.querySelector('.file-control').textContent = '' + file[0].name.substring(0, 14) + (file[0].name.length > 14 ? '...' : '') + ' ' + returnFileSize(file[0].size);
+        document.querySelector('.file-control .placeholder').textContent = '' + file[0].name.substring(0, 14) + (file[0].name.length > 14 ? '...' : '') + ' ' + returnFileSize(file[0].size);
     } else {
-        document.querySelector('.file-control').textContent = 'Выберите файл';
+        document.querySelector('.file-control .placeholder').textContent = 'Выберите файл';
     }
 
     function returnFileSize(number) {

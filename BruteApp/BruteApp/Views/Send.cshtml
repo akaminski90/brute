@@ -9,10 +9,6 @@
     <link href="~/css/send.css" rel="stylesheet" />        
 }
 
-@section send {
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-}
-
 <article>
     <div class="content">
 
@@ -47,10 +43,12 @@
                                     <div class="send-file @(Html.ValidationMessage("File") == null ? string.Empty : "error")">
                                         @*<input type="file" id="file" class="custom-file-input">*@
                                         @Html.TextBox("File", null, new {type = "file", @class = "custom-file-input", accept = ".txt, .doc, .docx, .rtf, .odt"})                                        
-                                        <span class="file-control"></span>
+                                        <span class="file-control">
+                                            <span class="placeholder">Добавить файл с переводом</span>
+                                        </span>
                                         <span class="validation">@Html.ValidationMessage("File")</span>
                                     </div>
-                                    <input type="submit" style="margin-top: 2rem;"/>
+                                    <button type="submit" @*data-toggle="modal" data-target="#myModal"*@>Отправить</button>
                                 }
                             </div>
                         </div>
@@ -63,8 +61,8 @@
 
     </div>
 
-    <!-- Button trigger modal -->
-        <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+    @*<!-- Button trigger modal -->
+    <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>*@
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -90,7 +88,13 @@
 </article>
 
 @section scripts {
-
+    
+    <script src="~/scripts/tether.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
     <script src="~/scripts/main.js"></script>
     <script src="~/scripts/send.js"></script>
+    @if (TempData["MailSent"] != null)
+    {
+        <script>$('#myModal').modal('show')</script>
+    }
 }

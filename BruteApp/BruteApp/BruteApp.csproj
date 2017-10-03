@@ -274,6 +274,8 @@
     <Content Include="scripts\jquery-3.2.1.min.js" />
     <Content Include="scripts\main.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="scripts\send.js" />
+    <Content Include="scripts\tether.min.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />

@@ -3657,6 +3657,7 @@ input[type="button"].btn-block {
   height: 45px;
   margin: 0;
   opacity: 0;
+  cursor: pointer;
 }
 
 .send-translation .send-file .file-control {
@@ -3674,6 +3675,7 @@ input[type="button"].btn-block {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  display: block;
 }
 
 .send-translation .send-file .file-control:before {
@@ -3691,8 +3693,8 @@ input[type="button"].btn-block {
   border: 1px solid #ddd;
 }
 
-.send-translation .send-file .file-control:after {
-  content: "Добавить файл с переводом";
+.send-translation .send-file .file-control .placeholder {
+  position: absolute;
 }
 
 .send-translation .error input {
@@ -3724,6 +3726,29 @@ input[type="button"].btn-block {
   .send-translation .validation {
     font-size: 1.5rem;
   }
+}
+
+.send-translation button {
+  margin: 2.5rem 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  background-color: #eceeef;
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+.send-translation button:hover {
+  background-color: #eff0f1;
 }
 
 .modal .modal-title, .modal .close {
