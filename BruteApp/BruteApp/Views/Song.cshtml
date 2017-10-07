@@ -2,6 +2,11 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @using BruteApp.Helpers;
 @using Umbraco.Web.Models
+@using System.Linq;
+@using BruteApp.Models
+@using Examine.LuceneEngine.Directories
+@using Umbraco.Web;
+
 @{
     Layout = "MasterLayout.cshtml";
     var main = (MainPage)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<MainPage>()));
@@ -12,84 +17,120 @@
 }
 
 <article>
-<div class="content">
-<div class="container-fluid">
-    <div class="row">
-        <div class="filters-section">
-            <div class="col-xl-5">
-                <div class="search">
-                    <input placeholder="Введите название группы"/>
-                    <button>
-                        <i class="br-search"></i>
-                    </button>
+    @*@{
+        var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+            var songs = umbracoHelper.ContentAtXPath("//song");
+
+        var songsList = new List<SearchModel>();
+        @*Get As List*@
+    @*foreach (var song in songs)
+    {
+        var sng = new SearchModel
+        {
+            id = song.Id,
+            musician = song.Parent.GetPropertyValue("navigationName").ToString(),
+            name = song.SongName,
+            entityType = 1
+        };
+        songsList.Add(sng);
+    }
+
+    var musicians = umbracoHelper.ContentAtXPath("//musician");
+    var musiciansList = new List<SearchModel>();
+
+    foreach (var musician in musicians)
+    {
+        var artist = new SearchModel
+        {
+            id = musician.Id,
+            musician = musician.navigationName,
+            name = musician.navigationName,
+            entityType = 0
+        };
+        musiciansList.Add(artist);
+    }
+
+        songsList.AddRange(musiciansList);
+        var test = 1;
+    }*@
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="filters-section">
+                    <div class="col-xl-5">
+                        <div class="search">
+                            <input placeholder="Введите название группы"/>
+                            <button>
+                                <i class="br-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    @CreateCatlogMenu()
                 </div>
             </div>
-            @CreateCatlogMenu()
         </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <div class="song">
-                <h1>@Model.Content.Parent.GetPropertyValue("NavigationName") - @Model.Content.SongName перевод песни</h1>
-                <p>
-                    Перевод песни <strong>@Model.Content.SongName</strong> @((bool)Model.Content.Parent.GetPropertyValue("Band") ? "группы" : "исполнителя")
-                    <strong>@Model.Content.Parent.GetPropertyValue("NavigationName")</strong>
-                    осуществлён с адаптацией на русский язык.
-                    Учитываются метафоры и смысл каждой строки - соответственно то, что хочет донести до
-                    слушателя
-                    автор песни.
-                    Если у Вас есть замечания к переводу или его адаптации на русский язык, пожалуйста,
-                    сообщите
-                    это
-                    в комментариях,
-                    и мы обязательно внесём поправки, а Ваша помощь не останется незамеченной.
-                </p>
-                @{
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="song">
+                        <h1>@Model.Content.Parent.GetPropertyValue("NavigationName") - @Model.Content.SongName перевод песни</h1>
+                        <p>
+                            Перевод песни <strong>@Model.Content.SongName</strong> @((bool) Model.Content.Parent.GetPropertyValue("Band") ? "группы" : "исполнителя")
+                            <strong>@Model.Content.Parent.GetPropertyValue("NavigationName")</strong>
+                            осуществлён с адаптацией на русский язык.
+                            Учитываются метафоры и смысл каждой строки - соответственно то, что хочет донести до
+                            слушателя
+                            автор песни.
+                            Если у Вас есть замечания к переводу или его адаптации на русский язык, пожалуйста,
+                            сообщите
+                            это
+                            в комментариях,
+                            и мы обязательно внесём поправки, а Ваша помощь не останется незамеченной.
+                        </p>
+                        @{
 
-                    <div class="text">
-                        @foreach (var item in CurrentPage.SongText)
-                        {
-                            <div class="string">
-                                <div class="original">
-                                    @item.OriginalText
-                                </div>
-                                <div class="translate">
-                                    @item.TranslatedText
-                                </div>
+                            <div class="text">
+                                @foreach (var item in CurrentPage.SongText)
+                                {
+                                    <div class="string">
+                                        <div class="original">
+                                            @item.OriginalText
+                                        </div>
+                                        <div class="translate">
+                                            @item.TranslatedText
+                                        </div>
+                                    </div>
+                                }
                             </div>
                         }
                     </div>
-                }
+                </div>
+
             </div>
         </div>
 
+        <div class="author">
+            <p>
+                @{
+                    var links = Model.Content.GetPropertyValue<RelatedLinks>("translator");
+                    if (links != null)
+                    {
+                        <span>
+                            Автор перевода:
+                            @foreach (var item in links)
+                            {
+                                <a href="@item.Link" @(item.NewWindow ? "target=blank" : string.Empty)> @item.Caption</a>
+                            }
+                        </span>
+                    }
+                }
+
+                При полном или частичном копировании данного материала указывайте
+                активную ссылку на сайт (<a href="@main.UrlAbsolute()">@main.UrlAbsolute()</a>),
+                а также авторов перевода.
+            </p>
+        </div>
     </div>
-</div>
-
-<div class="author">
-    <p>
-        @{
-            var links = Model.Content.GetPropertyValue<RelatedLinks>("translator");
-            if (links != null)
-             {
-                 <span>
-                     Автор перевода:
-                     @foreach (var item in links)
-                     {
-                         <a href="@item.Link" @(item.NewWindow ? "target=blank" : string.Empty)> @item.Caption</a>
-                     }
-                 </span>
-             }
-        }
-
-        При полном или частичном копировании данного материала указывайте
-        активную ссылку на сайт (<a href="@main.UrlAbsolute()">@main.UrlAbsolute()</a>),
-        а также авторов перевода.
-    </p>
-</div>
-</div>
 </article>
 
 @section scripts {
