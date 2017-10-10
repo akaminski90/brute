@@ -2753,7 +2753,7 @@ footer ul li a span {
   }
 }
 
-.filters-section .search input {
+.filters-section .search .selecet2-selection {
   border-radius: 0;
   border: 1px solid #ddd;
   padding: 1rem 1rem;

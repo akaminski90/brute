@@ -5,9 +5,9 @@
     Layout = "MasterLayout.cshtml";    
 }
 
-@section styles {    
-    <link href="~/css/index.css" rel="stylesheet" />
+@section styles {        
     <link href="~/css/select2.css" rel="stylesheet" />
+    <link href="~/css/index.css" rel="stylesheet" />
 }
 
 @section svg {
@@ -32,10 +32,7 @@
                 <div class="filters-section">
                     <div class="col-xl-5">
                         <div class="search">
-                            <select class="js-example-basic" type="text" placeholder="Введите название группы" autocomplete="off" autocorrect="off" name="list[]"></select>
-                            <button>
-                                <i class="br-search"></i>
-                            </button>
+                            <select class="search-bar" type="text" placeholder="Введите название группы" autocomplete="off" autocorrect="off"></select>                            
                         </div>
                     </div>
                     @CreateCatlogMenu()
@@ -123,56 +120,90 @@
 @section scripts {
     <script src="~/scripts/main.js"></script>
     <script>
-        var a = $.ajax({
-            type: "GET",
-            url: '/umbraco/surface/searchSurface/search'
-        });
-        console.log(a);
-
-        $(document).ready(function() {
-            $('.js-example-basic').select2({
+        $(document).ready(function () {
+            var search = $('.search-bar');
+            search.select2({
                 placeholder: 'Введите название песни или имя исполнителя',
                 minimumInputLength: 1,
                 maximumInputLength: 20,
-                width: 200,
+                //width: 200,
+                templateResult: formatRepo,
+                templateSelection: formatSelectionRepo,
+                escapeMarkup: function (markup) { return markup; },
                 ajax: {
                     url: '/umbraco/surface/searchSurface/search',
                     dataType: 'json',
-                    delay: 250,
-                    //data: function(params) {
-                    //    return {
-                    //        query: "abc"
-                    //    };
-                    //},
+                    delay: 1000,
+                    data: function (params) {
+                        return {
+                            q: params.term // search term
+                        };
+                    },
                     processResults: function(data) {
                         return {
                             results: data
                         };
-                    }
+                    }                    
                 }                
+            });
+
+            //search= search.data('select2');
+
+            //search.onSelect = (function (fn) {
+            //    return function(data, options) {
+            //        var target;
+
+            //        if (options != null) {
+            //            target = $(options.target);
+            //        }
+
+            //        if (target && target.hasClass('detail-link')) {
+            //            window.location = target.attr('href');
+                        
+            //        } else {
+            //            return fn.apply(this, arguments);
+            //        }
+            //    }
+            //})(search.onSelect);
+
+            search.on('select2:select', function (e) {
+                window.location  = e.params.data.link;
+                //console.log(data);
+            });
+
+            $('b[role="presentation"]').hide();
+            $('.select2-selection__arrow').append('<i class="br-search" style="position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%;"></i>');
+
+            function formatRepo(repo) {
+
+                if (repo.loading) {
+                    return "Поиск...";
+                }
+
+                if (!repo.id) {
+                     return repo.id;
+                }
+
+                var markup = "<a style='width: 100%; height: 100%;' class='detail-link' href='" + repo.link +"'>" + repo.text + "</a>";
+
+                return markup;
+            }
+
+            function formatSelectionRepo(repo) {
+
+                if (repo.loading) {
+                    return "Поиск...";
+                }
+
+                if (!repo.id) {
+                    return repo.id;
+                }
+
+                var markup = "<p>" + repo.text + "</p>";
+
+                return markup;
+            }
         });
-    });
-
-
-        //data: [
-        //    {
-        //        id: 0,
-        //        text: 'a'
-        //    },
-        //    {
-        //        id: 1,
-        //        text: "b"
-        //    },
-        //    {
-        //        id: 2,
-        //        text: "c"
-        //    },
-        //    {
-        //        id: 3,
-        //        text: "d"
-        //    }
-        //]
-
 
         //$.ajax({
         //    type: "GET",

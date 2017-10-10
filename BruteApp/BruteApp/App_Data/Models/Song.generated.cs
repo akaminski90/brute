@@ -22,7 +22,7 @@ namespace Umbraco.Web.PublishedContentModels
 {
 	/// <summary>Song</summary>
 	[PublishedContentModel("song")]
-	public partial class Song : PublishedContentModel, INavigation, ISEO
+	public partial class Song : PublishedContentModel, ISEO
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "song";
@@ -70,15 +70,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public Umbraco.Web.Models.RelatedLinks Translator
 		{
 			get { return this.GetPropertyValue<Umbraco.Web.Models.RelatedLinks>("translator"); }
-		}
-
-		///<summary>
-		/// Navigation Name: Page name for navbar
-		///</summary>
-		[ImplementPropertyType("navigationName")]
-		public string NavigationName
-		{
-			get { return Umbraco.Web.PublishedContentModels.Navigation.GetNavigationName(this); }
 		}
 
 		///<summary>

@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using BruteApp.Helpers;
 using BruteApp.Models;
+using Umbraco.Core;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
 using Umbraco.Web.PublishedContentModels;
@@ -21,106 +22,101 @@ namespace BruteApp.Controllers
 
 
         [HttpGet]
-        public JsonResult Search(string query = null)
+        public JsonResult Search(string q = null)
         {
             //var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
-            //var songs = umbracoHelper.ContentAtXPath("//song");
+            var songs = Umbraco.TypedContentAtXPath("//song");
+            var musicians = Umbraco.TypedContentAtXPath("//musician");
 
-            //var songsList = new List<SearchModel>();
+            if (!string.IsNullOrEmpty(q))
+            {
+                q = q.ToLower();
+                songs = songs.Where(x => x.GetPropertyValue<string>("songName") != null 
+                                         && x.GetPropertyValue<string>("songName").ToLower().Contains(q));
+                musicians = musicians.Where(x => x.GetPropertyValue<string>("navigationName") != null
+                                                 && x.GetPropertyValue<string>("navigationName").ToLower().Contains(q));                
+            }
+            var songsResult = songs.Select(x => new
+            {
+                id = x.Id,
+                text = x.Parent.GetPropertyValue<string>("navigationName") + " - " +
+                       x.GetPropertyValue<string>("songName"),
+                musician = x.Parent.GetPropertyValue<string>("navigationName"),
+                link = x.Url
+            })
+            .OrderBy(x => x.text)
+            .ToList();
+            var musiciansResult = musicians.Select(x => new
+                {
+                    id = x.Id,
+                    text = x.GetPropertyValue<string>("navigationName"),
+                    musician = x.GetPropertyValue<string>("navigationName"),
+                    link = x.Url
+                })
+                .OrderBy(x => x.text)
+                .ToList();
 
-            //foreach (var song in songs)
-            //{
-            //    var sng = new SearchModel
-            //    {
-            //        id = song.Id,
-            //        musician = song.Parent.NavigationName.ToString(),
-            //        name = song.SongName,
-            //        entityType = 1
-            //    };
-            //    songsList.Add(sng);
-            //}
+            musiciansResult.AddRange(songsResult);
+
+            //var songsList = GetSongsAsList(songs, q);
 
             //var musicians = umbracoHelper.ContentAtXPath("//musician");
-            //var musiciansList = new List<SearchModel>();
+            //var musiciansList = GetMusiciansAsList(musicians, q);
+
+            //musiciansList.AddRange(songs.ToList());
 
             //foreach (var musician in musicians)
             //{
             //    var artist = new SearchModel
             //    {
             //        id = musician.Id,
-            //        musician = musician.navigationName,
-            //        name = musician.navigationName,
-            //        entityType = 0
+            //        text = musician.navigationName
             //    };
-            //    musiciansList.Add(artist);
+            //    if (artist.text.ToLower().Contains(q.ToLower()))
+            //    {
+            //        musiciansList.Add(artist);
+            //    }
             //}
 
             //songsList.AddRange(musiciansList);
 
-            var search = new SearchModel
-            {
-                id = 0,
-                text = "a"
-            };
-            var search1 = new SearchModel
-            {
-                id = 1,
-                text = "b"
-            };
-            var search2 = new SearchModel
-            {
-                id = 2,
-                text = "c"
-            };
-            var search3 = new SearchModel
-            {
-                id = 3,
-                text = "d"
-            };
-            var search4 = new SearchModel
-            {
-                id = 4,
-                text = "e"
-            };
-            var search5 = new SearchModel
-            {
-                id = 5,
-                text = "f"
-            }; var search6 = new SearchModel
-            {
-                id = 6,
-                text = "font"
-            };
-            var list = new List<SearchModel>
-            {
-                search,
-                search1,
-                search2,
-                search3,
-                search4,
-                search5,
-                search6
-            };
-
-            return Json(list.ToArray(), JsonRequestBehavior.AllowGet);
-            //return Json(songsList, JsonRequestBehavior.AllowGet);
+            return Json(musiciansResult, JsonRequestBehavior.AllowGet);
         }
 
-        private List<SearchModel> GetSongsAsList(dynamic dynamicItems)
-        {
-            var items = new List<SearchModel>();
-            foreach (var item in dynamicItems)
-            {
-                var itm = new SearchModel
-                {
-                    id = item.Id,
-                    text = item.NavigationName
-                };
-                items.Add(itm);
-            }
-            items = items.OrderBy(x => x.text).ToList();
-            return items;
-        }
+        //private List<SearchModel> GetSongsAsList(dynamic dynamicItems, string q)
+        //{
+        //    var items = new List<SearchModel>();
+        //    foreach (var item in dynamicItems)
+        //    {
+        //        var itm = new SearchModel
+        //        {
+        //            id = item.Id,
+        //            text = item.Parent().NavigationName + " - " + item.SongName,
+        //            musician = item.Parent().NavigationName,
+        //            link = item.Url
+        //        };                
+        //        items.Add(itm);
+        //    }
+        //    return items;
+        //}
+
+        //private List<SearchModel> GetMusiciansAsList(dynamic dynamicItems, string q)
+        //{
+        //    var items = new List<SearchModel>();
+        //    foreach (var item in dynamicItems)
+        //    {
+        //        if (!item.NavigationName.ToLower().Contains(q.ToLower())) continue;
+        //        var itm = new SearchModel
+        //        {
+        //            id = item.Id,
+        //            text = item.NavigationName,
+        //            link = item.Url
+        //        };
+        //        items.Add(itm);
+        //    }
+        //    items = items.OrderBy(x => x.text).ToList();
+        //    return items;
+        //}
 
     }
 }

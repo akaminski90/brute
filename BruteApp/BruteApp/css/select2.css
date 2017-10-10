@@ -482,3 +482,30 @@
 
 .select2-container--classic.select2-container--open .select2-dropdown {
   border-color: #5897fb; }
+
+  .select2 {
+    width: -webkit-calc(100% - 30px) !important;
+    width: calc(100% - 30px) !important;
+  }
+
+  span.select2-selection.select2-selection--single {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 1rem 1rem;
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .select2-selection__arrow {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0;
+    width: 75px !important;
+    background-color: #5ab4ce;
+    color: #fff;
+    cursor: pointer;
+    height: 40px !important;
+  }

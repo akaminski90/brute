@@ -18,40 +18,12 @@
 
 <article>
     @*@{
-        var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
-            var songs = umbracoHelper.ContentAtXPath("//song");
-
-        var songsList = new List<SearchModel>();
-        @*Get As List*@
-    @*foreach (var song in songs)
-    {
-        var sng = new SearchModel
+        var songs = Umbraco.TypedContentAtXPath("//song");
+        songs = songs.Where(x => x.GetPropertyValue<string>("songName") != null && x.GetPropertyValue<string>("songName").ToLower().Contains("tes"));
+        foreach (var item in songs)
         {
-            id = song.Id,
-            musician = song.Parent.GetPropertyValue("navigationName").ToString(),
-            name = song.SongName,
-            entityType = 1
-        };
-        songsList.Add(sng);
-    }
-
-    var musicians = umbracoHelper.ContentAtXPath("//musician");
-    var musiciansList = new List<SearchModel>();
-
-    foreach (var musician in musicians)
-    {
-        var artist = new SearchModel
-        {
-            id = musician.Id,
-            musician = musician.navigationName,
-            name = musician.navigationName,
-            entityType = 0
-        };
-        musiciansList.Add(artist);
-    }
-
-        songsList.AddRange(musiciansList);
-        var test = 1;
+             <p>@item</p>
+         }
     }*@
     <div class="content">
         <div class="container-fluid">
