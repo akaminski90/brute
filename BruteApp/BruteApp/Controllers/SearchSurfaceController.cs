@@ -45,6 +45,7 @@ namespace BruteApp.Controllers
                 link = x.Url
             })
             .OrderBy(x => x.text)
+            .Take(50)
             .ToList();
             var musiciansResult = musicians.Select(x => new
                 {
@@ -54,6 +55,7 @@ namespace BruteApp.Controllers
                     link = x.Url
                 })
                 .OrderBy(x => x.text)
+                .Take(50)
                 .ToList();
 
             musiciansResult.AddRange(songsResult);

@@ -17,24 +17,13 @@
 }
 
 <article>
-    @*@{
-        var songs = Umbraco.TypedContentAtXPath("//song");
-        songs = songs.Where(x => x.GetPropertyValue<string>("songName") != null && x.GetPropertyValue<string>("songName").ToLower().Contains("tes"));
-        foreach (var item in songs)
-        {
-             <p>@item</p>
-         }
-    }*@
     <div class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="filters-section">
                     <div class="col-xl-5">
                         <div class="search">
-                            <input placeholder="Введите название группы"/>
-                            <button>
-                                <i class="br-search"></i>
-                            </button>
+                            <select class="search-bar" type="text" placeholder="Введите название группы" autocomplete="off" autocorrect="off"></select>
                         </div>
                     </div>
                     @CreateCatlogMenu()

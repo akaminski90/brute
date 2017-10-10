@@ -1,6 +1,5 @@
 umbraco.interfaces.IDiscoverable
 
-umbraco.MacroEngines.RazorMacroEngine, umbraco.MacroEngines, Version=1.0.6471.23339, Culture=neutral, PublicKeyToken=null
 umbraco.loadPackager, umbraco, Version=1.0.6471.23334, Culture=neutral, PublicKeyToken=null
 umbraco.loadDLRScripts, umbraco, Version=1.0.6471.23334, Culture=neutral, PublicKeyToken=null
 umbraco.loadRelationTypes, umbraco, Version=1.0.6471.23334, Culture=neutral, PublicKeyToken=null
@@ -282,6 +281,16 @@ umbraco.BusinessLogic.Actions.ContextMenuSeperator, cms, Version=1.0.6471.23332,
 umbraco.BusinessLogic.Actions.ActionUnPublish, cms, Version=1.0.6471.23332, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.Actions.ActionRestore, cms, Version=1.0.6471.23332, Culture=neutral, PublicKeyToken=null
 umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0.6471.23333, Culture=neutral, PublicKeyToken=null
+umbraco.MacroEngines.RazorMacroEngine, umbraco.MacroEngines, Version=1.0.6471.23339, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.ContentApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.MediaApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.SettingsApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.DeveloperApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.UsersApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.MembersApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.businesslogic.TranslationApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
 umbraco.editorControls.PropertyTypePicker, umbraco.editorControls, Version=1.0.6471.23338, Culture=neutral, PublicKeyToken=null
 umbraco.editorControls.yesno.YesNoDataType, umbraco.editorControls, Version=1.0.6471.23338, Culture=neutral, PublicKeyToken=null
 umbraco.editorControls.XPathDropDownList.XPathDropDownListDataType, umbraco.editorControls, Version=1.0.6471.23338, Culture=neutral, PublicKeyToken=null
@@ -320,15 +329,6 @@ umbraco.editorControls.colorpicker.ColorPickerDataType, umbraco.editorControls, 
 umbraco.editorControls.checkboxlist.checkboxListDataType, umbraco.editorControls, Version=1.0.6471.23338, Culture=neutral, PublicKeyToken=null
 umbraco.editorControls.PickerRelations.PickerRelationsDataType, umbraco.editorControls, Version=1.0.6471.23338, Culture=neutral, PublicKeyToken=null
 umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6471.23338, Culture=neutral, PublicKeyToken=null
-umbraco.businesslogic.ContentApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
-umbraco.businesslogic.MediaApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
-umbraco.businesslogic.SettingsApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
-umbraco.businesslogic.DeveloperApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
-umbraco.businesslogic.UsersApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
-umbraco.businesslogic.MembersApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
-umbraco.businesslogic.TranslationApplicationDefinition, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
-umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
-umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Strategies.RelateOnCopyHandler, Umbraco.Core, Version=1.0.6471.23325, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Strategies.RelateOnTrashHandler, Umbraco.Core, Version=1.0.6471.23325, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.PropertyEditors.PropertyValueConverterBase, Umbraco.Core, Version=1.0.6471.23325, Culture=neutral, PublicKeyToken=null
@@ -522,9 +522,9 @@ Umbraco.Web.Cache.CacheRefresherEventHandler, umbraco, Version=1.0.6471.23334, C
 Jumoo.uSync.BackOffice.uSyncApplicationEventHandler, Jumoo.uSync.BackOffice, Version=3.3.4.740, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Umbraco.ModelsBuilderApplication, Umbraco.ModelsBuilder, Version=3.0.7.99, Culture=neutral, PublicKeyToken=null
 umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0.6471.23333, Culture=neutral, PublicKeyToken=null
-umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6471.23338, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
 umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6471.23331, Culture=neutral, PublicKeyToken=null
+umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6471.23338, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Strategies.RelateOnCopyHandler, Umbraco.Core, Version=1.0.6471.23325, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Strategies.RelateOnTrashHandler, Umbraco.Core, Version=1.0.6471.23325, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Models.Identity.IdentityModelMappings, Umbraco.Core, Version=1.0.6471.23325, Culture=neutral, PublicKeyToken=null
