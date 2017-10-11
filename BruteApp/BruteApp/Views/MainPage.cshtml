@@ -2,7 +2,7 @@
 @using BruteApp.Helpers
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-    Layout = "MasterLayout.cshtml";    
+    Layout = "MasterLayout.cshtml";
 }
 
 @section styles {            
@@ -18,13 +18,31 @@
     </svg>
 }
 
+<nav class="sidebar">
+    <ul>
+        @foreach (var publishedContent in Model.Content.Musicians)
+        {
+            var mus = (Musician) publishedContent;
+            <li>
+                <a href="javascript:void(0)">
+                    <span>@mus.NavigationName</span>
+                    <i class="br-down"></i>
+                </a>
+                <ul class="collapse">
+                    @foreach (var publishedContent1 in mus.Children)
+                    {
+                        var song = (Song) publishedContent1;
+                        <li>
+                            <a href="@song.Url">@song.SongName</a>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</nav>
+
 <article>
-    @*@{
-        var catalog = (Catalog)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<Catalog>()));
-        var musicians = catalog.Children.SelectMany(item => item.Children).Cast<Musician>().ToList();
-        var songs = musicians.SelectMany(item => item.Children.Cast<Song>()).ToList();
-        var distinctSongs = songs.GroupBy(x => x.NavigationName).Select(y => y.First());
-    }*@
     <div class="content">
         <div class="container-fluid">
             <div class="row">
@@ -38,86 +56,79 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <a href="javascript:void(0)" class="musician">
-                        <img src="img/foals.jpg"/>
-                        <div class="description">
-                            <p>Foals</p>
-                            <span>перевод песен</span>
+            <div class="row" id="musicians">
+                @{
+                    var typedMultiNodeTreePicker = Model.Content.Musicians;
+                    foreach (var publishedContent in typedMultiNodeTreePicker)
+                    {
+                        if (publishedContent.DocumentTypeAlias != "musician") { continue; }
+                        var musician = (Musician) publishedContent;
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+                            <a href="@musician.Url" class="musician">
+                                <img class="lazy" data-src="@(Url.GetCropUrl(musician, "image", "musicianCropper"))"/>
+                                <div class="description">
+                                    <p>@musician.NavigationName</p>
+                                    <span>перевод песен</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <a href="javascript:void(0)" class="musician">
-                        <img src="img/HIM.jpg"/>
-                        <div class="description">
-                            <p>HIM</p>
-                            <span>перевод песен</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <a href="javascript:void(0)" class="musician">
-                        <img src="img/Kings-of-Leon.jpg"/>
-                        <div class="description">
-                            <p>Kings of leon</p>
-                            <span>перевод песен</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <a href="javascript:void(0)" class="musician">
-                        <img src="img/TheSunshineUnderground.jpg"/>
-                        <div class="description">
-                            <p>The sunshine Underground</p>
-                            <span>перевод песен</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <a href="javascript:void(0)" class="musician">
-                        <img src="img/Kings-of-Leon.jpg"/>
-                        <div class="description">
-                            <p>The sunshine Underground</p>
-                            <span>перевод песен</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <a href="javascript:void(0)" class="musician">
-                        <img src="img/foals.jpg"/>
-                        <div class="description">
-                            <p>The sunshine Underground</p>
-                            <span>перевод песен</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <a href="javascript:void(0)" class="musician">
-                        <img src="img/foals.jpg"/>
-                        <div class="description">
-                            <p>The sunshine Underground</p>
-                            <span>перевод песен</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                    <a href="javascript:void(0)" class="musician">
-                        <img src="img/TheSunshineUnderground.jpg"/>
-                        <div class="description">
-                            <p>The sunshine Underground</p>
-                            <span>перевод песен</span>
-                        </div>
-                    </a>
-                </div>
+                    }
+                }                
             </div>
+            @*<button id="load" style="margin: 50px auto; height: 50px; width: 50px; cursor: pointer;">Load More</button>*@
         </div>
     </div>
 </article>
 
 @section scripts {
     <script src="~/scripts/main.js"></script>
+    <script>
+        $('.lazy').Lazy({
+            scrollDirection: 'vertical',
+            visibleOnly: true,
+            effect: 'fadeIn',
+            effectTime: 250
+        });
+
+        //var count = 0;
+
+        //$('#load').on('click',
+        //    function() {
+        //        infiniteScroll(count);
+        //        count+=6;
+
+        //        function infiniteScroll(count) {
+        //            $.ajax({
+        //                type: "GET",
+        //                url: "/umbraco/surface/musicianSurface/infinite",
+        //                data: {
+        //                    count: count
+        //                },
+        //                contentType: "application/json; charset=utf-8",
+        //                dataType: "json",
+        //                success: function (data) {
+        //                    var div = $(data);
+        //                    console.log("typeof data: " + typeof data);
+        //                    console.log(JSON.stringify(data));
+        //                    if (data != "") {
+        //                        $('#musicians').append(div);
+        //                    } else {
+        //                        $('#load').hide();
+        //                    }
+        //                    $('.lazy').Lazy({
+        //                        scrollDirection: 'vertical',
+        //                        visibleOnly: true,
+        //                        effect: 'fadeIn',
+        //                        effectTime: 100
+        //                    });
+
+        //                }
+        //            });
+        //        };
+        //    });
+
+
+    </script>
 }
 
 @helper CreateCatlogMenu()

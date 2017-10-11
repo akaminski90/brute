@@ -46,7 +46,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Band: Tick this if it is a band
+		/// Band: Tick this if this is a band
 		///</summary>
 		[ImplementPropertyType("band")]
 		public bool Band

@@ -10,7 +10,7 @@
         ajax: {
             url: '/umbraco/surface/searchSurface/search',
             dataType: 'json',
-            delay: 1000,
+            delay: 250,
             data: function (params) {
                 return {
                     q: params.term // search term

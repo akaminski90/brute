@@ -26,6 +26,28 @@
             pages = 1;
         }
     }
+
+    <nav class="sidebar">
+        <ul>                   
+            <li>
+                <a href="javascript:void(0)">
+                    <span>@Model.Content.NavigationName</span>
+                    <i class="br-down"></i>
+                </a>
+                <ul class="collapse">
+                    @foreach (var publishedContent in Model.Content.Children)
+                    {
+                        var song = (Song)publishedContent;
+                        <li>
+                            <a href="@song.Url">@song.SongName</a>
+                        </li>
+                    }
+                </ul>
+            </li>
+            }
+        </ul>
+    </nav>
+
     <article>
         <div class="content">
             <div class="container-fluid">

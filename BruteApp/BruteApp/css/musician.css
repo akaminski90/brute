@@ -2635,6 +2635,7 @@ footer ul li a span {
   z-index: 2;
   -webkit-transition: left .2s;
   transition: left .2s;
+  overflow-y: auto;
 }
 
 @media (min-width: 900px) {

@@ -16,6 +16,29 @@
     <link href="~/css/song.css" rel="stylesheet" />
 }
 
+
+<nav class="sidebar">
+    <ul>                   
+            <li>
+                <a href="javascript:void(0)">
+                    <span>@Model.Content.Parent.GetPropertyValue("navigationName")</span>
+                    <i class="br-down"></i>
+                </a>
+                <ul class="collapse">
+                    @foreach (var publishedContent in Model.Content.Parent.Children)
+                    {
+                        var song = (Song)publishedContent;
+                        <li>
+                            <a href="@song.Url">@song.SongName</a>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</nav>
+
+
 <article>
     <div class="content">
         <div class="container-fluid">

@@ -46,12 +46,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Random Property
+		/// Musicians
 		///</summary>
-		[ImplementPropertyType("randomProperty")]
-		public string RandomProperty
+		[ImplementPropertyType("musicians")]
+		public IEnumerable<IPublishedContent> Musicians
 		{
-			get { return this.GetPropertyValue<string>("randomProperty"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("musicians"); }
 		}
 
 		///<summary>

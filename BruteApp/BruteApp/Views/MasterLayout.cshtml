@@ -15,11 +15,13 @@
     <title>Перевод песен - Brute.by</title>
     <link href="~/css/select2.css" rel="stylesheet" />
     @RenderSection("styles", false)
+    <link href="~/css/gray.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex, nofollow"/>
     <meta name="description" content=""/>
     <script src="~/scripts/jquery-3.2.1.min.js"></script>
     <script src="~/scripts/select2.full.js"></script>
+    <script src="~/scripts/jquery.lazy.js"></script>
     <script src="~/scripts/search.js"></script>
 
 </head>
@@ -43,45 +45,6 @@
     </div>
 </nav>
 
-
-<nav class="sidebar">
-    <ul>
-        <li>
-            <a href="javascript:void(0)">
-                <span>HIM</span>
-                <i class="br-down"></i>
-            </a>
-        </li>
-        <li>
-            <a href="javascript:void(0)">
-                <span>Kings of leon</span>
-                <i class="br-down"></i>
-            </a>
-            <ul class="collapse">
-                <li>
-                    <a href="index.html">Closer</a>
-                </li>
-                <li>
-                    <a href="page-types.html">Walls</a>
-                </li>
-                <li>
-                    <a href="page-type-editor.html">Use Somebody</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="javascript:void(0)">
-                <span>The Sunshine Underground</span>
-                <i class="br-down"></i>
-            </a>
-            <ul class="collapse">
-                <li>
-                    <a href="content.html">Chemical Brothers</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</nav>
 @RenderBody()
 </div>
 @RenderSection("scripts", false)

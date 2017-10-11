@@ -526,3 +526,8 @@
   b[role="presentation"] {
     display: none;
   }
+
+  *{
+      height: initial;
+      overflow: initial;
+  }

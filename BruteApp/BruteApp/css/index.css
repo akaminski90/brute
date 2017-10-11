@@ -2635,6 +2635,7 @@ footer ul li a span {
   z-index: 2;
   -webkit-transition: left .2s;
   transition: left .2s;
+  overflow-y: auto;
 }
 
 @media (min-width: 900px) {
@@ -2910,5 +2911,172 @@ article .content .musician span {
   -webkit-transition: opacity .2s, visibility .2s;
   transition: opacity .2s, visibility .2s;
 }
+
+.pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 30px 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.pagination > a {
+    padding: 20px;
+    color: #454545;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+    overflow: hidden;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 0 3px;
+    width: 65px;
+}
+
+.pagination > a:hover {
+    background-color: #eee;
+}
+
+.pagination > a span {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .pagination > a {
+        margin: 0;
+        border: none;
+        background-color: #4c4c4c;
+        color: #fff;
+    }
+    .pagination > a span {
+        display: block;
+        height: 100%;
+        line-height: 1.5;
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        transform: translateY(100%);
+        -webkit-transition: -webkit-transform .2s;
+        transition: -webkit-transform .2s;
+        transition: transform .2s;
+        transition: transform .2s, -webkit-transform .2s;
+    }
+    .pagination > a i {
+        -webkit-transition: -webkit-transform .2s;
+        transition: -webkit-transform .2s;
+        transition: transform .2s;
+        transition: transform .2s, -webkit-transform .2s;
+    }
+    .pagination > a:hover {
+        background-color: #666666;
+    }
+    .pagination > a:hover span {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    .pagination > a:hover i {
+        -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+}
+
+.pagination > a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination > a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pagination > a i {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+}
+
+@media (min-width: 576px) {
+    .pagination > a i {
+        font-size: 1.2rem;
+    }
+}
+
+.pagination .pages {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .pagination .pages {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+.pagination .pages a {
+    padding: 20px;
+    cursor: pointer;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #ddd;
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #000;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+.pagination .pages a:not(:last-child) {
+    border-right: 1px solid;
+    border-color: #ddd;
+}
+
+.pagination .pages a:hover {
+    background-color: #ececec;
+}
+
+.pagination .pages a.active {
+    background-color: #ececec;
+}
+
 
 /*# sourceMappingURL=index.css.map */
