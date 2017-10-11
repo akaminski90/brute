@@ -68,7 +68,7 @@ arrows.forEach(cur => cur.addEventListener('click', function () {
     }
 }));*/
 
-var arrows = document.querySelectorAll('.sidebar > ul > li > a');
+var arrows = document.querySelectorAll('.sidebar .items > li > a');
 for (var i = 0; i < arrows.length; i++) {
     arrows[i].addEventListener('click',
         function() {
@@ -92,3 +92,8 @@ for (var i = 0; i < arrows.length; i++) {
     $(this).find('i').toggleClass('br-down').toggleClass('br-up');
 });*/
 
+$(function(){
+    $('.menu-content .items').slimScroll({
+        height: '100%'
+    });
+});
