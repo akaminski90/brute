@@ -5564,3 +5564,6 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2017-10-11 17:33:54,588 [P29476/D34/T25] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Aaron' with Id '0' has been published.
  2017-10-11 17:33:58,628 [P29476/D34/T96] INFO  umbraco.content - Save Xml to file...
  2017-10-11 17:33:58,639 [P29476/D34/T96] INFO  umbraco.content - Saved Xml to file.
+ 2017-10-11 17:45:19,005 [P29476/D34/T282] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: akaminski@dev-team.com, IP Address: ::1
+ 2017-10-11 17:45:52,421 [P29476/D34/T276] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Executing Umbraco RouteDefinition controller
+ 2017-10-11 17:45:52,429 [P29476/D34/T276] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Finished (took 8ms)

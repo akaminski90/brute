@@ -1,13 +1,41 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Send>
 @using BruteApp.Controllers
+@using BruteApp.Helpers
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "MasterLayout.cshtml";
+    Layout = "MasterLayout.cshtml";
+    var main = (MainPage)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<MainPage>()));
 }
 
 @section styles {
     <link href="~/css/send.css" rel="stylesheet" />        
 }
+
+<nav class="sidebar">
+    <ul>
+        @foreach (var publishedContent in main.Musicians)
+        {
+            var musician = (Musician)publishedContent;
+            <li>
+                <a href="javascript:void(0)">
+                    <span>@musician.NavigationName</span>
+                    <i class="br-down"></i>
+                </a>
+                <ul class="collapse">
+                    @foreach (var publishedContent1 in musician.Children)
+                    {
+                        var song = (Song)publishedContent1;
+                        <li>
+                            <a href="@song.Url">@song.SongName</a>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</nav>
+
+
 
 <article>
     <div class="content">
