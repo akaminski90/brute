@@ -83,10 +83,6 @@
             return "Поиск...";
         }
 
-        if (!repo.id) {
-            return repo.id;
-        }
-
         var markup = "<a style='width: 100%; height: 100%;' class='detail-link' href='" + repo.link + "'>" + repo.text + "</a>";
 
         return markup;

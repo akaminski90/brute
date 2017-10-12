@@ -1,7 +1,6 @@
 ﻿$(document).ready(function () {
     var search = $('.search-bar');
     search.select2({
-        placeholder: 'Введите название песни или имя исполнителя',
         minimumInputLength: 1,
         maximumInputLength: 50,
         templateResult: formatRepo,
@@ -81,10 +80,6 @@
 
         if (repo.loading) {
             return "Поиск...";
-        }
-
-        if (!repo.id) {
-            return repo.id;
         }
 
         var markup = "<a style='width: 100%; height: 100%;' class='detail-link' href='" + repo.link + "'>" + repo.text + "</a>";

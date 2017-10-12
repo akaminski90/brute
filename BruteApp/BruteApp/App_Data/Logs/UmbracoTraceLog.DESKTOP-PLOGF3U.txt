@@ -2255,3 +2255,11 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
    at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
    at System.Threading.ThreadPoolWorkQueue.Dispatch()
  2017-10-12 15:02:01,436 [P2424/D17/T194] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 15:02:01
+ 2017-10-12 16:04:01,429 [P2424/D17/T355] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 16:04:01,430 [P2424/D17/T355] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2017-10-12 16:04:01,431 [P2424/D17/T355] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-10-12 16:04:01,440 [P2424/D17/T355] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 9ms)
+ 2017-10-12 16:04:01,548 [P2424/D17/T347] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 16:04:01,548 [P2424/D17/T347] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 16:04:01,548 [P2424/D17/T347] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2017-10-12 16:04:01,555 [P2424/D17/T347] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 6ms)

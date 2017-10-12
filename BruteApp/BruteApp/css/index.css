@@ -2337,6 +2337,16 @@ h1 {
   }
 }
 
+.select2-selection__placeholder p {
+  display: none;
+}
+
+@media (min-width: 400px) {
+  .select2-selection__placeholder p {
+    display: block;
+  }
+}
+
 @font-face {
   font-family: "brute";
   src: url("../fonts/brute.eot");
