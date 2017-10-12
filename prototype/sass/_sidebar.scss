@@ -21,7 +21,6 @@
 
   .menu-content  {
     height: calc(100% - 50px);
-    overflow: auto;
 
     .items {
 
@@ -42,6 +41,10 @@
 
           &:hover {
             background-color: #e5ecf1;
+          }
+
+          i {
+            font-size: 1.3rem;
           }
         }
 
@@ -78,7 +81,8 @@
         color: #454b4f;
         display: flex;
         justify-content: space-between;
-        font-weight: 400
+        font-weight: 400;
+        align-items: center;
       }
     }
 

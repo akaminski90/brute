@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  touch-action: manipulation;
 }
 
 html, body {
@@ -21,13 +22,14 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-
+  padding: 50px 0 0;
 }
 
 article {
   flex-grow: 1;
   transition: margin .2s;
   height: 100%;
+  overflow: auto;
 
   @media (min-width: 900px) {
     margin: 0 0 0 300px;
@@ -41,10 +43,9 @@ article {
 
 .content {
   position: relative;
-  min-height: calc(100% - 50px);
+  min-height: 100%;
   transition: left .2s;
   left: 0;
-  margin: 50px 0 0;
   background-color: #fff;
 }
 
@@ -59,8 +60,8 @@ h1 {
 }
 
 .select2-selection__placeholder p {
-display: none;
-	@media (min-width: 400px) {
-	display: block;
-	}
+  display: none;
+  @media (min-width: 400px) {
+    display: block;
+  }
 }

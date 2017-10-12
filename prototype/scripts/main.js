@@ -94,6 +94,7 @@ for (var i = 0; i < arrows.length; i++) {
 
 $(function(){
     $('.menu-content .items').slimScroll({
-        height: '100%'
+        height: '100%',
+        size: '4px'
     });
 });
