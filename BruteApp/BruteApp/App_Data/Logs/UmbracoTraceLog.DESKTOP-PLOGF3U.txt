@@ -648,3 +648,1610 @@ System.ArgumentException: Illegal characters in path.
    at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
  2017-10-12 13:49:13,191 [P2424/D4/T46] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: akaminski@dev-team.com, IP Address: ::1
+ 2017-10-12 14:21:03,896 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:21:03,896 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:21:03,896 [P2424/D4/T59] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:21:03,896 [P2424/D4/T223] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:21:03,896 [P2424/D4/T59] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:21:03,896 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:21:03,896 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:21:03,896 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:21:03,911 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:21:03,911 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:21:03,911 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:21:03,911 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:21:03,911 [P2424/D4/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:21:03,911 [P2424/D4/T200] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:21:03,911 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:21:03,911 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:21:03,911 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:21:03,911 [P2424/D4/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:21:03,911 [P2424/D4/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:21:03,911 [P2424/D4/T217] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:21:22,588 [P2424/D5/T225] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:21:22,609 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:21:22,616 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 14:21:22,670 [P2424/D5/T225] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:21:22,671 [P2424/D5/T225] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:21:22,676 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:22,849 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 173ms)
+ 2017-10-12 14:21:22,849 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:21:22,854 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 5ms)
+ 2017-10-12 14:21:22,871 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:22,872 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:21:22,872 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:21:22,876 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+ 2017-10-12 14:21:22,877 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:22,877 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:21:22,877 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:21:22,882 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 5ms)
+ 2017-10-12 14:21:22,894 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:22,894 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:21:22,895 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:21:22,898 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 3ms)
+ 2017-10-12 14:21:22,899 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:22,899 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:21:22,899 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:21:22,903 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2017-10-12 14:21:24,275 [P2424/D5/T225] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:21:24,393 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:21:24,399 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 6ms)
+ 2017-10-12 14:21:24,455 [P2424/D5/T225] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:21:24,478 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:21:24,480 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:21:24,580 [P2424/D5/T225] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (76ms)
+ 2017-10-12 14:21:24,600 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:21:24,614 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:21:24,620 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:21:24,623 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:21:24,629 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:24,629 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:21:24,630 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:21:24,635 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:21:24,964 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:21:24,964 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:21:25,028 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:21:25,029 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:21:25,569 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:25,569 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:21:25,569 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:21:25,573 [P2424/D5/T225] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 3ms)
+ 2017-10-12 14:21:25,680 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:21:25,680 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:21:25,801 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:21:25,802 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:21:25,819 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:21:25,820 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:21:25,820 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:21:25,820 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:21:25,821 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:21:25,854 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:21:25,860 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:21:25,860 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:21:25,860 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:21:25,864 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_142125_Startup.config
+ 2017-10-12 14:21:25,871 [P2424/D5/T225] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1390ms)
+ 2017-10-12 14:21:25,989 [P2424/D5/T225] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:21:25,990 [P2424/D5/T225] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:21:25,996 [P2424/D5/T225] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3476ms)
+ 2017-10-12 14:21:26,116 [P2424/D5/T222] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:21:26,261 [P2424/D5/T222] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:21:26,263 [P2424/D5/T222] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:21:26,332 [P2424/D5/T222] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:26,332 [P2424/D5/T222] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:21:26,332 [P2424/D5/T222] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:21:26,336 [P2424/D5/T222] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-10-12 14:21:28,508 [P2424/D5/T222] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:21:28,508 [P2424/D5/T222] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:21:28,508 [P2424/D5/T222] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:21:28,512 [P2424/D5/T222] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-10-12 14:21:29,299 [P2424/D5/T222] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:21:30,070 [P2424/D5/T222] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:21:34,011 [P2424/D4/T200] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:22:26,352 [P2424/D5/T73] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:22:26
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:22:54,362 [P2424/D5/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:22:54,362 [P2424/D5/T226] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:22:54,362 [P2424/D5/T200] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:22:54,362 [P2424/D5/T73] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:22:54,362 [P2424/D5/T200] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:22:54,362 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:22:54,378 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:22:54,378 [P2424/D5/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:23:24,393 [P2424/D5/T206] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:23:43,332 [P2424/D6/T39] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:23:43,357 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:23:43,365 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2017-10-12 14:23:43,418 [P2424/D6/T39] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:23:43,420 [P2424/D6/T39] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:23:43,422 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:43,592 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 171ms)
+ 2017-10-12 14:23:43,592 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:23:43,597 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 4ms)
+ 2017-10-12 14:23:43,612 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:43,612 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:23:43,612 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:23:43,616 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-10-12 14:23:43,616 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:43,616 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:23:43,616 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:23:43,621 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 5ms)
+ 2017-10-12 14:23:43,632 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:43,632 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:23:43,633 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:23:43,636 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 3ms)
+ 2017-10-12 14:23:43,637 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:43,637 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:23:43,637 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:23:43,641 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2017-10-12 14:23:44,875 [P2424/D6/T39] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:23:44,990 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:23:44,996 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 5ms)
+ 2017-10-12 14:23:45,053 [P2424/D6/T39] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:23:45,077 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:23:45,080 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:23:45,184 [P2424/D6/T39] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (81ms)
+ 2017-10-12 14:23:45,204 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:23:45,218 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:23:45,225 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:23:45,227 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:23:45,232 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:45,232 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:23:45,232 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:23:45,238 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:23:45,578 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:23:45,579 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:23:45,633 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:23:45,633 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:23:46,178 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:46,178 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:23:46,178 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:23:46,182 [P2424/D6/T39] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 3ms)
+ 2017-10-12 14:23:46,288 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:23:46,289 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:23:46,410 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:23:46,410 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:23:46,427 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:23:46,427 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:23:46,428 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:23:46,428 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:23:46,428 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:23:46,460 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:23:46,465 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:23:46,465 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:23:46,466 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:23:46,469 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_142346_Startup.config
+ 2017-10-12 14:23:46,477 [P2424/D6/T39] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1395ms)
+ 2017-10-12 14:23:46,519 [P2424/D6/T39] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:23:46,610 [P2424/D6/T39] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:23:46,617 [P2424/D6/T39] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3359ms)
+ 2017-10-12 14:23:46,748 [P2424/D6/T216] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:23:46,889 [P2424/D6/T216] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:23:46,892 [P2424/D6/T216] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:23:46,896 [P2424/D6/T59] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:23:46,950 [P2424/D6/T216] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:46,950 [P2424/D6/T216] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:23:46,951 [P2424/D6/T216] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:23:46,957 [P2424/D6/T216] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 6ms)
+ 2017-10-12 14:23:47,842 [P2424/D6/T59] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:23:49,081 [P2424/D6/T216] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:23:49,081 [P2424/D6/T216] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:23:49,081 [P2424/D6/T216] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:23:49,085 [P2424/D6/T216] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 3ms)
+ 2017-10-12 14:24:46,964 [P2424/D6/T59] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:24:46
+ 2017-10-12 14:27:31,971 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:27:31,971 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:27:31,971 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:27:31,971 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:27:31,971 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:27:31,986 [P2424/D6/T214] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:27:31,986 [P2424/D6/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:27:31,986 [P2424/D6/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:27:31,986 [P2424/D6/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:27:31,986 [P2424/D6/T199] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:27:31,986 [P2424/D6/T214] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:27:42,669 [P2424/D7/T43] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:27:42,689 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:27:42,696 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 14:27:42,747 [P2424/D7/T43] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:27:42,748 [P2424/D7/T43] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:27:42,756 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:42,927 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 170ms)
+ 2017-10-12 14:27:42,927 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:27:42,932 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 4ms)
+ 2017-10-12 14:27:42,949 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:42,949 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:27:42,950 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:27:42,954 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+ 2017-10-12 14:27:42,954 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:42,955 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:27:42,955 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:27:42,960 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 5ms)
+ 2017-10-12 14:27:42,970 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:42,971 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:27:42,971 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:27:42,975 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 4ms)
+ 2017-10-12 14:27:42,976 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:42,976 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:27:42,976 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:27:42,980 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2017-10-12 14:27:44,295 [P2424/D7/T43] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:27:44,409 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:27:44,416 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 6ms)
+ 2017-10-12 14:27:44,478 [P2424/D7/T43] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:27:44,605 [P2424/D7/T43] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:27:44,606 [P2424/D7/T43] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:27:44,608 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:27:44,610 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:27:44,699 [P2424/D7/T43] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (61ms)
+ 2017-10-12 14:27:44,721 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:27:44,734 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:27:44,742 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:27:44,744 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:27:44,750 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:44,750 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:27:44,750 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:27:44,758 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 7ms)
+ 2017-10-12 14:27:45,097 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:27:45,098 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:27:45,161 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:27:45,161 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:27:45,701 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:45,701 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:27:45,701 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:27:45,706 [P2424/D7/T43] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 4ms)
+ 2017-10-12 14:27:45,837 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:27:45,838 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:27:45,988 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:27:45,988 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:27:46,005 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:27:46,005 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:27:46,005 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:27:46,006 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:27:46,006 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:27:46,042 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:27:46,046 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:27:46,047 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:27:46,047 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:27:46,051 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_142746_Startup.config
+ 2017-10-12 14:27:46,058 [P2424/D7/T43] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1448ms)
+ 2017-10-12 14:27:46,101 [P2424/D7/T43] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3500ms)
+ 2017-10-12 14:27:46,225 [P2424/D7/T195] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:27:46,363 [P2424/D7/T195] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:27:46,365 [P2424/D7/T195] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:27:46,432 [P2424/D7/T195] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:46,432 [P2424/D7/T195] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:27:46,432 [P2424/D7/T195] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:27:46,436 [P2424/D7/T195] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-10-12 14:27:48,580 [P2424/D7/T195] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:27:48,580 [P2424/D7/T195] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:27:48,580 [P2424/D7/T195] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:27:48,584 [P2424/D7/T195] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 3ms)
+ 2017-10-12 14:27:49,340 [P2424/D7/T195] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:27:50,151 [P2424/D7/T195] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:28:02,043 [P2424/D6/T213] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:28:46,453 [P2424/D7/T216] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:28:46
+ 2017-10-12 14:29:13,189 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:29:13,189 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:29:13,195 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:29:13,195 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:29:13,195 [P2424/D7/T205] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:29:13,196 [P2424/D7/T198] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:29:13,196 [P2424/D7/T204] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:29:13,198 [P2424/D7/T204] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:29:13,198 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:29:13,198 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:29:13,199 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:29:13,199 [P2424/D7/T206] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:29:13,199 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:29:13,199 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:29:13,199 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:29:13,199 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:29:13,199 [P2424/D7/T214] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:29:13,201 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:29:13,202 [P2424/D7/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:29:13,202 [P2424/D7/T213] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:29:19,904 [P2424/D8/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:29:19,924 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:29:19,932 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 14:29:19,990 [P2424/D8/T223] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:29:19,992 [P2424/D8/T223] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:29:19,998 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:20,190 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 191ms)
+ 2017-10-12 14:29:20,190 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:29:20,195 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 4ms)
+ 2017-10-12 14:29:20,213 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:20,214 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:29:20,214 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:29:20,218 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-10-12 14:29:20,218 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:20,218 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:29:20,218 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:29:20,225 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 6ms)
+ 2017-10-12 14:29:20,238 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:20,238 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:29:20,239 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:29:20,243 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 4ms)
+ 2017-10-12 14:29:20,243 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:20,243 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:29:20,243 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:29:20,247 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2017-10-12 14:29:21,465 [P2424/D8/T223] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:29:21,582 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:29:21,587 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 5ms)
+ 2017-10-12 14:29:21,644 [P2424/D8/T223] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:29:21,693 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:29:21,695 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:29:21,793 [P2424/D8/T223] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (73ms)
+ 2017-10-12 14:29:21,812 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:29:21,826 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:29:21,832 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:29:21,834 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:29:21,840 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:21,840 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:29:21,840 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:29:21,846 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:29:22,175 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:29:22,176 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:29:22,229 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:29:22,229 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:29:22,763 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:22,763 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:29:22,763 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:29:22,767 [P2424/D8/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 3ms)
+ 2017-10-12 14:29:22,871 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:29:22,872 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:29:23,011 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:29:23,011 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:29:23,029 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:29:23,030 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:29:23,030 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:29:23,030 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:29:23,031 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:29:23,062 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:29:23,066 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:29:23,067 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:29:23,067 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:29:23,070 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_142923_Startup.config
+ 2017-10-12 14:29:23,077 [P2424/D8/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1381ms)
+ 2017-10-12 14:29:23,081 [P2424/D8/T223] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:29:23,171 [P2424/D8/T223] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:29:23,180 [P2424/D8/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3353ms)
+ 2017-10-12 14:29:23,298 [P2424/D8/T206] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:29:23,424 [P2424/D8/T206] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:29:23,426 [P2424/D8/T206] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:29:23,492 [P2424/D8/T206] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:23,492 [P2424/D8/T206] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:29:23,492 [P2424/D8/T206] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:29:23,496 [P2424/D8/T206] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 3ms)
+ 2017-10-12 14:29:25,621 [P2424/D8/T206] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:29:25,621 [P2424/D8/T206] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:29:25,622 [P2424/D8/T206] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:29:25,626 [P2424/D8/T206] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-10-12 14:29:26,393 [P2424/D8/T206] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:29:27,150 [P2424/D8/T206] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:29:43,244 [P2424/D7/T204] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:30:23,498 [P2424/D8/T214] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:30:23
+ 2017-10-12 14:33:51,217 [P2424/D8/T170] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:33:51,217 [P2424/D8/T170] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:33:51,232 [P2424/D8/T204] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:33:51,232 [P2424/D8/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:33:51,232 [P2424/D8/T216] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:33:51,232 [P2424/D8/T194] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:33:51,232 [P2424/D8/T170] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:33:51,232 [P2424/D8/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:33:55,922 [P2424/D9/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:33:55,944 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:33:55,951 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 14:33:56,006 [P2424/D9/T223] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:33:56,009 [P2424/D9/T223] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:33:56,015 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:33:56,193 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 178ms)
+ 2017-10-12 14:33:56,193 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:33:56,199 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 5ms)
+ 2017-10-12 14:33:56,217 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:33:56,218 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:33:56,218 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:33:56,222 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-10-12 14:33:56,222 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:33:56,222 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:33:56,222 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:33:56,227 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 4ms)
+ 2017-10-12 14:33:56,238 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:33:56,238 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:33:56,238 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:33:56,242 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 3ms)
+ 2017-10-12 14:33:56,242 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:33:56,242 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:33:56,242 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:33:56,247 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 4ms)
+ 2017-10-12 14:33:57,423 [P2424/D9/T223] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:33:57,538 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:33:57,544 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 5ms)
+ 2017-10-12 14:33:57,597 [P2424/D9/T223] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:33:57,620 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:33:57,623 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:33:57,718 [P2424/D9/T223] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (72ms)
+ 2017-10-12 14:33:57,738 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:33:57,751 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:33:57,757 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:33:57,760 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:33:57,765 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:33:57,766 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:33:57,766 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:33:57,772 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:33:58,080 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:33:58,081 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:33:58,131 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:33:58,132 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:33:58,662 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:33:58,662 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:33:58,662 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:33:58,666 [P2424/D9/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 3ms)
+ 2017-10-12 14:33:58,773 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:33:58,773 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:33:58,890 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:33:58,890 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:33:58,907 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:33:58,907 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:33:58,908 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:33:58,908 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:33:58,908 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:33:58,942 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:33:58,946 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:33:58,947 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:33:58,947 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:33:58,951 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_143358_Startup.config
+ 2017-10-12 14:33:58,957 [P2424/D9/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1334ms)
+ 2017-10-12 14:33:59,001 [P2424/D9/T223] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:33:59,081 [P2424/D9/T223] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:33:59,088 [P2424/D9/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3240ms)
+ 2017-10-12 14:33:59,209 [P2424/D9/T211] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:33:59,332 [P2424/D9/T211] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:33:59,334 [P2424/D9/T211] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:33:59,395 [P2424/D9/T211] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:33:59,396 [P2424/D9/T211] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:33:59,396 [P2424/D9/T211] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:33:59,400 [P2424/D9/T211] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 3ms)
+ 2017-10-12 14:34:01,491 [P2424/D9/T211] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:34:01,491 [P2424/D9/T211] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:34:01,492 [P2424/D9/T211] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:34:01,496 [P2424/D9/T211] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-10-12 14:34:02,261 [P2424/D9/T211] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:34:03,016 [P2424/D9/T211] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:34:21,313 [P2424/D8/T170] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:34:59,372 [P2424/D9/T219] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:34:59
+ 2017-10-12 14:35:52,964 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:35:52,964 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:35:52,983 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:35:52,983 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:35:52,984 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:35:52,984 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:35:52,984 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:35:52,986 [P2424/D9/T222] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:35:52,987 [P2424/D9/T207] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:35:52,989 [P2424/D9/T47] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:35:52,991 [P2424/D9/T47] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:35:52,991 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:35:52,991 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:35:52,991 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:35:52,991 [P2424/D9/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:35:52,991 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:35:52,991 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:35:52,992 [P2424/D9/T219] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:35:52,992 [P2424/D9/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:35:52,992 [P2424/D9/T207] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:35:59,236 [P2424/D10/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:35:59,256 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:35:59,263 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 14:35:59,316 [P2424/D10/T223] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:35:59,317 [P2424/D10/T223] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:35:59,323 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:35:59,494 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 171ms)
+ 2017-10-12 14:35:59,495 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:35:59,500 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 5ms)
+ 2017-10-12 14:35:59,515 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:35:59,515 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:35:59,516 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:35:59,519 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+ 2017-10-12 14:35:59,520 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:35:59,520 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:35:59,520 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:35:59,525 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 4ms)
+ 2017-10-12 14:35:59,536 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:35:59,536 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:35:59,536 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:35:59,540 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 3ms)
+ 2017-10-12 14:35:59,540 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:35:59,541 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:35:59,541 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:35:59,546 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 5ms)
+ 2017-10-12 14:36:00,758 [P2424/D10/T223] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:36:00,872 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:36:00,878 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 5ms)
+ 2017-10-12 14:36:00,935 [P2424/D10/T223] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:36:00,961 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:36:00,963 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:36:01,065 [P2424/D10/T223] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (76ms)
+ 2017-10-12 14:36:01,084 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:36:01,097 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:36:01,103 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:36:01,106 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:36:01,112 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:36:01,112 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:36:01,112 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:36:01,118 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:36:01,440 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:36:01,440 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:36:01,494 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:36:01,494 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:36:02,030 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:36:02,030 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:36:02,030 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:36:02,035 [P2424/D10/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 4ms)
+ 2017-10-12 14:36:02,144 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:36:02,144 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:36:02,266 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:36:02,266 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:36:02,283 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:36:02,283 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:36:02,284 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:36:02,284 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:36:02,285 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:36:02,316 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:36:02,321 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:36:02,321 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:36:02,321 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:36:02,325 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_143602_Startup.config
+ 2017-10-12 14:36:02,331 [P2424/D10/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1368ms)
+ 2017-10-12 14:36:02,442 [P2424/D10/T223] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:36:02,443 [P2424/D10/T223] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:36:02,451 [P2424/D10/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3290ms)
+ 2017-10-12 14:36:02,571 [P2424/D10/T44] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:36:02,694 [P2424/D10/T44] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:36:02,696 [P2424/D10/T44] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:36:02,760 [P2424/D10/T44] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:36:02,760 [P2424/D10/T44] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:36:02,760 [P2424/D10/T44] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:36:02,764 [P2424/D10/T44] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-10-12 14:36:04,872 [P2424/D10/T44] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:36:04,873 [P2424/D10/T44] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:36:04,873 [P2424/D10/T44] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:36:04,877 [P2424/D10/T44] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-10-12 14:36:05,650 [P2424/D10/T44] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:36:06,361 [P2424/D10/T44] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:36:23,097 [P2424/D9/T47] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:37:02,759 [P2424/D10/T44] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:37:02
+ 2017-10-12 14:42:40,739 [P2424/D10/T5] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:42:40,755 [P2424/D10/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:42:40,755 [P2424/D10/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:42:40,755 [P2424/D10/T188] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:42:40,755 [P2424/D10/T69] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:42:40,755 [P2424/D10/T102] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:42:40,755 [P2424/D10/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:42:55,597 [P2424/D11/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:42:55,617 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:42:55,625 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2017-10-12 14:42:55,676 [P2424/D11/T223] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:42:55,678 [P2424/D11/T223] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:42:55,682 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:42:55,853 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 171ms)
+ 2017-10-12 14:42:55,853 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:42:55,859 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 6ms)
+ 2017-10-12 14:42:55,878 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:42:55,878 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:42:55,879 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:42:55,883 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+ 2017-10-12 14:42:55,883 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:42:55,883 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:42:55,883 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:42:55,889 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 5ms)
+ 2017-10-12 14:42:55,903 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:42:55,903 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:42:55,903 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:42:55,907 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 3ms)
+ 2017-10-12 14:42:55,907 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:42:55,907 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:42:55,908 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:42:55,911 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2017-10-12 14:42:57,232 [P2424/D11/T223] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:42:57,360 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:42:57,365 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 5ms)
+ 2017-10-12 14:42:57,421 [P2424/D11/T223] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:42:57,470 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:42:57,471 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:42:57,566 [P2424/D11/T223] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (73ms)
+ 2017-10-12 14:42:57,586 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:42:57,601 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:42:57,608 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:42:57,610 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:42:57,615 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:42:57,615 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:42:57,615 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:42:57,621 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:42:57,939 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:42:57,939 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:42:57,991 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:42:57,992 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:42:58,524 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:42:58,524 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:42:58,524 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:42:58,528 [P2424/D11/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 3ms)
+ 2017-10-12 14:42:58,635 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:42:58,635 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:42:58,753 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:42:58,754 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:42:58,769 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:42:58,770 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:42:58,770 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:42:58,770 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:42:58,771 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:42:58,804 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:42:58,809 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:42:58,809 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:42:58,809 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:42:58,813 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_144258_Startup.config
+ 2017-10-12 14:42:58,821 [P2424/D11/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1348ms)
+ 2017-10-12 14:42:58,827 [P2424/D11/T223] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:42:58,915 [P2424/D11/T223] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:42:58,924 [P2424/D11/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3413ms)
+ 2017-10-12 14:42:59,039 [P2424/D11/T69] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:42:59,162 [P2424/D11/T69] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:42:59,165 [P2424/D11/T69] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:42:59,238 [P2424/D11/T69] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:42:59,238 [P2424/D11/T69] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:42:59,239 [P2424/D11/T69] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:42:59,243 [P2424/D11/T69] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-10-12 14:43:01,362 [P2424/D11/T69] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:43:01,362 [P2424/D11/T69] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:43:01,363 [P2424/D11/T69] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:43:01,367 [P2424/D11/T69] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-10-12 14:43:02,136 [P2424/D11/T69] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:43:02,943 [P2424/D11/T69] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:43:10,863 [P2424/D10/T182] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:43:59,206 [P2424/D11/T193] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:43:59
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:46:13,494 [P2424/D11/T187] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:46:13,494 [P2424/D11/T198] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:46:13,494 [P2424/D11/T208] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:46:13,494 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:46:13,494 [P2424/D11/T198] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:46:13,510 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:46:13,510 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:46:13,510 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:46:13,510 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:46:13,510 [P2424/D11/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:46:13,510 [P2424/D11/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:46:18,361 [P2424/D12/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:46:18,380 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:46:18,387 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 14:46:18,437 [P2424/D12/T223] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:46:18,439 [P2424/D12/T223] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:46:18,443 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:18,617 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 173ms)
+ 2017-10-12 14:46:18,617 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:46:18,623 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 5ms)
+ 2017-10-12 14:46:18,637 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:18,638 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:46:18,638 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:46:18,642 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-10-12 14:46:18,642 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:18,642 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:46:18,643 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:46:18,647 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 4ms)
+ 2017-10-12 14:46:18,658 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:18,659 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:46:18,659 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:46:18,662 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 3ms)
+ 2017-10-12 14:46:18,663 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:18,663 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:46:18,663 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:46:18,667 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 4ms)
+ 2017-10-12 14:46:19,853 [P2424/D12/T223] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:46:19,964 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:46:19,970 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 5ms)
+ 2017-10-12 14:46:20,023 [P2424/D12/T223] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:46:20,047 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:46:20,049 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:46:20,146 [P2424/D12/T223] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (74ms)
+ 2017-10-12 14:46:20,168 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:46:20,182 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:46:20,188 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:46:20,191 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:46:20,196 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:20,197 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:46:20,197 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:46:20,202 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:46:20,512 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:46:20,512 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:46:20,564 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:46:20,565 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:46:21,087 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:21,087 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:46:21,088 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:46:21,092 [P2424/D12/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 4ms)
+ 2017-10-12 14:46:21,198 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:46:21,198 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:46:21,315 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:46:21,315 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:46:21,334 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:46:21,334 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:46:21,335 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:46:21,335 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:46:21,336 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:46:21,375 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:46:21,380 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:46:21,381 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:46:21,381 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:46:21,386 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_144621_Startup.config
+ 2017-10-12 14:46:21,395 [P2424/D12/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1345ms)
+ 2017-10-12 14:46:21,441 [P2424/D12/T223] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:46:21,526 [P2424/D12/T223] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:46:21,537 [P2424/D12/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3244ms)
+ 2017-10-12 14:46:21,699 [P2424/D12/T128] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:46:21,832 [P2424/D12/T128] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:46:21,834 [P2424/D12/T128] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:46:21,895 [P2424/D12/T128] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:21,895 [P2424/D12/T128] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:46:21,895 [P2424/D12/T128] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:46:21,900 [P2424/D12/T128] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-10-12 14:46:24,019 [P2424/D12/T128] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:46:24,019 [P2424/D12/T128] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:46:24,019 [P2424/D12/T128] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:46:24,023 [P2424/D12/T128] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 3ms)
+ 2017-10-12 14:46:24,794 [P2424/D12/T128] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:46:25,496 [P2424/D12/T128] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:46:43,530 [P2424/D11/T128] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:47:21,971 [P2424/D12/T200] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:47:21
+ 2017-10-12 14:47:22,784 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:47:22,784 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:47:22,800 [P2424/D12/T89] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:47:22,800 [P2424/D12/T200] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:47:22,800 [P2424/D12/T41] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:47:22,800 [P2424/D12/T89] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:47:22,800 [P2424/D12/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:47:22,800 [P2424/D12/T128] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:47:29,109 [P2424/D13/T190] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:47:29,129 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:47:29,136 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 14:47:29,194 [P2424/D13/T190] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:47:29,195 [P2424/D13/T190] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:47:29,199 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:29,364 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 164ms)
+ 2017-10-12 14:47:29,364 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:47:29,369 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 4ms)
+ 2017-10-12 14:47:29,383 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:29,384 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:47:29,384 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:47:29,388 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-10-12 14:47:29,388 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:29,388 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:47:29,388 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:47:29,394 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 5ms)
+ 2017-10-12 14:47:29,405 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:29,406 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:47:29,406 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:47:29,410 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 3ms)
+ 2017-10-12 14:47:29,410 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:29,410 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:47:29,410 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:47:29,414 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 4ms)
+ 2017-10-12 14:47:30,592 [P2424/D13/T190] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:47:30,705 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:47:30,711 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 5ms)
+ 2017-10-12 14:47:30,765 [P2424/D13/T190] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:47:30,789 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:47:30,791 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:47:30,885 [P2424/D13/T190] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (72ms)
+ 2017-10-12 14:47:30,904 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:47:30,917 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:47:30,923 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:47:30,926 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:47:30,932 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:30,932 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:47:30,932 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:47:30,938 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:47:31,256 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:47:31,256 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:47:31,309 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:47:31,309 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:47:31,840 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:31,840 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:47:31,841 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:47:31,844 [P2424/D13/T190] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 3ms)
+ 2017-10-12 14:47:31,948 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:47:31,948 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:47:32,063 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:47:32,064 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:47:32,080 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:47:32,081 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:47:32,081 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:47:32,081 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:47:32,082 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:47:32,113 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:47:32,117 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:47:32,118 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:47:32,118 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:47:32,123 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_144732_Startup.config
+ 2017-10-12 14:47:32,129 [P2424/D13/T190] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1338ms)
+ 2017-10-12 14:47:32,174 [P2424/D13/T190] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:47:32,255 [P2424/D13/T190] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:47:32,262 [P2424/D13/T190] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3225ms)
+ 2017-10-12 14:47:32,379 [P2424/D13/T220] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:47:32,499 [P2424/D13/T220] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:47:32,502 [P2424/D13/T220] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:47:32,562 [P2424/D13/T220] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:32,562 [P2424/D13/T220] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:47:32,562 [P2424/D13/T220] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:47:32,566 [P2424/D13/T220] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 3ms)
+ 2017-10-12 14:47:34,686 [P2424/D13/T220] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:47:34,686 [P2424/D13/T220] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:47:34,686 [P2424/D13/T220] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:47:34,690 [P2424/D13/T220] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-10-12 14:47:35,470 [P2424/D13/T220] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:47:36,146 [P2424/D13/T220] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:47:52,865 [P2424/D12/T128] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:48:32,569 [P2424/D13/T72] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:48:32
+ 2017-10-12 14:50:07,472 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:50:07,472 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:50:07,472 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:50:07,472 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:50:07,472 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:50:07,472 [P2424/D13/T182] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:50:07,488 [P2424/D13/T220] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:50:07,488 [P2424/D13/T182] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:50:07,488 [P2424/D13/T109] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:50:07,488 [P2424/D13/T201] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:50:07,488 [P2424/D13/T182] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:50:15,892 [P2424/D14/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:50:15,910 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:50:15,918 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2017-10-12 14:50:15,973 [P2424/D14/T223] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:50:15,974 [P2424/D14/T223] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:50:15,983 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:16,186 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 203ms)
+ 2017-10-12 14:50:16,186 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:50:16,193 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 7ms)
+ 2017-10-12 14:50:16,210 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:16,210 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:50:16,210 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:50:16,214 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-10-12 14:50:16,214 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:16,215 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:50:16,215 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:50:16,220 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 5ms)
+ 2017-10-12 14:50:16,233 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:16,233 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:50:16,233 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:50:16,237 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 4ms)
+ 2017-10-12 14:50:16,238 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:16,238 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:50:16,238 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:50:16,243 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 5ms)
+ 2017-10-12 14:50:17,534 [P2424/D14/T223] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:50:17,661 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:50:17,668 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 6ms)
+ 2017-10-12 14:50:17,726 [P2424/D14/T223] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:50:17,749 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:50:17,752 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:50:17,854 [P2424/D14/T223] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (77ms)
+ 2017-10-12 14:50:17,873 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:50:17,887 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:50:17,893 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:50:17,896 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:50:17,901 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:17,901 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:50:17,901 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:50:17,907 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:50:18,235 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:50:18,235 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:50:18,288 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:50:18,289 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:50:18,817 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:18,817 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:50:18,817 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:50:18,821 [P2424/D14/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 4ms)
+ 2017-10-12 14:50:18,927 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:50:18,927 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:50:19,044 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:50:19,045 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:50:19,063 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:50:19,063 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:50:19,064 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:50:19,064 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:50:19,064 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:50:19,097 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:50:19,101 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:50:19,102 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:50:19,102 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:50:19,107 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_145019_Startup.config
+ 2017-10-12 14:50:19,114 [P2424/D14/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1361ms)
+ 2017-10-12 14:50:19,229 [P2424/D14/T223] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:50:19,230 [P2424/D14/T223] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:50:19,237 [P2424/D14/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3411ms)
+ 2017-10-12 14:50:19,352 [P2424/D14/T109] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:50:19,475 [P2424/D14/T109] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:50:19,477 [P2424/D14/T109] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:50:19,550 [P2424/D14/T109] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:19,550 [P2424/D14/T109] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:50:19,551 [P2424/D14/T109] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:50:19,556 [P2424/D14/T109] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 5ms)
+ 2017-10-12 14:50:21,632 [P2424/D14/T109] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:50:21,632 [P2424/D14/T109] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:50:21,633 [P2424/D14/T109] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:50:21,638 [P2424/D14/T109] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 5ms)
+ 2017-10-12 14:50:22,398 [P2424/D14/T109] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:50:23,172 [P2424/D14/T109] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:50:37,545 [P2424/D13/T210] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:51:08,788 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:51:08,788 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:51:08,803 [P2424/D14/T41] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:51:08,803 [P2424/D14/T189] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:51:08,803 [P2424/D14/T41] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:51:08,803 [P2424/D14/T72] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:51:08,803 [P2424/D14/T196] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:51:08,803 [P2424/D14/T109] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:51:14,041 [P2424/D15/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:51:14,061 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:51:14,068 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Hash determined (took 6ms)
+ 2017-10-12 14:51:14,118 [P2424/D15/T223] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:51:14,120 [P2424/D15/T223] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:51:14,121 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:14,306 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 185ms)
+ 2017-10-12 14:51:14,307 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:51:14,312 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 5ms)
+ 2017-10-12 14:51:14,327 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:14,328 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:51:14,328 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:51:14,332 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+ 2017-10-12 14:51:14,332 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:14,333 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:51:14,333 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:51:14,338 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 4ms)
+ 2017-10-12 14:51:14,351 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:14,351 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:51:14,351 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:51:14,355 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 4ms)
+ 2017-10-12 14:51:14,356 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:14,356 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:51:14,356 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:51:14,360 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2017-10-12 14:51:15,538 [P2424/D15/T223] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:51:15,653 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:51:15,660 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 6ms)
+ 2017-10-12 14:51:15,714 [P2424/D15/T223] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:51:15,738 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:51:15,740 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:51:15,835 [P2424/D15/T223] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (73ms)
+ 2017-10-12 14:51:15,854 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:51:15,868 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:51:15,874 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:51:15,876 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:51:15,882 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:15,882 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:51:15,882 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:51:15,888 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:51:16,203 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:51:16,203 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:51:16,256 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:51:16,256 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:51:16,785 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:16,785 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:51:16,785 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:51:16,789 [P2424/D15/T223] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 3ms)
+ 2017-10-12 14:51:16,897 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:51:16,897 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:51:17,016 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:51:17,016 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:51:17,033 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:51:17,033 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:51:17,034 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:51:17,034 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:51:17,034 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:51:17,070 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:51:17,074 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:51:17,075 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:51:17,075 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:51:17,078 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_145117_Startup.config
+ 2017-10-12 14:51:17,085 [P2424/D15/T223] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1345ms)
+ 2017-10-12 14:51:17,205 [P2424/D15/T223] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:51:17,205 [P2424/D15/T223] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:51:17,215 [P2424/D15/T223] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3240ms)
+ 2017-10-12 14:51:17,334 [P2424/D15/T72] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:51:17,454 [P2424/D15/T72] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:51:17,456 [P2424/D15/T72] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:51:17,520 [P2424/D15/T72] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:17,520 [P2424/D15/T72] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:51:17,520 [P2424/D15/T72] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:51:17,525 [P2424/D15/T72] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-10-12 14:51:19,643 [P2424/D15/T72] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:51:19,643 [P2424/D15/T72] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:51:19,643 [P2424/D15/T72] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:51:19,648 [P2424/D15/T72] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-10-12 14:51:20,421 [P2424/D15/T72] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:51:21,117 [P2424/D15/T72] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:51:38,834 [P2424/D14/T196] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:52:17,260 [P2424/D15/T197] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 14:52:17,275 [P2424/D15/T182] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 14:52:17,275 [P2424/D15/T183] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 14:52:17,275 [P2424/D15/T5] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 14:52:17,275 [P2424/D15/T194] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 14:52:17,275 [P2424/D15/T181] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 14:52:17,275 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 14:52:17,291 [P2424/D15/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 14:52:22,741 [P2424/D16/T186] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 14:52:22,761 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 14:52:22,769 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 14:52:22,824 [P2424/D16/T186] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 14:52:22,825 [P2424/D16/T186] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 14:52:22,831 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:23,000 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 168ms)
+ 2017-10-12 14:52:23,001 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 14:52:23,005 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 4ms)
+ 2017-10-12 14:52:23,020 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:23,021 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:52:23,021 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 14:52:23,025 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-10-12 14:52:23,025 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:23,025 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:52:23,026 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 14:52:23,030 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 4ms)
+ 2017-10-12 14:52:23,041 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:23,041 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:52:23,041 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 14:52:23,045 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 4ms)
+ 2017-10-12 14:52:23,046 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:23,046 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:52:23,046 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 14:52:23,050 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2017-10-12 14:52:24,240 [P2424/D16/T186] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 14:52:24,353 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 14:52:24,360 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 6ms)
+ 2017-10-12 14:52:24,415 [P2424/D16/T186] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 14:52:24,547 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 14:52:24,549 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 14:52:24,632 [P2424/D16/T186] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (61ms)
+ 2017-10-12 14:52:24,651 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 14:52:24,664 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 14:52:24,671 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 14:52:24,673 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 14:52:24,679 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:24,679 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:52:24,679 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 14:52:24,685 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-10-12 14:52:24,999 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 14:52:24,999 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 14:52:25,052 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 14:52:25,052 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 14:52:25,581 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:25,581 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:52:25,581 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 14:52:25,586 [P2424/D16/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 4ms)
+ 2017-10-12 14:52:25,693 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 14:52:25,693 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 14:52:25,811 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 14:52:25,812 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 14:52:25,829 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 14:52:25,829 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 14:52:25,830 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:52:25,830 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 14:52:25,830 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 14:52:25,862 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 14:52:25,867 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 14:52:25,867 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 14:52:25,867 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 14:52:25,872 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_145225_Startup.config
+ 2017-10-12 14:52:25,879 [P2424/D16/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1329ms)
+ 2017-10-12 14:52:25,880 [P2424/D16/T186] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 14:52:25,881 [P2424/D16/T186] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 14:52:25,916 [P2424/D16/T186] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3246ms)
+ 2017-10-12 14:52:26,033 [P2424/D16/T182] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 14:52:26,156 [P2424/D16/T182] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 14:52:26,158 [P2424/D16/T182] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 14:52:26,221 [P2424/D16/T182] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:26,221 [P2424/D16/T182] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:52:26,221 [P2424/D16/T182] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 14:52:26,225 [P2424/D16/T182] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-10-12 14:52:28,302 [P2424/D16/T182] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 14:52:28,302 [P2424/D16/T182] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 14:52:28,303 [P2424/D16/T182] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 14:52:28,306 [P2424/D16/T182] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 3ms)
+ 2017-10-12 14:52:29,052 [P2424/D16/T182] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 14:52:29,736 [P2424/D16/T182] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 14:52:47,302 [P2424/D15/T183] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 14:53:26,211 [P2424/D16/T71] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 14:53:26
+ 2017-10-12 15:00:51,065 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-10-12 15:00:51,065 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-10-12 15:00:51,081 [P2424/D16/T219] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-10-12 15:00:51,081 [P2424/D16/T176] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-10-12 15:00:51,081 [P2424/D16/T169] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2017-10-12 15:00:51,081 [P2424/D16/T176] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-10-12 15:00:51,081 [P2424/D16/T211] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-10-12 15:00:51,081 [P2424/D16/T59] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-10-12 15:00:57,877 [P2424/D17/T186] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.7.1 application starting on DESKTOP-PLOGF3U
+ 2017-10-12 15:00:57,897 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-10-12 15:00:57,904 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-10-12 15:00:57,958 [P2424/D17/T186] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-10-12 15:00:57,960 [P2424/D17/T186] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-10-12 15:00:57,962 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:00:58,136 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 173ms)
+ 2017-10-12 15:00:58,136 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-10-12 15:00:58,141 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 5ms)
+ 2017-10-12 15:00:58,158 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:00:58,159 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 15:00:58,159 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-10-12 15:00:58,164 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+ 2017-10-12 15:00:58,164 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:00:58,164 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 15:00:58,164 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-10-12 15:00:58,170 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 5ms)
+ 2017-10-12 15:00:58,182 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:00:58,183 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 15:00:58,183 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-10-12 15:00:58,187 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 4ms)
+ 2017-10-12 15:00:58,188 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:00:58,188 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 15:00:58,188 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-10-12 15:00:58,192 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 4ms)
+ 2017-10-12 15:00:59,410 [P2424/D17/T186] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-10-12 15:00:59,525 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-10-12 15:00:59,531 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 5ms)
+ 2017-10-12 15:00:59,586 [P2424/D17/T186] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-10-12 15:00:59,611 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-10-12 15:00:59,613 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-10-12 15:00:59,714 [P2424/D17/T186] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (74ms)
+ 2017-10-12 15:00:59,733 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 16
+ 2017-10-12 15:00:59,746 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-10-12 15:00:59,753 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-10-12 15:00:59,755 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Processing a Delete: Umbraco.Core.Models.IDataTypeDefinition
+ 2017-10-12 15:00:59,761 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:00:59,761 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 15:00:59,761 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-10-12 15:00:59,767 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 6ms)
+ 2017-10-12 15:01:00,126 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 28 Items 1 changes 0 failures
+ 2017-10-12 15:01:00,126 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-10-12 15:01:00,182 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 6 Items 0 changes 0 failures
+ 2017-10-12 15:01:00,182 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-10-12 15:01:00,712 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:01:00,712 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 15:01:00,712 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-10-12 15:01:00,716 [P2424/D17/T186] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 3ms)
+ 2017-10-12 15:01:00,824 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 9 Items 1 changes 0 failures
+ 2017-10-12 15:01:00,825 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-10-12 15:01:00,942 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-10-12 15:01:00,942 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-10-12 15:01:00,959 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-10-12 15:01:00,960 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-10-12 15:01:00,960 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 15:01:00,960 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-10-12 15:01:00,961 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-10-12 15:01:00,991 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-10-12 15:01:00,996 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 47 items with 2 changes ###
+ 2017-10-12 15:01:00,996 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Delete Song text - Content grid Umbraco.Core.Models.IDataTypeDefinition Not found 
+ 2017-10-12 15:01:00,997 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncAction - Action: Import Main Page Umbraco.Core.Models.IContentType  E:\Repositories\Brute\BruteApp\BruteApp\uSync\data\DocumentType\main-page\def.config
+ 2017-10-12 15:01:01,001 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncActionLogger - Saving uSync Report: E:\Repositories\Brute\BruteApp\BruteApp\App_Data\temp\uSync\20171012_150101_Startup.config
+ 2017-10-12 15:01:01,008 [P2424/D17/T186] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (1394ms)
+ 2017-10-12 15:01:01,121 [P2424/D17/T186] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-10-12 15:01:01,121 [P2424/D17/T186] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-10-12 15:01:01,128 [P2424/D17/T186] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3324ms)
+ 2017-10-12 15:01:01,248 [P2424/D17/T209] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:8888/umbraco (UmbracoModule request)
+ 2017-10-12 15:01:01,371 [P2424/D17/T209] INFO  umbraco.content - Load Xml from file...
+ 2017-10-12 15:01:01,373 [P2424/D17/T209] INFO  umbraco.content - Loaded Xml from file.
+ 2017-10-12 15:01:01,376 [P2424/D17/T206] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generate models now.
+ 2017-10-12 15:01:01,427 [P2424/D17/T209] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:01:01,427 [P2424/D17/T209] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 15:01:01,427 [P2424/D17/T209] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-10-12 15:01:01,431 [P2424/D17/T209] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 3ms)
+ 2017-10-12 15:01:02,316 [P2424/D17/T206] INFO  Umbraco.ModelsBuilder.Umbraco.LiveModelsProvider - Generated.
+ 2017-10-12 15:01:03,542 [P2424/D17/T209] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-10-12 15:01:03,542 [P2424/D17/T209] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-10-12 15:01:03,542 [P2424/D17/T209] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-10-12 15:01:03,547 [P2424/D17/T209] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-10-12 15:01:21,158 [P2424/D16/T172] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\5512e166\9a30797f\hash\hash.web
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2017-10-12 15:02:01,436 [P2424/D17/T194] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-11 15:02:01

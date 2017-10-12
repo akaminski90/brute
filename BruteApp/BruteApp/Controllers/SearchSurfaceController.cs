@@ -39,22 +39,28 @@ namespace BruteApp.Controllers
             var songsResult = songs.Select(x => new
             {
                 id = x.Id,
-                text = x.Parent.GetPropertyValue<string>("navigationName") + " - " +
+                text = "<b>" + x.Parent.GetPropertyValue<string>("navigationName") + "</b>" + " - " +
                        x.GetPropertyValue<string>("songName"),
                 musician = x.Parent.GetPropertyValue<string>("navigationName"),
                 link = x.Url
             })
-            .OrderBy(x => x.text)
+            .Where(x => x.text.ToLower().Contains(q))
+            .AsEnumerable()
+            .OrderBy(x => x.text.ToLower().StartsWith(q) ? 0 : 1)
+            .ThenBy(x => x.text)
             .Take(50)
             .ToList();
             var musiciansResult = musicians.Select(x => new
                 {
                     id = x.Id,
-                    text = x.GetPropertyValue<string>("navigationName"),
+                    text = /*"Группа: " + */"<b>" + x.GetPropertyValue<string>("navigationName") + "</b>",
                     musician = x.GetPropertyValue<string>("navigationName"),
                     link = x.Url
                 })
-                .OrderBy(x => x.text)
+                .Where(x => x.musician.ToLower().Contains(q))
+                .AsEnumerable()
+                .OrderBy(x => x.musician.ToLower().StartsWith(q) ? 0 : 1)
+                .ThenBy(x => x.musician)
                 .Take(50)
                 .ToList();
 
