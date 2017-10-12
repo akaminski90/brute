@@ -270,6 +270,7 @@
     <Content Include="scripts\bootstrap.min.js" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery.lazy.js" />
+    <Content Include="scripts\jquery.slimscroll.min.js" />
     <Content Include="scripts\search.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -375,6 +376,7 @@
     <Compile Include="App_Data\Models\Section.generated.cs" />
     <Compile Include="App_Data\Models\Send.generated.cs" />
     <Compile Include="App_Data\Models\SEO.generated.cs" />
+    <Compile Include="App_Data\Models\SocialLinks.generated.cs" />
     <Compile Include="App_Data\Models\Song.generated.cs" />
     <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\MusicianSurfaceController.cs" />

@@ -6,6 +6,7 @@
 }
 
 @section styles {
+    <link href="~/css/select2.css" rel="stylesheet" />
     <link href="~/css/musician.css" rel="stylesheet" />
 }
 
@@ -27,8 +28,7 @@
         }
     }
 
-    <nav class="sidebar">
-        <ul>                   
+@section sidebar {
             <li>
                 <a href="javascript:void(0)">
                     <span>@Model.Content.NavigationName</span>
@@ -44,9 +44,7 @@
                     }
                 </ul>
             </li>
-            }
-        </ul>
-    </nav>
+}
 
     <article>
         <div class="content">

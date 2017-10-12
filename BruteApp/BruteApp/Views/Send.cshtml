@@ -11,29 +11,31 @@
     <link href="~/css/send.css" rel="stylesheet" />        
 }
 
-<nav class="sidebar">
-    <ul>
-        @foreach (var publishedContent in main.Musicians)
+@section sidebar {
+    @foreach (var publishedContent in main.Musicians)
+    {
+        if (publishedContent.DocumentTypeAlias != "musician")
         {
-            var musician = (Musician)publishedContent;
-            <li>
-                <a href="javascript:void(0)">
-                    <span>@musician.NavigationName</span>
-                    <i class="br-down"></i>
-                </a>
-                <ul class="collapse">
-                    @foreach (var publishedContent1 in musician.Children)
-                    {
-                        var song = (Song)publishedContent1;
-                        <li>
-                            <a href="@song.Url">@song.SongName</a>
-                        </li>
-                    }
-                </ul>
-            </li>
+            continue;
         }
-    </ul>
-</nav>
+        var musician = (Musician) publishedContent;
+        <li>
+            <a href="javascript:void(0)">
+                <span>@musician.NavigationName</span>
+                <i class="br-down"></i>
+            </a>
+            <ul class="collapse">
+                @foreach (var publishedContent1 in musician.Children)
+                {
+                    var song = (Song) publishedContent1;
+                    <li>
+                        <a href="@song.Url">@song.SongName</a>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+}
 
 
 
@@ -47,7 +49,7 @@
 
                         <h1>Отправьте нам свой перевод</h1>
                         <p>Для того, чтобы Ваш перевод разместили на сайте, Вам необходимо оформить его в данном текстовом файле
-                                <a href="#">Здесь будет текстовой файл на скачивание - шаюлон для оформления перевода</a>, а затем отправить нам через форму ниже.
+                                Здесь будет текстовой файл на скачивание - шаюлон для оформления перевода, а затем отправить нам через форму ниже.
                                 В случае, каких-либо неточностей, администрация свяжется с вами через электронную почту, потому указывайте СВОЙ КОРРЕКТНЫЙ почтовый ящик.</p>
                         <div class="row justify-content-center">
                             <div class="col-lg-9 col-xl-9 col-xxl-8">

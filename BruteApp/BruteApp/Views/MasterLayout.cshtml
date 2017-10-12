@@ -4,6 +4,7 @@
     Layout = null;
     var main = (MainPage)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<MainPage>()));
     var send = (Send)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<Send>()));
+    var social = (SocialLinks)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<SocialLinks>()));
 }
 
 @* the fun starts here *@
@@ -12,8 +13,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8"/>
-    <title>Перевод песен - Brute.by</title>
-    <link href="~/css/select2.css" rel="stylesheet" />
+    <title>Перевод песен - Brute.by</title>    
     @RenderSection("styles", false)
     <link href="~/css/gray.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -26,28 +26,57 @@
 
 </head>
 <body>
-    @RenderSection("svg", false)
 <div class="wrapper">
 
-<nav class="navbar">
-    <span class="bars"></span>
-    <div class="links">
-        <ul>
-            <li>
-                <a href="@main.Url">Главная страница</a>
-            </li>
-        </ul>
-        <ul class="send">
-            <li>
-                <a href="@send.Url">Отправьте свой перевод</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar">
+        <span class="bars"></span>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="@main.Url">Главная страница</a>
+                </li>
+            </ul>
+            <ul class="send">
+                <li>
+                    <a href="@send.Url">Отправьте свой перевод</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav class="sidebar">
+        <div class="menu-content">
+            <ul class="items">
+                @RenderSection("sidebar")
+            </ul>
+        </div>
+        @if (social != null)
+        {
+            <div class="social-links">
+                @foreach (var link in social.Links)
+                {
+                    <a href="@link.Link" @(link.NewWindow ? "target=_blank" : string.Empty)>
+                        <i class="@link.Caption"></i>
+                    </a>
+                }
+            </div>
+        }
+    </nav>
 
-@RenderBody()
+    @RenderBody()
 </div>
 @RenderSection("scripts", false)
+<script src="~/scripts/jquery.slimscroll.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.lazy').Lazy({
+            scrollDirection: 'vertical',
+            visibleOnly: true,
+            effect: 'fadeIn',
+            effectTime: 250
+        });
+    });
+</script>
 </body>
 </html>
 
