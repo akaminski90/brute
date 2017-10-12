@@ -564,3 +564,6 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2017-10-12 12:27:48,401 [P2424/D4/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Social Links' with Id '1230' has been published.
  2017-10-12 12:27:52,459 [P2424/D4/T17] INFO  umbraco.content - Save Xml to file...
  2017-10-12 12:27:52,468 [P2424/D4/T17] INFO  umbraco.content - Saved Xml to file.
+ 2017-10-12 12:34:48,809 [P2424/D4/T51] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Executing Umbraco RouteDefinition controller
+ 2017-10-12 12:34:48,836 [P2424/D4/T51] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Finished (took 27ms)
+ 2017-10-12 12:47:22,192 [P2424/D4/T110] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: akaminski@dev-team.com, IP Address: ::1

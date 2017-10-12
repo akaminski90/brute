@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Перевод песни</title>
+    <link href="css/select2.css" rel="stylesheet" />
     <link href="css/musician.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex, nofollow"/>
     <meta name="description" content=""/>
     <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/select2.full.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -219,10 +221,7 @@
                     <div class="filters-section">
                         <div class="col-xl-5">
                             <div class="search">
-                                <input placeholder="Введите название группы"/>
-                                <button>
-                                    <i class="br-search"></i>
-                                </button>
+                                <select class="search-bar" type="text" placeholder="Введите название группы" autocomplete="off" autocorrect="off"></select>
                             </div>
                         </div>
                         <div class="col-xl-7 no-padding">
@@ -382,5 +381,6 @@
 </div>
 <script src="scripts/main.js"></script>
 <script src="scripts/jquery.slimscroll.min.js"></script>
+<script src="scripts/search.js"></script>
 </body>
 </html>
