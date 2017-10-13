@@ -2326,3 +2326,4 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2017-10-13 14:56:08,031 [P2424/D22/T134] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Finished (took 15ms)
  2017-10-13 14:56:11,077 [P2424/D22/T5] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Executing Umbraco RouteDefinition controller
  2017-10-13 14:56:11,094 [P2424/D22/T5] INFO  Umbraco.Web.Mvc.UmbracoPageResult - Finished (took 17ms)
+ 2017-10-13 16:59:36,084 [P2424/D22/T144] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-10-12 16:59:36
