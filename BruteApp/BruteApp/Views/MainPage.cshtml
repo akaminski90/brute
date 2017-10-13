@@ -17,7 +17,7 @@
                     if (publishedContent.DocumentTypeAlias != "musician") { continue; }
                     var mus = (Musician)publishedContent;
                     <li>
-                        <a href="javascript:void(0)">
+                        <a href="@mus.Url">
                             <span>@mus.NavigationName</span>
                             <i class="br-down"></i>
                         </a>
@@ -76,15 +76,6 @@
 @section scripts {
     <script src="~/scripts/main.js"></script>    
     @*<script>
-        $(document).ready(function() {
-            $('.lazy').Lazy({
-                scrollDirection: 'vertical',
-                visibleOnly: true,
-                effect: 'fadeIn',
-                effectTime: 250
-            });
-        });
-
         //var count = 0;
 
         //$('#load').on('click',

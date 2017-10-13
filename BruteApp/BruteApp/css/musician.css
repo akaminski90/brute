@@ -2293,6 +2293,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden;
+  padding: 50px 0 0;
 }
 
 article {
@@ -2303,6 +2304,7 @@ article {
   -webkit-transition: margin .2s;
   transition: margin .2s;
   height: 100%;
+  overflow: auto;
 }
 
 @media (min-width: 900px) {
@@ -2318,12 +2320,10 @@ article {
 
 .content {
   position: relative;
-  min-height: -webkit-calc(100% - 50px);
-  min-height: calc(100% - 50px);
+  min-height: 100%;
   -webkit-transition: left .2s;
   transition: left .2s;
   left: 0;
-  margin: 50px 0 0;
   background-color: #fff;
 }
 
@@ -2677,7 +2677,6 @@ footer ul li a span {
 .sidebar .menu-content {
   height: -webkit-calc(100% - 50px);
   height: calc(100% - 50px);
-  overflow: auto;
 }
 
 .sidebar .menu-content .items > li:first-child {
@@ -2700,6 +2699,10 @@ footer ul li a span {
 
 .sidebar .menu-content .items > li > a:hover {
   background-color: #e5ecf1;
+}
+
+.sidebar .menu-content .items > li > a icon {
+  font-size: 1.3rem;
 }
 
 .sidebar .menu-content .items > li.active .collapse {
@@ -2741,6 +2744,10 @@ footer ul li a span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-weight: 400;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sidebar .brute-down {
