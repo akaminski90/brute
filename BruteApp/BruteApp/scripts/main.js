@@ -2,13 +2,12 @@ $(document).ready(function () {
     /*SWIPE*/
     $(document).swipe({
         swipeLeft: function (e) {
-            e.preventDefault();
             hideSidebar();
         },
         swipeRight: function (e) {
-            e.preventDefault();
             showSidebar();
-        }
+        },
+        excludedElements: $.fn.swipe.defaults.excludedElements + ", form *"
     });
 
     /*ARROWS*/
