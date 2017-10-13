@@ -163,7 +163,17 @@
 @section scripts {
     <script src="~/scripts/select2.min.js"></script>
     <script src="~/scripts/jquery.lazy.js"></script>
-    <script src="~/scripts/search.js"></script>  
+    <script src="~/scripts/search.js"></script> 
+    <script>
+        $(document).ready(function() {
+            $('.lazy').Lazy({
+                scrollDirection: 'vertical',
+                visibleOnly: true,
+                effect: 'fadeIn',
+                effectTime: 250
+            });
+        });
+    </script>
 }
 
 @helper CreateCatlogMenu()
