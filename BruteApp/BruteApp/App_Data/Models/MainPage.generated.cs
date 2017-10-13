@@ -22,7 +22,7 @@ namespace Umbraco.Web.PublishedContentModels
 {
 	/// <summary>Main Page</summary>
 	[PublishedContentModel("mainPage")]
-	public partial class MainPage : PublishedContentModel, INavigation, ISEO
+	public partial class MainPage : PublishedContentModel, ISEO
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "mainPage";
@@ -55,12 +55,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Navigation Name: Page name for navbar
+		/// Songs On Page: Number of songs on page of a band/musician
 		///</summary>
-		[ImplementPropertyType("navigationName")]
-		public string NavigationName
+		[ImplementPropertyType("songsOnPage")]
+		public int SongsOnPage
 		{
-			get { return Umbraco.Web.PublishedContentModels.Navigation.GetNavigationName(this); }
+			get { return this.GetPropertyValue<int>("songsOnPage"); }
 		}
 
 		///<summary>

@@ -366,7 +366,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Data\Models\Catalog.generated.cs" />
     <Compile Include="App_Data\Models\File.generated.cs" />
     <Compile Include="App_Data\Models\Folder.generated.cs" />
     <Compile Include="App_Data\Models\Image.generated.cs" />

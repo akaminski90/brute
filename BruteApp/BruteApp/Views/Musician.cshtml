@@ -12,7 +12,7 @@
 
 @{
     var selection = Model.Content.Children.OrderBy(x => x.GetPropertyValue("NavigationName"));
-    var pageSize = (int)Model.Content.Ancestor(2).GetPropertyValue("SongsOnPage") > 0 ? (int)Model.Content.Ancestor(2).GetPropertyValue("SongsOnPage") : 10;
+    var pageSize = (int)Model.Content.Parent.Parent.GetPropertyValue("SongsOnPage") > 0 ? (int)Model.Content.Parent.Parent.GetPropertyValue("SongsOnPage") : 10;
     var pages = 1;
     int.TryParse(Request.QueryString["pages"], out pages);
     var totalPages = (int)Math.Ceiling((double)selection.Count() / pageSize);
@@ -160,15 +160,15 @@
 
 @helper CreateCatlogMenu()
 {
-    var catalog = (Catalog) Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<Catalog>()));
+var sections = Umbraco.TypedContentAtXPath("//section");
 
     <div class="col-xl-7 no-padding">
         <div class="filter">
             <p>Выберите исполнителя по первой букве (цифре):</p>
             <ul>
-                @foreach (var item in catalog.Children.OrderBy(x => x.GetPropertyValue("NavigationName")))
+                @foreach (var item in sections.OrderBy(x => x.GetPropertyValue("NavigationName")))
                 {
-                    if ((string) item.GetPropertyValue("navigationName") != string.Empty)
+                    if ((string)item.GetPropertyValue("navigationName") != string.Empty)
                     {
                         <li>
                             <a href="@item.Url">@item.GetPropertyValue("navigationName")</a>

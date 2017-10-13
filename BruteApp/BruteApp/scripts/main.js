@@ -37,7 +37,7 @@ var hideSidebar = function () {
 
 var showSidebar = function() {
     $('.sidebar').css('left', '0px');
-    if ($(window).innerWidth >= 900) {
+    if ($(window).innerWidth() >= 900) {
         $('body article').css('margin-left', '300px');
         $('.content').css('left', '0px');
     } else {

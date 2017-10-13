@@ -22,7 +22,7 @@ namespace Umbraco.Web.PublishedContentModels
 {
 	/// <summary>Send</summary>
 	[PublishedContentModel("send")]
-	public partial class Send : PublishedContentModel, INavigation, ISEO
+	public partial class Send : PublishedContentModel, ISEO
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "send";
@@ -52,15 +52,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public IHtmlString Description
 		{
 			get { return this.GetPropertyValue<IHtmlString>("description"); }
-		}
-
-		///<summary>
-		/// Navigation Name: Page name for navbar
-		///</summary>
-		[ImplementPropertyType("navigationName")]
-		public string NavigationName
-		{
-			get { return Umbraco.Web.PublishedContentModels.Navigation.GetNavigationName(this); }
 		}
 
 		///<summary>
