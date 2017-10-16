@@ -141,3 +141,4 @@ E:\Repositories\Brute\BruteApp\BruteApp\bin\Umbraco.Web.UI.xml
 E:\Repositories\Brute\BruteApp\BruteApp\bin\UmbracoExamine.xml
 E:\Repositories\Brute\BruteApp\BruteApp\obj\Debug\BruteApp.dll
 E:\Repositories\Brute\BruteApp\BruteApp\obj\Debug\BruteApp.pdb
+E:\Repositories\Brute\BruteApp\BruteApp\obj\Debug\BruteApp.csprojResolveAssemblyReference.cache

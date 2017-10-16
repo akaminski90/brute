@@ -29,13 +29,13 @@
     }
 
 @section sidebar {
-            <li>
+            <li class="active">
                 <a href="@Model.Content.Url">
                     <span>@Model.Content.NavigationName</span>
                     <i class="br-down"></i>
                 </a>
                 <ul class="collapse">
-                    @foreach (var publishedContent in Model.Content.Children)
+                    @foreach (var publishedContent in Model.Content.Children.OrderBy(x => x.GetPropertyValue("songName")))
                     {
                         var song = (Song)publishedContent;
                         <li>
@@ -156,17 +156,9 @@
 
 @section scripts {
     <script src="~/scripts/select2.min.js"></script>
-    <script src="~/scripts/jquery.lazy.js"></script>
     <script src="~/scripts/search.js"></script>
     <script>
-        $(document).ready(function() {
-            $('.lazy').Lazy({
-                scrollDirection: 'vertical',
-                visibleOnly: true,
-                effect: 'fadeIn',
-                effectTime: 250
-            });
-        });
+        
     </script>
 }
 

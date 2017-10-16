@@ -48,7 +48,7 @@ namespace BruteApp.Controllers
             .AsEnumerable()
             .OrderBy(x => x.text.ToLower().StartsWith(q) ? 0 : 1)
             .ThenBy(x => x.text)
-            .Take(50)
+            .Take(10)
             .ToList();
             var musiciansResult = musicians.Select(x => new
                 {
@@ -61,7 +61,7 @@ namespace BruteApp.Controllers
                 .AsEnumerable()
                 .OrderBy(x => x.musician.ToLower().StartsWith(q) ? 0 : 1)
                 .ThenBy(x => x.musician)
-                .Take(50)
+                .Take(5)
                 .ToList();
 
             musiciansResult.AddRange(songsResult);

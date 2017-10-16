@@ -73,7 +73,7 @@
                         var musician = (Musician) publishedContent;
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
                             <a href="@musician.Url" class="musician">
-                                <img class="lazy" data-src="@(Url.GetCropUrl(musician, "image", "musicianCropper"))"/>
+                                <img src="@(Url.GetCropUrl(musician, "image", "musicianCropper"))"/>
                                 <div class="description">
                                     <p>@musician.NavigationName</p>
                                     <span>перевод песен</span>
@@ -162,18 +162,7 @@
 
 @section scripts {
     <script src="~/scripts/select2.min.js"></script>
-    <script src="~/scripts/jquery.lazy.js"></script>
     <script src="~/scripts/search.js"></script> 
-    <script>
-        $(document).ready(function() {
-            $('.lazy').Lazy({
-                scrollDirection: 'vertical',
-                visibleOnly: true,
-                effect: 'fadeIn',
-                effectTime: 250
-            });
-        });
-    </script>
 }
 
 @helper CreateCatlogMenu()

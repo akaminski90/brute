@@ -19,13 +19,13 @@
 
 
 @section sidebar {
-        <li>
+        <li class="active">
             <a href="@Model.Content.Parent.Url">
                 <span>@Model.Content.Parent.GetPropertyValue("navigationName")</span>
                 <i class="br-down"></i>
             </a>
             <ul class="collapse">
-                @foreach (var publishedContent in Model.Content.Parent.Children)
+                @foreach (var publishedContent in Model.Content.Parent.Children.OrderBy(x => x.GetPropertyValue("songName")))
                 {
                     var song = (Song)publishedContent;
                     <li @(song.SongName == Model.Content.SongName ? "class=active" : string.Empty)>
@@ -112,18 +112,7 @@
 
 @section scripts {
     <script src="~/scripts/select2.min.js"></script>
-    <script src="~/scripts/jquery.lazy.js"></script>
     <script src="~/scripts/search.js"></script>  
-    <script>
-        $(document).ready(function() {
-            $('.lazy').Lazy({
-                scrollDirection: 'vertical',
-                visibleOnly: true,
-                effect: 'fadeIn',
-                effectTime: 250
-            });
-        });
-    </script>
 }
 
 @helper CreateCatlogMenu()
