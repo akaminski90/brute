@@ -35,7 +35,7 @@ var hideSidebar = function () {
     $('.content').css('left', '0px');
 };
 
-var showSidebar = function() {
+var showSidebar = function () {
     $('.sidebar').css('left', '0px');
     if ($(window).innerWidth >= 900) {
         $('body article').css('margin-left', '300px');
@@ -47,9 +47,20 @@ var showSidebar = function() {
 }
 
 /*SCROLL*/
-$(function(){
+$(function () {
     $('.menu-content .items').slimScroll({
         height: '100%',
         size: '4px'
     });
 });
+
+
+/*Print*/
+
+function printTranslation() {
+    $('.text, .song > h1, .for-print').printThis({
+        importCSS: true,
+        loadCSS: "http://localhost:63342/prototype/css/print.css"
+    });
+}
+
