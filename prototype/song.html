@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Перевод песни</title>
-    <link href="css/selecet2.css" rel="stylesheet"/>
+    <link href="css/select2.css" rel="stylesheet"/>
     <link href="css/song.css" rel="stylesheet"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -367,12 +367,12 @@
                             </p>
                             <div class="btns-panel">
                                 <div class="left">
-                                    <button title="Скопировать оригинал" class="">
+                                    <button id="original" title="Скопировать оригинал" class="">
                                         <i class="br-copy"></i>
                                     </button>
                                 </div>
                                 <div class="right">
-                                    <button title="Скопировать перевод">
+                                    <button id="translation" title="Скопировать перевод">
                                         <i class="br-copy"></i>
                                     </button>
                                     <button onclick="printTranslation()" title="Распечатать">
@@ -869,9 +869,12 @@
         </div>
     </article>
 </div>
+<script src="scripts/select2.min.js"></script>
+<script src="scripts/search.js"></script>
 <script src="scripts/jquery.slimscroll.min.js"></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/jquery.touchSwipe.min.js"></script>
 <script src="scripts/printThis.js"></script>
+<script src="scripts/clipboard.min.js"></script> 
 </body>
 </html>

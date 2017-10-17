@@ -55,6 +55,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Song Name Translation
+		///</summary>
+		[ImplementPropertyType("songNameTranslation")]
+		public string SongNameTranslation
+		{
+			get { return this.GetPropertyValue<string>("songNameTranslation"); }
+		}
+
+		///<summary>
 		/// Song Text
 		///</summary>
 		[ImplementPropertyType("songText")]

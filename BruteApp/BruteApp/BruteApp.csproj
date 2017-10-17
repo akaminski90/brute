@@ -266,18 +266,17 @@
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
     <EmbeddedResource Include="Resources\Feedback.txt" />
-    <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
-    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\clipboard.min.js" />
+    <Content Include="scripts\jquery.gray.min.js" />
     <Content Include="scripts\jquery.lazy.js" />
     <Content Include="scripts\jquery.slimscroll.min.js" />
     <Content Include="scripts\jquery.touchSwipe.min.js" />
+    <Content Include="scripts\printThis.js" />
     <Content Include="scripts\search.js" />
-    <Content Include="scripts\jquery-1.10.2.js" />
-    <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\jquery-3.2.1.min.js" />
     <Content Include="scripts\main.js" />
-    <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="scripts\select2.min.js" />
     <Content Include="scripts\send.js" />
     <Content Include="scripts\tether.min.js" />
     <Content Include="Views\Web.config" />
@@ -319,16 +318,12 @@
     <Content Include="css\musician.css.map" />
     <Content Include="css\send.css.map" />
     <Content Include="css\song.css.map" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="fonts\brute.eot" />
     <Content Include="fonts\brute.ttf" />
     <Content Include="fonts\brute.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Search\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

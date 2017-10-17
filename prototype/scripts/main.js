@@ -1,15 +1,17 @@
 $(document).ready(function () {
     /*SWIPE*/
-    $(document).swipe({
-        swipeLeft: function (e) {
-            e.preventDefault();
-            hideSidebar();
-        },
-        swipeRight: function (e) {
-            e.preventDefault();
-            showSidebar();
-        }
-    });
+    if (isMobile() == true) {
+        $(document).swipe({
+            swipeLeft: function(e) {
+                hideSidebar();
+            },
+            swipeRight: function(e) {
+                showSidebar();
+            },
+            excludedElements: $.fn.swipe.defaults.excludedElements + ", form *",
+            treshold: 75
+        });
+    };
 
     /*ARROWS*/
     $('.sidebar .items > li > a').click(function (e) {
@@ -29,20 +31,29 @@ $(document).ready(function () {
     });
 });
 
-var hideSidebar = function () {
+function hideSidebar() {
     $('.sidebar').css('left', '-300px');
     $('body article').css('margin-left', '0px');
     $('.content').css('left', '0px');
 };
 
-var showSidebar = function () {
+function showSidebar() {
     $('.sidebar').css('left', '0px');
-    if ($(window).innerWidth >= 900) {
+    if ($(window).innerWidth() >= 900) {
         $('body article').css('margin-left', '300px');
         $('.content').css('left', '0px');
     } else {
         $('.content').css('left', '300px');
         $('body article').css('margin-left', '0px');
+    }
+}
+
+function isMobile() {
+    try {
+        document.createEvent("TouchEvent");
+        return true;
+    } catch (e) {
+        return false;
     }
 }
 
@@ -60,7 +71,7 @@ $(function () {
 function printTranslation() {
     $('.text, .song > h1, .for-print').printThis({
         importCSS: true,
-        loadCSS: "http://localhost:63342/prototype/css/print.css"
+        loadCSS: "/css/print.css"
     });
 }
 

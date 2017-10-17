@@ -2419,6 +2419,14 @@ h1 {
   content: "\69";
 }
 
+.br-copy:before {
+  content: "\6a";
+}
+
+.br-print:before {
+  content: "\6b";
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -2701,7 +2709,7 @@ footer ul li a span {
   background-color: #e5ecf1;
 }
 
-.sidebar .menu-content .items > li > a icon {
+.sidebar .menu-content .items > li > a i {
   font-size: 1.3rem;
 }
 
@@ -2974,6 +2982,25 @@ footer ul li a span {
   padding: .5rem 0;
 }
 
+.song .text .string.title {
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  .song .text .string.title {
+    font-size: 2rem;
+  }
+}
+
+.song .text .string.title .original, .song .text .string.title .translate {
+  padding: 1rem;
+}
+
+.song .text .string.title:hover {
+  background-color: transparent;
+}
+
 @media (min-width: 320px) {
   .song .text .string {
     display: -webkit-box;
@@ -3014,6 +3041,43 @@ footer ul li a span {
   font-weight: 600;
 }
 
+.song .btns-panel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.song .btns-panel .left, .song .btns-panel .right {
+  width: 50%;
+}
+
+.song .btns-panel .left button, .song .btns-panel .right button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #546e7f;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+.song .btns-panel .left button:hover, .song .btns-panel .right button:hover {
+  background-color: #f6f6f6;
+}
+
+.song .btns-panel .left i, .song .btns-panel .right i {
+  color: #546e7f;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.song .for-print {
+  display: none;
+}
+
 .author {
   display: none;
   -webkit-box-flex: 1;
@@ -3048,7 +3112,5 @@ footer ul li a span {
   display: block;
   text-align: right;
 }
-
-/*# sourceMappingURL=song.css.map */
 
 /*# sourceMappingURL=song.css.map */

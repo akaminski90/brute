@@ -56,6 +56,7 @@
                 <div class="col-lg-10">
                     <div class="song">
                         <h1>@Model.Content.Parent.GetPropertyValue("NavigationName") - @Model.Content.SongName перевод песни</h1>
+                        <span class="for-print">Brute.by - Перевод песен со всех языков</span>
                         <p>
                             Перевод песни <strong>@Model.Content.SongName</strong> @((bool) Model.Content.Parent.GetPropertyValue("Band") ? "группы" : "исполнителя")
                             <strong>@Model.Content.Parent.GetPropertyValue("NavigationName")</strong>
@@ -64,22 +65,38 @@
                             слушателя автор песни. Если у Вас есть замечания к переводу или его адаптации на русский язык, пожалуйста,
                             сообщите это в комментариях, и мы обязательно внесём поправки, а Ваша помощь не останется незамеченной.
                         </p>
-                        @{
-
+                        <div class="btns-panel">
+                            <div class="left">
+                                <button id="original"  title="Скопировать оригинал">
+                                    <i class="br-copy"></i>
+                                </button>
+                            </div>
+                            <div class="right">
+                                <button id="translation" title="Скопировать перевод">
+                                    <i class="br-copy"></i>
+                                </button>
+                                <button onclick="printTranslation()" title="Распечатать">
+                                    <i class="br-print"></i>
+                                </button>
+                            </div>
+                        </div>                        
                             <div class="text">
+                                @if (!string.IsNullOrEmpty(Model.Content.SongName) || !string.IsNullOrEmpty(Model.Content.SongNameTranslation))
+                                {
+                                    <div class="string title">
+                                        <div class="original">@Model.Content.SongName</div>
+                                        <div class="translate">@Model.Content.SongNameTranslation</div>
+                                    </div>
+                                }
                                 @foreach (var item in CurrentPage.SongText)
                                 {
                                     <div class="string">
-                                        <div class="original">
-                                            @item.OriginalText
-                                        </div>
-                                        <div class="translate">
-                                            @item.TranslatedText
-                                        </div>
+                                        <div class="original">@item.OriginalText</div>
+                                        <div class="translate">@item.TranslatedText</div>
                                     </div>
                                 }
                             </div>
-                        }
+                            <span class="for-print">@main.UrlAbsolute() - Перевод песен со всех языков</span>                        
                     </div>
                 </div>
 
@@ -112,7 +129,9 @@
 
 @section scripts {
     <script src="~/scripts/select2.min.js"></script>
-    <script src="~/scripts/search.js"></script>  
+    <script src="~/scripts/search.js"></script>
+    <script src="~/scripts/printThis.js"></script>
+    <script src="~/scripts/clipboard.min.js"></script>    
 }
 
 @helper CreateCatlogMenu()

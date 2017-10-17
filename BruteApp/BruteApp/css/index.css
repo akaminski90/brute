@@ -2419,6 +2419,14 @@ h1 {
   content: "\69";
 }
 
+.br-copy:before {
+  content: "\6a";
+}
+
+.br-print:before {
+  content: "\6b";
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -2701,7 +2709,7 @@ footer ul li a span {
   background-color: #e5ecf1;
 }
 
-.sidebar .menu-content .items > li > a icon {
+.sidebar .menu-content .items > li > a i {
   font-size: 1.3rem;
 }
 

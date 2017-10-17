@@ -9,9 +9,9 @@ $(document).ready(function () {
                 showSidebar();
             },
             excludedElements: $.fn.swipe.defaults.excludedElements + ", form *",
-            threshold: 75
+            treshold: 75
         });
-    }
+    };
 
     /*ARROWS*/
     $('.sidebar .items > li > a').click(function (e) {
@@ -49,14 +49,29 @@ function showSidebar() {
 }
 
 function isMobile() {
-    try { document.createEvent("TouchEvent"); return true; }
-    catch (e) { return false; }
+    try {
+        document.createEvent("TouchEvent");
+        return true;
+    } catch (e) {
+        return false;
+    }
 }
 
 /*SCROLL*/
-$(function(){
+$(function () {
     $('.menu-content .items').slimScroll({
         height: '100%',
         size: '4px'
     });
 });
+
+
+/*Print*/
+
+function printTranslation() {
+    $('.text, .song > h1, .for-print').printThis({
+        importCSS: true,
+        loadCSS: "/css/print.css"
+    });
+}
+
