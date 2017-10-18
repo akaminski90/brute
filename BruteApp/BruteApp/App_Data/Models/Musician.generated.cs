@@ -64,6 +64,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Section
+		///</summary>
+		[ImplementPropertyType("musicianSection")]
+		public IPublishedContent MusicianSection
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("musicianSection"); }
+		}
+
+		///<summary>
 		/// Navigation Name: Page name for navbar
 		///</summary>
 		[ImplementPropertyType("navigationName")]

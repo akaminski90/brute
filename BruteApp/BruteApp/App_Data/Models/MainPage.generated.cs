@@ -46,6 +46,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Bottom Title
+		///</summary>
+		[ImplementPropertyType("bottomTitle")]
+		public string BottomTitle
+		{
+			get { return this.GetPropertyValue<string>("bottomTitle"); }
+		}
+
+		///<summary>
 		/// Musicians
 		///</summary>
 		[ImplementPropertyType("musicians")]
@@ -61,6 +70,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public int SongsOnPage
 		{
 			get { return this.GetPropertyValue<int>("songsOnPage"); }
+		}
+
+		///<summary>
+		/// Top Title
+		///</summary>
+		[ImplementPropertyType("topTitle")]
+		public string TopTitle
+		{
+			get { return this.GetPropertyValue<string>("topTitle"); }
 		}
 
 		///<summary>

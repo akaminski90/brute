@@ -56,7 +56,7 @@
                 <div class="col-lg-10">
                     <div class="song">
                         <h1>@Model.Content.Parent.GetPropertyValue("NavigationName") - @Model.Content.SongName перевод песни</h1>
-                        <span class="for-print">Brute.by - Перевод песен со всех языков</span>
+                        <span class="for-print">@main.TopTitle</span>
                         <p>
                             Перевод песни <strong>@Model.Content.SongName</strong> @((bool) Model.Content.Parent.GetPropertyValue("Band") ? "группы" : "исполнителя")
                             <strong>@Model.Content.Parent.GetPropertyValue("NavigationName")</strong>
@@ -96,7 +96,7 @@
                                     </div>
                                 }
                             </div>
-                            <span class="for-print">@main.UrlAbsolute() - Перевод песен со всех языков</span>                        
+                            <span class="for-print">@main.BottomTitle</span>                        
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@
 
 @helper CreateCatlogMenu()
 {
-    var sections = Umbraco.TypedContentAtXPath("//section");
+    var sections = Umbraco.TypedContentAtXPath("//section");    
 
     <div class="col-xl-7 no-padding">
         <div class="filter">

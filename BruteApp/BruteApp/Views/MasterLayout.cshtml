@@ -13,12 +13,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8"/>
-    <title>Перевод песен - Brute.by</title>    
+    <title>@CurrentPage.GetPropertyValue("pageTitle")</title>    
     @RenderSection("styles", false)
     <link href="~/css/gray.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex, nofollow"/>
-    <meta name="description" content=""/>
+    <meta name="description" content="@CurrentPage.GetPropertyValue("metaDescription")"/>
     <script src="~/scripts/jquery-3.2.1.min.js"></script>    
 </head>
 <body>

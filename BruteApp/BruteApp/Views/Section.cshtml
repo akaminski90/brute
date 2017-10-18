@@ -12,11 +12,13 @@
 }
 
 @{
-    var selection = Model.Content.Children.OrderBy(x => x.GetPropertyValue("NavigationName"));
+    var musicians = Umbraco.TypedContentAtXPath("//musician");
+    //musicians = musicians.Where(x => x.GetPropertyValue("navigationName") != null && x.GetPropertyValue<string>("navigationName").ToLower().Substring(0,1) == Model.Content.NavigationName.ToLower()).OrderBy(x => x.GetPropertyValue("navigationName"));
+    musicians = musicians != null ? musicians.Select(x => new Musician(x)).Where(x => x.MusicianSection != null && x.MusicianSection.Id == Model.Content.Id) : null;
     const int pageSize = 30;
     var pages = 1;
     int.TryParse(Request.QueryString["pages"], out pages);
-    var totalPages = (int) Math.Ceiling((double) selection.Count() / pageSize);
+    var totalPages = (int) Math.Ceiling((double) musicians.Count() / pageSize);
     if (pages > totalPages)
     {
         pages = totalPages;
@@ -31,7 +33,7 @@
 
 
 @section sidebar {
-    @foreach (var publishedContent in selection.Skip((pages - 1) * pageSize).Take(pageSize))
+    @foreach (var publishedContent in musicians.Skip((pages - 1) * pageSize).Take(pageSize))
     {
         var musician = (Musician) publishedContent;
         <li>
@@ -68,7 +70,7 @@
 
                 <div class="row" id="musicians">
                     
-                    @foreach (var publishedContent in selection.Skip((pages - 1) * pageSize).Take(pageSize))
+                    @foreach (var publishedContent in musicians.Skip((pages - 1) * pageSize).Take(pageSize))
                     {
                         var musician = (Musician) publishedContent;
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">

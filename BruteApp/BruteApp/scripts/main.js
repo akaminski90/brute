@@ -1,15 +1,15 @@
 $(document).ready(function () {
     /*SWIPE*/
-    if (isMobile() == true) {
+    if (isMobile() === true) {
         $(document).swipe({
-            swipeLeft: function(e) {
+            swipeLeft: function() {
                 hideSidebar();
             },
-            swipeRight: function(e) {
+            swipeRight: function() {
                 showSidebar();
             },
             excludedElements: $.fn.swipe.defaults.excludedElements + ", form *",
-            treshold: 75
+            threshold: 75
         });
     };
 
