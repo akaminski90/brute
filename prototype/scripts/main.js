@@ -75,3 +75,6 @@ function printTranslation() {
     });
 }
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

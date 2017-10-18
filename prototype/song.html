@@ -5,17 +5,14 @@
     <title>Перевод песни</title>
     <link href="css/select2.css" rel="stylesheet"/>
     <link href="css/song.css" rel="stylesheet"/>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex, nofollow"/>
     <meta name="description" content=""/>
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/select2.min.js"></script>
-
 </head>
 <body>
 <div class="wrapper">
-
     <nav class="navbar">
         <span class="bars"></span>
         <div class="links">
@@ -367,15 +364,15 @@
                             </p>
                             <div class="btns-panel">
                                 <div class="left">
-                                    <button id="original" title="Скопировать оригинал" class="">
+                                    <button id="original" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Скопировать оригинал" class="">
                                         <i class="br-copy"></i>
                                     </button>
                                 </div>
                                 <div class="right">
-                                    <button id="translation" title="Скопировать перевод">
+                                    <button id="translation" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Скопировать перевод">
                                         <i class="br-copy"></i>
                                     </button>
-                                    <button onclick="printTranslation()" title="Распечатать">
+                                    <button class="print btn btn-secondary" onclick="printTranslation()" data-toggle="tooltip" data-placement="right" title="Распечатать">
                                         <i class="br-print"></i>
                                     </button>
                                 </div>
@@ -850,17 +847,14 @@
                             <span class="for-print">Brute.by - Перевод песен со всех языков</span>
                         </div>
                     </div>
-
                 </div>
             </div>
-
             <div class="author">
                 <p>
                     <span>
                         Автор перевода:
                         <a href="#"> Lerika Raido</a>.
                     </span>
-
                     При полном или частичном копировании данного материала указывайте
                     активную ссылку на сайт (<a href="http://brute.by">brute.by</a>),
                     а также авторов перевода.
@@ -869,6 +863,8 @@
         </div>
     </article>
 </div>
+<script src="scripts/tether.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
 <script src="scripts/select2.min.js"></script>
 <script src="scripts/search.js"></script>
 <script src="scripts/jquery.slimscroll.min.js"></script>
