@@ -75,7 +75,7 @@
                         var musician = (Musician) publishedContent;
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
                             <a href="@musician.Url" class="musician">
-                                <img src="@(Url.GetCropUrl(musician, "image", "musicianCropper"))"/>
+                                <img src="@(Url.GetCropUrl(musician, "image", "musicianCropper"))" alt="@(!string.IsNullOrWhiteSpace(musician.Alt) ? musician.Alt : musician.NavigationName ?? string.Empty)"/>
                                 <div class="description">
                                     <p>@musician.NavigationName</p>
                                     <span>перевод песен</span>

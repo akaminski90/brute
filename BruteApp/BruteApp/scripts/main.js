@@ -74,4 +74,3 @@ function printTranslation() {
         loadCSS: "/css/print.css"
     });
 }
-

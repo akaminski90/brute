@@ -2498,6 +2498,7 @@ h1 {
   text-decoration: none;
   color: #000;
   font-size: 1.7rem;
+  padding: 1rem 0;
 }
 
 .navbar .bars {
@@ -2869,6 +2870,7 @@ footer ul li a span {
   background-color: #6fb0dd;
   padding: .5rem;
   text-align: center;
+  color: #fff;
 }
 
 .filters-section .filter ul {

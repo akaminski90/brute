@@ -54,7 +54,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Navigation Name: Page name for navbar
+		/// Navigation Name
 		///</summary>
 		[ImplementPropertyType("navigationName")]
 		public string NavigationName

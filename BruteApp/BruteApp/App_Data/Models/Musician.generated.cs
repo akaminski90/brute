@@ -46,6 +46,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Alt attribute: If empty Navigation Name used as alt attribute
+		///</summary>
+		[ImplementPropertyType("alt")]
+		public string Alt
+		{
+			get { return this.GetPropertyValue<string>("alt"); }
+		}
+
+		///<summary>
 		/// Band: Tick this if this is a band
 		///</summary>
 		[ImplementPropertyType("band")]
@@ -73,7 +82,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Navigation Name: Page name for navbar
+		/// Navigation Name
 		///</summary>
 		[ImplementPropertyType("navigationName")]
 		public string NavigationName
