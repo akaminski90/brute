@@ -13,6 +13,7 @@
 }
 
 @section styles {
+    <link href="~/css/print.css" rel="stylesheet"/>
     <link href="~/css/select2.css" rel="stylesheet" />
     <link href="~/css/song.css" rel="stylesheet" />
 }
@@ -58,12 +59,7 @@
                         <h1>@Model.Content.Parent.GetPropertyValue("NavigationName") - @Model.Content.SongName перевод песни</h1>
                         <span class="for-print">@main.TopTitle</span>
                         <p>
-                            Перевод песни <strong>@Model.Content.SongName</strong> @((bool) Model.Content.Parent.GetPropertyValue("Band") ? "группы" : "исполнителя")
-                            <strong>@Model.Content.Parent.GetPropertyValue("NavigationName")</strong>
-                            осуществлён с адаптацией на русский язык.
-                            Учитываются метафоры и смысл каждой строки - соответственно то, что хочет донести до
-                            слушателя автор песни. Если у Вас есть замечания к переводу или его адаптации на русский язык, пожалуйста,
-                            сообщите это в комментариях, и мы обязательно внесём поправки, а Ваша помощь не останется незамеченной.
+                            @(Html.Raw(!string.IsNullOrWhiteSpace(Model.Content.Description) ? Model.Content.Description : main.DefaultDescription.Replace("{0}", "<strong>" + Model.Content.Parent.GetPropertyValue("navigationName") + "</strong>").Replace("{1}", "<strong>" + Model.Content.SongName + "</strong>")))
                         </p>
                         <div class="btns-panel">
                             <div class="left">
@@ -127,18 +123,21 @@
     </div>
 </article>
 
+@section tooltip {
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>
+}
+
 @section scripts {
     <script src="~/scripts/tether.min.js"></script>
     <script src="~/scripts/bootstrap.min.js"></script>
     <script src="~/scripts/select2.min.js"></script>
     <script src="~/scripts/search.js"></script>
     <script src="~/scripts/printThis.js"></script>
-    <script src="~/scripts/clipboard.min.js"></script>   
-    <script>
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    <script src="~/scripts/clipboard.min.js"></script>       
 }
 
 @helper CreateCatlogMenu()

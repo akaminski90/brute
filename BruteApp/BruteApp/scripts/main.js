@@ -70,7 +70,8 @@ $(function () {
 
 function printTranslation() {
     $('.text, .song > h1, .for-print').printThis({
-        importCSS: true,
-        loadCSS: "/css/print.css"
+        //importCSS: true,
+        //loadCSS: "/css/print.css"
+        delay: 1000
     });
 }

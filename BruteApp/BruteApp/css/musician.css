@@ -2292,7 +2292,6 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-x: hidden;
   padding: 50px 0 0;
 }
 
@@ -2304,7 +2303,8 @@ article {
   -webkit-transition: margin .2s;
   transition: margin .2s;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (min-width: 900px) {
@@ -2956,6 +2956,7 @@ footer ul li a span {
   color: #3a3a3a;
   font-size: 1.7rem;
   margin: 1rem 0 3rem;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -3141,5 +3142,3 @@ footer ul li a span {
 .pagination .pages a.active {
   background-color: #ececec;
 }
-
-/*# sourceMappingURL=musician.css.map */

@@ -46,6 +46,24 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Description
+		///</summary>
+		[ImplementPropertyType("description")]
+		public string Description
+		{
+			get { return this.GetPropertyValue<string>("description"); }
+		}
+
+		///<summary>
+		/// Link Text: If this field is empty default pattern is used
+		///</summary>
+		[ImplementPropertyType("linkText")]
+		public string LinkText
+		{
+			get { return this.GetPropertyValue<string>("linkText"); }
+		}
+
+		///<summary>
 		/// Song Name
 		///</summary>
 		[ImplementPropertyType("songName")]
@@ -82,7 +100,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// PageDescription
+		/// PageDescription: For meta and social networks meta tags
 		///</summary>
 		[ImplementPropertyType("metaDescription")]
 		public string MetaDescription
@@ -91,7 +109,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Page Title
+		/// Page Title: For meta and social networks meta tags
 		///</summary>
 		[ImplementPropertyType("pageTitle")]
 		public string PageTitle

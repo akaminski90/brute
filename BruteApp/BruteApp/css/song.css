@@ -2292,7 +2292,6 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-x: hidden;
   padding: 50px 0 0;
 }
 
@@ -2304,7 +2303,8 @@ article {
   -webkit-transition: margin .2s;
   transition: margin .2s;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (min-width: 900px) {
@@ -3264,7 +3264,7 @@ tbody.collapse.show {
 .author p {
   font-size: 1.6rem;
   padding: 0 1rem;
-  margin: 0 0 auto auto;
+  margin: auto auto 0;
 }
 
 .author p span {
@@ -3275,5 +3275,3 @@ tbody.collapse.show {
 .tooltip {
   font-size: 1.35rem;
 }
-
-/*# sourceMappingURL=song.css.map */

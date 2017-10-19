@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic);
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
@@ -2293,7 +2293,6 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-x: hidden;
   padding: 50px 0 0;
 }
 
@@ -2305,7 +2304,8 @@ article {
   -webkit-transition: margin .2s;
   transition: margin .2s;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (min-width: 900px) {
@@ -3863,5 +3863,3 @@ input[type="button"].btn-block {
     font-size: 1.5rem;
   }
 }
-
-/*# sourceMappingURL=send.css.map */

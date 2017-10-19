@@ -19,6 +19,7 @@
     color: #3a3a3a;
     font-size: 1.7rem;
     margin: 1rem 0 3rem;
+    width: 100%;
 
     @include media-breakpoint-up(md) {
       font-size: 2rem;

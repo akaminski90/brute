@@ -57,7 +57,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// PageDescription
+		/// PageDescription: For meta and social networks meta tags
 		///</summary>
 		[ImplementPropertyType("metaDescription")]
 		public string MetaDescription
@@ -69,7 +69,7 @@ namespace Umbraco.Web.PublishedContentModels
 		public static string GetMetaDescription(ISEO that) { return that.GetPropertyValue<string>("metaDescription"); }
 
 		///<summary>
-		/// Page Title
+		/// Page Title: For meta and social networks meta tags
 		///</summary>
 		[ImplementPropertyType("pageTitle")]
 		public string PageTitle
