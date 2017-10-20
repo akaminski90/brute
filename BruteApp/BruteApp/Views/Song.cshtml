@@ -63,15 +63,15 @@
                         </p>
                         <div class="btns-panel">
                             <div class="left">
-                                <button id="original" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Скопировать оригинал" class="">
+                                <button id="original" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" data-animation="false" title="Скопировать оригинал" class="">
                                     <i class="br-copy"></i>
                                 </button>
                             </div>
                             <div class="right">
-                                <button id="translation" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Скопировать перевод">
+                                <button id="translation" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" data-animation="false" title="Скопировать перевод">
                                     <i class="br-copy"></i>
                                 </button>
-                                <button class="print btn btn-secondary" onclick="printTranslation()" data-toggle="tooltip" data-placement="right" title="Распечатать">
+                                <button class="print btn btn-secondary" data-toggle="tooltip" data-placement="right" data-animation="false" title="Распечатать">
                                     <i class="br-print"></i>
                                 </button>
                             </div>
@@ -124,7 +124,9 @@
 </article>
 
 @section tooltip {
-    <script>
+<script src="~/scripts/tether.min.js"></script>
+<script src="~/scripts/bootstrap.min.js"></script>
+<script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
@@ -132,17 +134,15 @@
 }
 
 @section scripts {
-    <script src="~/scripts/tether.min.js"></script>
-    <script src="~/scripts/bootstrap.min.js"></script>
     <script src="~/scripts/select2.min.js"></script>
     <script src="~/scripts/search.js"></script>
     <script src="~/scripts/printThis.js"></script>
-    <script src="~/scripts/clipboard.min.js"></script>       
+    <script src="~/scripts/clipboard.min.js"></script>
 }
 
 @helper CreateCatlogMenu()
 {
-    var sections = Umbraco.TypedContentAtXPath("//section");    
+    var sections = Umbraco.TypedContentAtXPath("//section");
 
     <div class="col-xl-7 no-padding">
         <div class="filter">
