@@ -19,9 +19,6 @@ h1 {
 .text .string {
   border-bottom: 1px solid #eee;
   padding: 5px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   min-height: 30px;
 }
@@ -46,5 +43,3 @@ h1 {
 .text .string .translate {
   font-weight: 600;
 }
-
-/*# sourceMappingURL=print.css.map */
