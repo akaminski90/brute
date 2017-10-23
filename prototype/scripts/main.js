@@ -75,6 +75,15 @@ function printTranslation() {
     });
 }
 
+/* Tooltips */
+
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-})
+});
+
+/* Open filter */
+
+$('.open-filter').click(function () {
+    $('.filter').toggleClass('active');
+    $(this).find('i').toggleClass('br-down').toggleClass('br-up');
+});
