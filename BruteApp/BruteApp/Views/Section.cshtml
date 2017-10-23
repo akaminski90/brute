@@ -53,8 +53,11 @@
             </ul>
         </li>
     }
-
-    <button id="loadMore" style="width: 5rem;" onclick="var lis = document.querySelectorAll('.menu-content .items > li[style=\'display: none\']');for (var i = 0; i < lis.length; i++) {lis[i].style.display='block';} document.getElementById('loadMore').style.display='none';">Load more</button>
+    
+    @if (musicians.Count() - pageSize > 0)
+    {
+        <button id="loadMore" style="width: 5rem;" onclick="var lis = document.querySelectorAll('.menu-content .items > li[style=\'display: none\']');for (var i = 0; i < lis.length; i++) { lis[i].style.display = 'block'; }document.getElementById('loadMore').style.display = 'none';">Load more</button>
+    }
 
 
     @foreach (var publishedContent in musicians.Skip(pageSize))
