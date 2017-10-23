@@ -34,10 +34,33 @@
 
 
 @section sidebar {
-    @foreach (var publishedContent in musicians.Skip((pages - 1) * pageSize).Take(pageSize))
+    @foreach (var publishedContent in musicians@*.Skip((pages - 1) * pageSize)*@.Take(pageSize))
     {
         var musician = (Musician) publishedContent;
         <li>
+            <a href="@musician.Url">
+                <span>@musician.NavigationName</span>
+                <i class="br-down"></i>
+            </a>
+            <ul class="collapse">
+                @foreach (var publishedContent1 in musician.Children)
+                {
+                    var song = (Song) publishedContent1;
+                    <li>
+                        <a href="@song.Url">@song.SongName</a>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+
+    <button id="loadMore" style="width: 5rem;" onclick="var lis = document.querySelectorAll('.menu-content .items > li[style=\'display: none\']');for (var i = 0; i < lis.length; i++) {lis[i].style.display='block';} document.getElementById('loadMore').style.display='none';">Load more</button>
+
+
+    @foreach (var publishedContent in musicians.Skip(pageSize))
+    {
+        var musician = (Musician) publishedContent;
+        <li style='display: none'>
             <a href="@musician.Url">
                 <span>@musician.NavigationName</span>
                 <i class="br-down"></i>

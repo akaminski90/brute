@@ -4,6 +4,8 @@
 @{
     Layout = "MasterLayout.cshtml";
     var main = (MainPage)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<MainPage>()));
+    var musicians = Umbraco.TypedContentAtXPath("//musician");
+    musicians = musicians != null ? musicians.Select(x => new Musician(x)).Where(x => x.MusicianSection != null && x.MusicianSection.Id == Model.Content.MusicianSection.Id && x.Id != Model.Content.Id)/*.OrderBy(x => x.NavigationName)*/ : null;
 }
 
 @section styles {
@@ -14,6 +16,7 @@
 @{
     var selection = Model.Content.Children.OrderBy(x => x.GetPropertyValue("NavigationName"));
     var pageSize = (int)Model.Content.Parent.GetPropertyValue("SongsOnPage") > 0 ? (int)Model.Content.Parent.GetPropertyValue("SongsOnPage") : 10;
+    var sidebarSize = 30;
     var pages = 1;
     int.TryParse(Request.QueryString["pages"], out pages);
     var totalPages = (int)Math.Ceiling((double)selection.Count() / pageSize);
@@ -30,21 +33,64 @@
     }
 
 @section sidebar {
-            <li class="active">
-                <a href="@Model.Content.Url">
-                    <span>@Model.Content.NavigationName</span>
-                    <i class="br-down"></i>
-                </a>
-                <ul class="collapse">
-                    @foreach (var publishedContent in Model.Content.Children.OrderBy(x => x.GetPropertyValue("songName")))
-                    {
-                        var song = (Song)publishedContent;
-                        <li>
-                            <a href="@song.Url">@song.SongName</a>
-                        </li>
-                    }
-                </ul>
-            </li>
+    <li class="active">
+        <a href="@Model.Content.Url">
+            <span>@Model.Content.NavigationName</span>
+            <i class="br-up"></i>
+        </a>
+        <ul class="collapse">
+            @foreach (var publishedContent in Model.Content.Children.OrderBy(x => x.GetPropertyValue("songName")))
+            {
+                var song = (Song)publishedContent;
+                <li>
+                    <a href="@song.Url">@song.SongName</a>
+                </li>
+            }
+        </ul>
+    </li>
+    @foreach (var publishedContent in musicians@*.Skip((pages - 1) * pageSize)*@.Take(sidebarSize - 1))
+    {
+        if (sidebarSize - 1 <= 0) {break;}
+        var musician = (Musician) publishedContent;
+        <li>
+            <a href="@musician.Url">
+                <span>@musician.NavigationName</span>
+                <i class="br-down"></i>
+            </a>
+            <ul class="collapse">
+                @foreach (var publishedContent1 in musician.Children)
+                {
+                    var song = (Song) publishedContent1;
+                    <li>
+                        <a href="@song.Url">@song.SongName</a>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+
+    <button id="loadMore" style="width: 5rem;" onclick="var lis = document.querySelectorAll('.menu-content .items > li[style=\'display: none\']');for (var i = 0; i < lis.length; i++) {lis[i].style.display='block';} document.getElementById('loadMore').style.display='none';">Load more</button>
+
+
+    @foreach (var publishedContent in musicians.Skip(sidebarSize-1))
+    {
+        var musician = (Musician) publishedContent;
+        <li style='display: none'>
+            <a href="@musician.Url">
+                <span>@musician.NavigationName</span>
+                <i class="br-down"></i>
+            </a>
+            <ul class="collapse">
+                @foreach (var publishedContent1 in musician.Children)
+                {
+                    var song = (Song) publishedContent1;
+                    <li>
+                        <a href="@song.Url">@song.SongName</a>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
 }
 
     <article>
