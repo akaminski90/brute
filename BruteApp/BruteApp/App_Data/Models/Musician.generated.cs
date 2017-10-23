@@ -67,9 +67,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// Musician image
 		///</summary>
 		[ImplementPropertyType("Image")]
-		public Umbraco.Web.Models.ImageCropDataSet Image
+		public IPublishedContent Image
 		{
-			get { return this.GetPropertyValue<Umbraco.Web.Models.ImageCropDataSet>("Image"); }
+			get { return this.GetPropertyValue<IPublishedContent>("Image"); }
 		}
 
 		///<summary>

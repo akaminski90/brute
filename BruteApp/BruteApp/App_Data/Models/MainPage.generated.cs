@@ -64,6 +64,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// DefaultImage
+		///</summary>
+		[ImplementPropertyType("defaultImage")]
+		public IPublishedContent DefaultImage
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("defaultImage"); }
+		}
+
+		///<summary>
 		/// Default Link Caption: {0} - musician {1} - song
 		///</summary>
 		[ImplementPropertyType("defaultLinkCaption")]
@@ -75,19 +84,10 @@ namespace Umbraco.Web.PublishedContentModels
 		///<summary>
 		/// Meta Image
 		///</summary>
-		[ImplementPropertyType("metaImage")]
-		public string MetaImage
-		{
-			get { return this.GetPropertyValue<string>("metaImage"); }
-		}
-
-		///<summary>
-		/// Meta Image
-		///</summary>
 		[ImplementPropertyType("metaImg")]
-		public Umbraco.Web.Models.ImageCropDataSet MetaImg
+		public IPublishedContent MetaImg
 		{
-			get { return this.GetPropertyValue<Umbraco.Web.Models.ImageCropDataSet>("metaImg"); }
+			get { return this.GetPropertyValue<IPublishedContent>("metaImg"); }
 		}
 
 		///<summary>
