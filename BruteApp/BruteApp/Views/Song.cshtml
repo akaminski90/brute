@@ -108,7 +108,7 @@
                             Автор перевода:
                             @foreach (var item in links)
                             {
-                                <a href="@item.Link" @(item.NewWindow ? "target=blank" : string.Empty)> @item.Caption</a>
+                                <a rel="nofollow" href="@item.Link" @(item.NewWindow ? "target=blank" : string.Empty)><!--noindex-->@item.Caption<!--/noindex--></a>
                             }
                         </span>
                     }
