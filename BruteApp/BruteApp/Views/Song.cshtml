@@ -58,24 +58,19 @@
                         <h1>@Model.Content.Parent.GetPropertyValue("NavigationName") - @Model.Content.SongName перевод песни</h1>
                         <span class="for-print">@main.TopTitle</span>
                         <p>
-                            Перевод песни <strong>@Model.Content.SongName</strong> @((bool) Model.Content.Parent.GetPropertyValue("Band") ? "группы" : "исполнителя")
-                            <strong>@Model.Content.Parent.GetPropertyValue("NavigationName")</strong>
-                            осуществлён с адаптацией на русский язык.
-                            Учитываются метафоры и смысл каждой строки - соответственно то, что хочет донести до
-                            слушателя автор песни. Если у Вас есть замечания к переводу или его адаптации на русский язык, пожалуйста,
-                            сообщите это в комментариях, и мы обязательно внесём поправки, а Ваша помощь не останется незамеченной.
+                            @(Html.Raw(!string.IsNullOrWhiteSpace(Model.Content.Description) ? Model.Content.Description : main.DefaultDescription.Replace("{0}", "<strong>" + Model.Content.Parent.GetPropertyValue("navigationName") + "</strong>").Replace("{1}", "<strong>" + Model.Content.SongName + "</strong>")))
                         </p>
                         <div class="btns-panel">
                             <div class="left">
-                                <button id="original" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Скопировать оригинал" class="">
+                                <button id="original" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" data-animation="false" title="Скопировать оригинал" class="">
                                     <i class="br-copy"></i>
                                 </button>
                             </div>
                             <div class="right">
-                                <button id="translation" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Скопировать перевод">
+                                <button id="translation" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" data-animation="false" title="Скопировать перевод">
                                     <i class="br-copy"></i>
                                 </button>
-                                <button class="print btn btn-secondary" onclick="printTranslation()" data-toggle="tooltip" data-placement="right" title="Распечатать">
+                                <button class="print btn btn-secondary" data-toggle="tooltip" data-placement="right" data-animation="false" title="Распечатать">
                                     <i class="br-print"></i>
                                 </button>
                             </div>
@@ -113,7 +108,7 @@
                             Автор перевода:
                             @foreach (var item in links)
                             {
-                                <a href="@item.Link" @(item.NewWindow ? "target=blank" : string.Empty)> @item.Caption</a>
+                                <a rel="nofollow" href="@item.Link" @(item.NewWindow ? "target=blank" : string.Empty)><!--noindex-->@item.Caption<!--/noindex--></a>
                             }
                         </span>
                     }
@@ -127,23 +122,26 @@
     </div>
 </article>
 
+@section tooltip {
+<script src="~/scripts/tether.min.js"></script>
+<script src="~/scripts/bootstrap.min.js"></script>
+<script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>
+}
+
 @section scripts {
-    <script src="~/scripts/tether.min.js"></script>
-    <script src="~/scripts/bootstrap.min.js"></script>
     <script src="~/scripts/select2.min.js"></script>
     <script src="~/scripts/search.js"></script>
     <script src="~/scripts/printThis.js"></script>
-    <script src="~/scripts/clipboard.min.js"></script>   
-    <script>
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    <script src="~/scripts/clipboard.min.js"></script>
 }
 
 @helper CreateCatlogMenu()
 {
-    var sections = Umbraco.TypedContentAtXPath("//section");    
+    var sections = Umbraco.TypedContentAtXPath("//section");
 
     <div class="col-xl-7 no-padding">
         <div class="filter">

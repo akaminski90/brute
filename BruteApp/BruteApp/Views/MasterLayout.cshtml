@@ -14,11 +14,20 @@
 <head>
     <meta charset="UTF-8"/>
     <title>@CurrentPage.GetPropertyValue("pageTitle")</title>    
-    @RenderSection("styles", false)
-    <link href="~/css/gray.css" rel="stylesheet">
+    @RenderSection("styles", false)    
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex, nofollow"/>
     <meta name="description" content="@CurrentPage.GetPropertyValue("metaDescription")"/>
+    <meta property="og:locale" content="@main.Oglocale"/>
+    <meta property="og:type" content="@main.Ogtype"/>
+    <meta property="og:title" content="@CurrentPage.GetPropertyValue("pageTitle")"/>
+    <meta property="og:description" content="@CurrentPage.GetPropertyValue("metaDescription")"/>
+    <meta property="og:image" content="@(main.MetaImg != null ? MediaHelper.GetPropertyImageUrl(main.MetaImg) : string.Empty)"/>
+    <meta property="og:url" content="@CurrentPage.UrlAbsolute()"/>
+    <meta property="og:site_name" content="@main.Ogsite_name"/>
+    <meta name="twitter:title" content="@CurrentPage.GetPropertyValue("pageTitle")">
+    <meta name="twitter:description" content="@CurrentPage.GetPropertyValue("metaDescription")">
+    <meta name="twitter:image" content="@(main.MetaImg != null ? MediaHelper.GetPropertyImageUrl(main.MetaImg) : string.Empty)">
     <script src="~/scripts/jquery-3.2.1.min.js"></script>    
 </head>
 <body>
@@ -61,6 +70,7 @@
 
     @RenderBody()
 </div>
+@RenderSection("tooltip", false)
 <script src="~/scripts/main.js"></script>
 @RenderSection("scripts", false)
 <script src="~/scripts/jquery.slimscroll.min.js"></script>
