@@ -38,14 +38,30 @@
   }
 
   .filter {
+    height: 95px;
+    overflow: hidden;
+
+    &.active {
+      height: auto;
+      overflow: visible;
+    }
+
+    @include media-breakpoint-up(sm) {
+      height: auto;
+      overflow: auto;
+    }
 
     p {
-      font-size: 2rem;
+      font-size: 1.7rem;
       width: 100%;
       background-color: #6fb0dd;
       padding: .5rem;
       text-align: center;
       color: #fff;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 2rem;
+      }
     }
     ul {
       display: flex;
@@ -72,6 +88,30 @@
           border: 1px solid #838383;
         }
       }
+    }
+  }
+
+  .open-filter {
+    background-color: #8babb5;
+    padding: 1rem 0;
+    display: flex;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+
+    span {
+      margin: auto;
+      display: flex;
+    }
+
+    i {
+      font-size: 1.35rem;
+      display: flex;
+      margin: auto;
+    }
+
+    @include media-breakpoint-up(sm) {
+      display: none;
     }
   }
 }

@@ -71,7 +71,7 @@
 
     @if (musicians.Count() - sidebarSize + 1 > 0)
     {
-        <button id="loadMore" style="width: 5rem;" onclick="var lis = document.querySelectorAll('.menu-content .items > li[style=\'display: none\']');for (var i = 0; i < lis.length; i++) { lis[i].style.display = 'block'; }document.getElementById('loadMore').style.display = 'none';">Load more</button>
+        <button id="loadMore" class="load-more" onclick="var lis = document.querySelectorAll('.menu-content .items > li[style=\'display: none\']');for (var i = 0; i < lis.length; i++) { lis[i].style.display = 'block'; }document.getElementById('loadMore').style.display = 'none';">Load more</button>
         
     }
 
@@ -229,6 +229,12 @@ var sections = Umbraco.TypedContentAtXPath("//section");
                     }
                 }
             </ul>
+        </div>
+        <div class="open-filter">
+            <span>
+                Найти по букве/цифре
+                <i class="br-down"></i>
+            </span>
         </div>
     </div>
 }
