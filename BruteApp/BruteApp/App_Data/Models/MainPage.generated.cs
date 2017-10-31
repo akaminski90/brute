@@ -91,6 +91,24 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Musician Default SEO Page Description: {0} - musician
+		///</summary>
+		[ImplementPropertyType("musicianDefaultSEOPageDescription")]
+		public string MusicianDefaultSeopageDescription
+		{
+			get { return this.GetPropertyValue<string>("musicianDefaultSEOPageDescription"); }
+		}
+
+		///<summary>
+		/// Musician Default SEO Page Title: {0} - musician
+		///</summary>
+		[ImplementPropertyType("musicianDefaultSEOPageTitle")]
+		public string MusicianDefaultSeopageTitle
+		{
+			get { return this.GetPropertyValue<string>("musicianDefaultSEOPageTitle"); }
+		}
+
+		///<summary>
 		/// Musician Page Text: Use {0} to show where you want to insert the name of a musician
 		///</summary>
 		[ImplementPropertyType("musicianPageText")]
@@ -133,6 +151,24 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Ogtype
 		{
 			get { return this.GetPropertyValue<string>("ogtype"); }
+		}
+
+		///<summary>
+		/// Song Default SEO Page Description: {0} - musician {1} - song
+		///</summary>
+		[ImplementPropertyType("songDefaultSEOPageDescription")]
+		public string SongDefaultSeopageDescription
+		{
+			get { return this.GetPropertyValue<string>("songDefaultSEOPageDescription"); }
+		}
+
+		///<summary>
+		/// Song Default SEO Page Title: {0} - musician {1} - song
+		///</summary>
+		[ImplementPropertyType("songDefaultSEOPageTitle")]
+		public string SongDefaultSeopageTitle
+		{
+			get { return this.GetPropertyValue<string>("songDefaultSEOPageTitle"); }
 		}
 
 		///<summary>
