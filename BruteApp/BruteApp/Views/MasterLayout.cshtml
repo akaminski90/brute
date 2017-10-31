@@ -5,6 +5,8 @@
     var main = (MainPage)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<MainPage>()));
     var send = (Send)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<Send>()));
     var social = (SocialLinks)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<SocialLinks>()));
+    var title = "";
+    var description = "";
 }
 
 @* the fun starts here *@
@@ -14,7 +16,7 @@
 <head>
     <meta charset="UTF-8"/>
     @{
-        var title = "";
+
         if (string.IsNullOrWhiteSpace(CurrentPage.PageTitle))
         {
             if (CurrentPage.DocumentTypeAlias == "musician")
@@ -30,15 +32,7 @@
         {
             title = CurrentPage.PageTitle;
         }
-        <title>@title</title>
-        <meta property="og:title" content="@title"/>
-        <meta name="twitter:title" content="@title">
-    }
-    @RenderSection("styles", false)    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="robots" content="noindex, nofollow"/>
-    @{
-        var description = "";
+
         if (string.IsNullOrWhiteSpace(CurrentPage.MetaDescription))
         {
             if (CurrentPage.DocumentTypeAlias == "musician")
@@ -52,17 +46,23 @@
         }
         else
         {
-            description = CurrentPage.MetaDescription;            
-        }
-        <meta name="description" content="@description"/>
-        <meta property="og:description" content="@description" />
-        <meta name="twitter:description" content="@description">
+            description = CurrentPage.MetaDescription;
+        }                
     }
+    <title>@title</title>
+    @RenderSection("styles", false) 
+    <meta name="description" content="@description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex, nofollow"/>  
+    <meta property="og:title" content="@title" />
+    <meta property="og:description" content="@description" />    
     <meta property="og:locale" content="@main.Oglocale"/>
     <meta property="og:type" content="@main.Ogtype"/>    
-    <meta property="og:image" content="@(main.MetaImg != null ? MediaHelper.GetPropertyImageUrl(main.MetaImg) : string.Empty)"/>
-    <meta property="og:url" content="@CurrentPage.UrlAbsolute()"/>
-    <meta property="og:site_name" content="@main.Ogsite_name"/>    
+    <meta property="og:url" content="@CurrentPage.UrlAbsolute()" />
+    <meta property="og:site_name" content="@main.Ogsite_name" />    
+    <meta property="og:image" content="@(main.MetaImg != null ? MediaHelper.GetPropertyImageUrl(main.MetaImg) : string.Empty)"/>    
+    <meta name="twitter:title" content="@title">
+    <meta name="twitter:description" content="@description">
     <meta name="twitter:image" content="@(main.MetaImg != null ? MediaHelper.GetPropertyImageUrl(main.MetaImg) : string.Empty)">
     <script src="~/scripts/jquery-3.2.1.min.js"></script>    
 </head>
