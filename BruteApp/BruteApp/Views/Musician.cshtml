@@ -1,0 +1,246 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Musician>
+@using BruteApp.Helpers
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "MasterLayout.cshtml";
+    var main = (MainPage)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<MainPage>()));
+    var musicians = Umbraco.TypedContentAtXPath("//musician");
+    musicians = musicians != null ? musicians.Select(x => new Musician(x)).Where(x => x.MusicianSection != null && x.MusicianSection.Id == Model.Content.MusicianSection.Id && x.Id != Model.Content.Id)/*.OrderBy(x => x.NavigationName)*/ : null;
+}
+
+@section styles {
+    <link href="~/css/select2.css" rel="stylesheet" />
+    <link href="~/css/musician.css" rel="stylesheet" />
+}
+
+@{
+    var selection = Model.Content.Children.OrderBy(x => x.GetPropertyValue("NavigationName"));
+    var pageSize = (int)Model.Content.Parent.GetPropertyValue("SongsOnPage") > 0 ? (int)Model.Content.Parent.GetPropertyValue("SongsOnPage") : 10;
+    var sidebarSize = 30;
+    var pages = 1;
+    int.TryParse(Request.QueryString["pages"], out pages);
+    var totalPages = (int)Math.Ceiling((double)selection.Count() / pageSize);
+    if (pages > totalPages)
+    {
+        pages = totalPages;
+    }
+    else
+    {
+        if (pages < 1)
+        {
+            pages = 1;
+        }
+    }
+
+@section sidebar {
+    <li class="active">
+        <a href="@Model.Content.Url">
+            <span>@Model.Content.NavigationName</span>
+            <i class="br-up"></i>
+        </a>
+        <ul class="collapse">
+            @foreach (var publishedContent in Model.Content.Children.OrderBy(x => x.GetPropertyValue("songName")))
+            {
+                var song = (Song)publishedContent;
+                <li>
+                    <a href="@song.Url">@song.SongName</a>
+                </li>
+            }
+        </ul>
+    </li>
+    @foreach (var publishedContent in musicians@*.Skip((pages - 1) * pageSize)*@.Take(sidebarSize - 1))
+    {
+        if (sidebarSize - 1 <= 0) {break;}
+        var musician = (Musician) publishedContent;
+        <li>
+            <a href="@musician.Url">
+                <span>@musician.NavigationName</span>
+                <i class="br-down"></i>
+            </a>
+            <ul class="collapse">
+                @foreach (var publishedContent1 in musician.Children)
+                {
+                    var song = (Song) publishedContent1;
+                    <li>
+                        <a href="@song.Url">@song.SongName</a>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+
+    @if (musicians.Count() - sidebarSize + 1 > 0)
+    {
+        <button id="loadMore" class="load-more" onclick="var lis = document.querySelectorAll('.menu-content .items > li[style=\'display: none\']');for (var i = 0; i < lis.length; i++) { lis[i].style.display = 'block'; }document.getElementById('loadMore').style.display = 'none';">Load more</button>
+        
+    }
+
+    @foreach (var publishedContent in musicians.Skip(sidebarSize-1))
+    {
+        var musician = (Musician) publishedContent;
+        <li style='display: none'>
+            <a href="@musician.Url">
+                <span>@musician.NavigationName</span>
+                <i class="br-down"></i>
+            </a>
+            <ul class="collapse">
+                @foreach (var publishedContent1 in musician.Children)
+                {
+                    var song = (Song) publishedContent1;
+                    <li>
+                        <a href="@song.Url">@song.SongName</a>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+}    
+
+    <article>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="filters-section">
+                        <div class="col-xl-5">
+                            <div class="search">
+                                <select style="display: none;" class="search-bar" type="text" placeholder="Введите название группы" autocomplete="off" autocorrect="off"></select>
+                            </div>
+                        </div>
+                        @CreateCatlogMenu()
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="musician">
+                            <h1>Перевод песен @IsBand() <strong>@Model.Content.NavigationName</strong>
+                            </h1>
+                            <p>
+                                @Html.Raw(main.MusicianPageText.Replace("{0}", "<strong>" + Model.Content.NavigationName + "</strong>"))
+                            </p>
+                            @foreach (var publishedContent in selection.Skip((pages - 1) * pageSize).Take(pageSize))
+                            {
+                                var song = (Song) publishedContent;
+                                <a href="@song.Url">@(!string.IsNullOrWhiteSpace(song.LinkText) ? song.LinkText : main.DefaultLinkCaption.Replace("{0}", Model.Content.NavigationName).Replace("{1}", song.SongName))</a>
+                            }                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @if (totalPages > 1)
+            {
+            <div class="pagination">            
+            
+                <a href="@(pages <= 1 ? "javascript:void(0)" : "?pages=" + (pages-1))">
+                    <i class="br-left"></i>
+                    <span>назад</span>
+                </a>
+
+                <div class="pages">
+                    @{
+                        const int delta = 2;
+                        var range = new List<int>();
+                        var rangeWithDots = new List<int>();
+                        var l = 0;
+
+                        range.Add(1);
+
+                        for (var i = pages - delta; i <= pages + delta; i++)
+                        {
+                            if (i < totalPages && i > 1)
+                            {
+                                range.Add(i);
+                            }
+                        }
+
+                        range.Add(totalPages);
+
+                        foreach (var item in range)
+                        {
+                            if (l != 0)
+                            {
+                                if (item - l == 2)
+                                {
+                                    rangeWithDots.Add(l + 1);
+                                }
+                                else
+                                {
+                                    if (item - l != 1)
+                                    {
+                                        rangeWithDots.Add(0);
+                                    }
+                                }
+                            }
+                            rangeWithDots.Add(item);
+                            l = item;
+                        }
+
+                        foreach (var item in rangeWithDots)
+                        {
+                            if (item != 0)
+                            {
+                                <a @(item == pages ? "class=active" : string.Empty) href="?pages=@item">@item</a>
+                            }
+                            else
+                            {
+                                if (item == 0)
+                                {
+                                    <a style="cursor: default; user-select: none;">...</a>
+                                }
+                            }
+                        }
+                    }               
+                </div>
+            
+                <a href="@(pages >= totalPages ? "javascript:void(0)" : "?pages=" + (pages+1))">
+                    <i class="br-right"></i>
+                    <span>далее</span>
+                </a>
+
+            </div>
+            }
+        </div>
+    </article>
+
+@section scripts {
+    <script src="~/scripts/select2.min.js"></script>
+    <script src="~/scripts/search.js"></script>
+    <script>
+        
+    </script>
+}
+
+@helper CreateCatlogMenu()
+{
+var sections = Umbraco.TypedContentAtXPath("//section");
+
+    <div class="col-xl-7 no-padding">
+        <div class="filter">
+            <p>Выберите исполнителя по первой букве (цифре):</p>
+            <ul>
+                @foreach (var item in sections.OrderBy(x => x.GetPropertyValue("NavigationName")))
+                {
+                    if ((string)item.GetPropertyValue("navigationName") != string.Empty)
+                    {
+                        <li>
+                            <a href="@item.Url">@item.GetPropertyValue("navigationName")</a>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+        <div class="open-filter">
+            <span>
+                Найти по букве/цифре
+                <i class="br-down"></i>
+            </span>
+        </div>
+    </div>
+}
+}
+
+@helper IsBand()
+{
+    @(Model.Content.Band ? "группы" : "исполнителя")
+}

@@ -1,0 +1,148 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.MainPage>
+@using BruteApp.Helpers
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "MasterLayout.cshtml";
+}
+
+@section styles {     
+    <link href="~/css/select2.css" rel="stylesheet" />
+    <link href="~/css/index.css" rel="stylesheet" />
+    <link href="~/css/gray.css" rel="stylesheet">
+}
+
+
+@section sidebar {
+                @foreach (var publishedContent in Model.Content.Musicians)
+                {
+                    if (publishedContent.DocumentTypeAlias != "musician") { continue; }
+                    var mus = (Musician)publishedContent;
+                    <li>
+                        <a href="@mus.Url">
+                            <span>@mus.NavigationName</span>
+                            <i class="br-down"></i>
+                        </a>
+                        <ul class="collapse">
+                            @foreach (var publishedContent1 in mus.Children)
+                            {
+                                var song = (Song)publishedContent1;
+                                <li>
+                                    <a href="@song.Url">@song.SongName</a>
+                                </li>
+                            }
+                        </ul>
+                    </li>
+                } 
+}
+
+
+<article>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="filters-section">
+                    <div class="col-xl-5">
+                        <div class="search">
+                            <select style="display: none;" class="search-bar" type="text" placeholder="Введите название группы" autocomplete="off" autocorrect="off"></select>
+                        </div>
+                    </div>
+                    @CreateCatlogMenu()
+                </div>
+            </div>
+
+            <div class="row" id="musicians">
+                @{
+                    var typedMultiNodeTreePicker = Model.Content.Musicians;
+                    foreach (var publishedContent in typedMultiNodeTreePicker)
+                    {
+                        if (publishedContent.DocumentTypeAlias != "musician") { continue; }
+                        var musician = (Musician) publishedContent;
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+                            <a href="@musician.Url" class="musician">
+                                <img src="@(MediaHelper.GetPropertyImageUrl(musician.Image)??MediaHelper.GetPropertyImageUrl(Model.Content.DefaultImage))" alt="@(!string.IsNullOrWhiteSpace(musician.Alt) ? musician.Alt : musician.NavigationName ?? string.Empty)"/>
+                                <div class="description">
+                                    <p>@musician.NavigationName</p>
+                                    <span>перевод песен</span>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                }                
+            </div>
+            @*<button id="load" style="margin: 50px auto; height: 50px; width: 50px; cursor: pointer;">Load More</button>*@
+        </div>
+    </div>
+</article>
+
+@section scripts {
+    <script src="~/scripts/select2.min.js"></script>
+    <script src="~/scripts/search.js"></script>
+    @*<script>
+        //var count = 0;
+
+        //$('#load').on('click',
+        //    function() {
+        //        infiniteScroll(count);
+        //        count+=6;
+
+        //        function infiniteScroll(count) {
+        //            $.ajax({
+        //                type: "GET",
+        //                url: "/umbraco/surface/musicianSurface/infinite",
+        //                data: {
+        //                    count: count
+        //                },
+        //                contentType: "application/json; charset=utf-8",
+        //                dataType: "json",
+        //                success: function (data) {
+        //                    var div = $(data);
+        //                    console.log("typeof data: " + typeof data);
+        //                    console.log(JSON.stringify(data));
+        //                    if (data != "") {
+        //                        $('#musicians').append(div);
+        //                    } else {
+        //                        $('#load').hide();
+        //                    }
+        //                    $('.lazy').Lazy({
+        //                        scrollDirection: 'vertical',
+        //                        visibleOnly: true,
+        //                        effect: 'fadeIn',
+        //                        effectTime: 100
+        //                    });
+
+        //                }
+        //            });
+        //        };
+        //    });
+
+
+    </script>*@
+}
+
+@helper CreateCatlogMenu()
+{
+    var sections = Umbraco.TypedContentAtXPath("//section");
+
+    <div class="col-xl-7 no-padding">
+        <div class="filter">
+            <p>Выберите исполнителя по первой букве (цифре):</p>
+            <ul>
+                @foreach (var item in sections.OrderBy(x => x.GetPropertyValue("navigationName")))
+                {
+                    if ((string) item.GetPropertyValue("navigationName") != string.Empty)
+                    {
+                        <li>
+                            <a href="@item.Url">@item.GetPropertyValue("navigationName")</a>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+        <div class="open-filter">
+            <span>
+                Найти по букве/цифре
+                <i class="br-down"></i>
+            </span>
+        </div>
+    </div>
+}

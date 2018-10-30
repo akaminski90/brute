@@ -1,0 +1,116 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using BruteApp.Helpers;
+@{
+    Layout = null;
+    var main = (MainPage)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<MainPage>()));
+    var send = (Send)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<Send>()));
+    var social = (SocialLinks)Umbraco.TypedContentSingleAtXPath(string.Format("//{0}", AttributeHelper.GetTypeAlias<SocialLinks>()));
+    var title = "";
+    var description = "";
+}
+
+@* the fun starts here *@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    @{
+
+        if (string.IsNullOrWhiteSpace(CurrentPage.PageTitle))
+        {
+            if (CurrentPage.DocumentTypeAlias == "musician")
+            {
+                title = !string.IsNullOrWhiteSpace(main.MusicianDefaultSeopageTitle) ? main.MusicianDefaultSeopageTitle.Replace("{0}", CurrentPage.NavigationName) : string.Empty;
+            }
+            else if (CurrentPage.DocumentTypeAlias == "song")
+            {
+                title = !string.IsNullOrWhiteSpace(main.SongDefaultSeopageTitle) ? main.SongDefaultSeopageTitle.Replace("{1}", CurrentPage.SongName).Replace("{0}", CurrentPage.Parent.NavigationName) : string.Empty;
+            }
+        }
+        else
+        {
+            title = CurrentPage.PageTitle;
+        }
+
+        if (string.IsNullOrWhiteSpace(CurrentPage.MetaDescription))
+        {
+            if (CurrentPage.DocumentTypeAlias == "musician")
+            {
+                description = !string.IsNullOrWhiteSpace(main.MusicianDefaultSeopageDescription) ? main.MusicianDefaultSeopageDescription.Replace("{0}", CurrentPage.NavigationName) : string.Empty;
+            }
+            else if (CurrentPage.DocumentTypeAlias == "song")
+            {
+                description = !string.IsNullOrWhiteSpace(main.SongDefaultSeopageDescription) ? main.SongDefaultSeopageDescription.Replace("{1}", CurrentPage.SongName).Replace("{0}", CurrentPage.Parent.NavigationName) : string.Empty;
+            }
+        }
+        else
+        {
+            description = CurrentPage.MetaDescription;
+        }                
+    }
+    <title>@title</title>
+    @RenderSection("styles", false) 
+    <meta name="description" content="@description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex, nofollow"/>  
+    <meta property="og:title" content="@title" />
+    <meta property="og:description" content="@description" />    
+    <meta property="og:locale" content="@main.Oglocale"/>
+    <meta property="og:type" content="@main.Ogtype"/>    
+    <meta property="og:url" content="@CurrentPage.UrlAbsolute()" />
+    <meta property="og:site_name" content="@main.Ogsite_name" />    
+    <meta property="og:image" content="@(main.MetaImg != null ? MediaHelper.GetPropertyImageUrl(main.MetaImg) : string.Empty)"/>    
+    <meta name="twitter:title" content="@title">
+    <meta name="twitter:description" content="@description">
+    <meta name="twitter:image" content="@(main.MetaImg != null ? MediaHelper.GetPropertyImageUrl(main.MetaImg) : string.Empty)">
+    <script src="~/scripts/jquery-3.2.1.min.js"></script>    
+</head>
+<body>
+<div class="wrapper">
+
+    <nav class="navbar">
+        <span class="bars"></span>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="@main.Url">Главная страница</a>
+                </li>
+            </ul>
+            <ul class="send">
+                <li>
+                    <a href="@send.Url">Отправьте свой перевод</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav class="sidebar">
+        <div class="menu-content">
+            <ul class="items">
+                @RenderSection("sidebar")
+            </ul>
+        </div>
+        @if (social != null)
+        {
+            <div class="social-links">
+                @foreach (var link in social.Links)
+                {
+                    <a href="@link.Link" @(link.NewWindow ? "target=_blank" : string.Empty)>
+                        <i class="@link.Caption"></i>
+                    </a>
+                }
+            </div>
+        }
+    </nav>
+
+    @RenderBody()
+</div>
+@RenderSection("tooltip", false)
+<script src="~/scripts/main.js"></script>
+@RenderSection("scripts", false)
+<script src="~/scripts/jquery.slimscroll.min.js"></script>
+<script src="~/scripts/jquery.touchSwipe.min.js"></script>
+</body>
+</html>
+

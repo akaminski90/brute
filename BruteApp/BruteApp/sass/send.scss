@@ -1,0 +1,162 @@
+@import "main";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/buttons";
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.send-translation {
+
+  > h1 {
+    padding: 0 .5rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-size: 1.7rem;
+    margin: 3rem 0;
+  }
+
+  .input {
+    margin: 2.5rem 0;
+    position: relative;
+
+    input {
+      height: 45px;
+      border: 1px solid #ddd;
+      width: 100%;
+      padding: 0 1rem;
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .send-file {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: 45px;
+    font-size: 1.6rem;
+    margin: .5rem 0;
+
+    input {
+      width: 100%;
+      height: 45px;
+      margin: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .file-control {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 45px;
+      padding: 1rem;
+      line-height: 1.5;
+      color: #464a4c;
+      border: 1px solid #ddd;
+      pointer-events: none;
+      user-select: none;
+      display: block;
+
+      &:before {
+        content: "Обзор";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        display: block;
+        height: 45px;
+        padding: 1rem;
+        line-height: 1.5;
+        color: #464a4c;
+        background-color: #eceeef;
+        border: 1px solid #ddd;
+      }
+
+      .placeholder {
+        position: absolute;
+      }
+    }
+  }
+
+  .error {
+    input {
+      border: 1px solid #ff2f3b;
+    }
+
+    .file-control {
+      border: 1px solid #ff2f3b;
+
+      &:before {
+        border: 1px solid #ff2f3b;
+      }
+    }
+
+    .validation {
+      display: block;
+    }
+  }
+
+  .validation {
+    display: none;
+    color: #ff2f3b;
+    font-size: 1.2rem;
+    margin: .5rem;
+    position: absolute;
+    bottom: -25px;
+
+    @include media-breakpoint-up(sm){
+      font-size: 1.5rem;
+    }
+  }
+
+  button {
+    margin: 2.5rem 0 0 auto;
+    display: flex;
+    padding: 1rem;
+    background-color: #eceeef;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: lighten(#eceeef, 1%);
+    }
+  }
+
+}
+
+.modal {
+  .modal-title, .close {
+    font-size: 2rem;
+  }
+
+  .modal-footer button {
+    font-size: 1.5rem;
+
+  }
+
+  .modal-body {
+    p {
+      font-size: 1.3rem;
+
+      @include media-breakpoint-up(sm){
+        font-size: 1.5rem;
+      }
+      padding: 0;
+    }
+  }
+}
